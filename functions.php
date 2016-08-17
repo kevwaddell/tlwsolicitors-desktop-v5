@@ -190,9 +190,6 @@ include (STYLESHEETPATH . '/_/functions/afc_save_post.php');
 /* SEND NEWSLETTER TO DOTMAILER */
 include (STYLESHEETPATH . '/_/functions/submit_newsletter.php');
 
-/* YOUST ADD TO CONTENT FUNCTION */
-include (STYLESHEETPATH . '/_/functions/yoast_functions.php');
-
 function add_gf_cap() {	
    $id = 2;
    $role = new WP_User( $id );
@@ -224,28 +221,6 @@ function adjust_my_breadcrumbs( $linksarray ) {
 	return $linksarray;
 }
 add_filter( 'wpseo_breadcrumb_links', 'adjust_my_breadcrumbs' );
-
-/*
-*  AFC Options Page
-*/
-
-if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page();
-	
-}
-
-if( function_exists('acf_add_options_sub_page') ) {
-	
-	acf_add_options_sub_page('Site footer');
-	acf_add_options_sub_page('Office location');
-	acf_add_options_sub_page('Homepage');
-	acf_add_options_sub_page('Testimonials');
-	acf_add_options_sub_page('Toolkits');
-	acf_add_options_sub_page('Campaigns');
-	acf_add_options_sub_page('Sitemap');
-	
-}
 
 add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
 function my_mce_buttons_2( $buttons ) {
