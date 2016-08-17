@@ -1,0 +1,256 @@
+#our-team-section {
+.bg-col-gray;
+.gradient(@gray, @gray ,@grayDk);
+.pad-bot(8);
+
+	.our-team-wrapper {
+	.over-hide;	
+	.h(38);	
+	.rel;
+	}
+	
+	.wrapper-inner {
+	.h(38);	
+	.abs;
+	.top(0);
+	.pad-left(8);
+	.pad-right(8);
+	}
+	
+	.team-profile {
+	.fleft;
+	.w(30);
+	.h(35);	
+		.profile-inner {
+		height: 100%;	
+		.mag-left(1.5);
+		.mag-right(1.5);
+		.drop-shadow(0, 3px, 10px, 0.7);
+		.rel;
+		overflow: hidden;
+		}
+		
+		.profile-img {
+		.abs;
+		.left(0);
+		.bottom(0);	
+		.border(@wht; 0.4);
+		width: 100%;
+		height: 100%;
+		.bg-repeat(no-repeat);
+		background-position: center top;
+		.bg-size;
+		-webkit-filter: grayscale(80%);
+		filter: grayscale(80%);
+		filter: url('/wp-content/themes/tlwsolicitors-v4/_/css/desaturate.svg#greyscale');		
+		}
+		
+		.profile-info {
+		.abs;
+		.left(0);
+		.bottom(0.4);	
+		.trans-bg(@wht; 0.8);
+		width: 100%;
+		.pad-all(1);
+		text-align: center;
+			h3 {
+			.mag-top(0);
+			.mag-bot(0.3);
+			.font-slab-serif;	
+			}
+			.email a {
+			.txt-col-red;	
+			.no-text-dec;
+				&:hover, &:active, &:focus {
+				.txt-col-red-dk;
+				}
+			}
+		}
+		
+		.profile-txt {
+		.abs;
+		vertical-align: bottom;
+		.top(0);
+		.left(0);	
+		width: 100%;
+		height: 100%;
+		.trans-bg(@grayDk; 0.9);
+		.txt-col-wht;
+		.pad-all(2);
+		.transition(0.3s, ease-out);
+			
+			.position {
+			.font-size(1.4);	
+			.line-h(1.4);
+			.bold;
+			.mag-bot(0.7);
+				span {
+				.block;
+				.mag-bot(0.3);
+				.txt-col-green;	
+				.font-normal;
+				}
+			}
+			
+				.profile-info-btn {
+				.abs;
+				.top(0);
+				.pad-all(0);
+				width: 100%;
+				.no-rounded;
+				.opacity(0);
+				.font-size(6);
+				.bg-col(@wht);
+				
+					&:after {
+					font-family: FontAwesome;	
+					}
+					
+					&:hover, &:active, &:focus {
+						.txt-col-gray;
+						.opacity(0.8);
+					}
+					
+				}	
+		
+			&.txt-hide {
+			.mag-left(27);				
+				.profile-info-btn {
+				.left(-27);
+				height: calc(~'100% - 75px');
+					
+					&:after {
+					content: "\f05a";	
+					}
+				
+					&:hover, &:active, &:focus {
+						.txt-col-gray;
+						.opacity(0.8);
+					}
+				}	
+			}
+			&.txt-view {
+			.mag-left(0);	
+				
+				.profile-info-btn {
+				.left(0);
+				top: auto;
+				.bottom(0);
+				.h(4);
+				.opacity(1);
+				.font-size(2);
+				.line-h(4);
+				.bg-col-red;
+				.txt-col-wht;
+					
+					&:after {
+					content: "\f138";	
+					}
+				
+					&:hover, &:active, &:focus {
+					.bg-col(@wht);
+					.opacity(0.8);
+					.txt-col-red;
+					}	
+				}	
+			}
+
+		}
+		
+	}
+	
+	.scroll-btns {
+	z-index: 2;	
+	.rel;
+		button.btn {
+		.w(5);
+		.h(5);
+		.pad-all(0);	
+		.mag-left(1);
+		.mag-right(1);
+		.bg-col(@wht);
+		.border(@wht; 0.4);
+		.font-size(2.5);
+		.rounded(100%);
+		.drop-shadow(0, 3px, 10px, 0.7);
+			&:hover, &:active, &:focus {
+			.bg-col-red;
+			.txt-col-wht;
+			}
+		}
+	}
+}
+
+
+/*
+OLD TEAM PROFILE STYLES
+*/
+
+#team-profiles {
+.mag-left(-3);
+}
+
+.team-list-box {
+	.rel;
+	.min-h(20);
+	
+	.profile-img {
+	.abs;
+	.top(0);
+	.bottom(0);
+	.min-h(20);
+	.max-h(35);	
+	
+		figure {
+			.abs;
+			.left(1.5); 
+			.right(0);
+			.top(0);
+			.bottom(0);
+			.bg-col(white);
+			.bg-repeat(no-repeat);
+			background-position: center top;
+			.bg-size;
+			.over-hide;
+			
+			img {
+			.abs;
+			.top(0);
+			.left(0);
+			width: 100%;
+			height: auto;	
+			}
+		}
+	}
+	
+	p.position {
+	.col(@red);
+	.mag-bot(0);
+	}
+	
+	a.icon-btn {
+	.mag-bot(0);
+	.mag-top(1);	
+	}
+	
+	a.email-link {
+	.block;
+	.mag-bot(1);	
+	}
+	
+	.txt {
+	.mag-bot(1);
+		p {
+		.font-size(1.4);
+		.line-h(1.8);	
+		}
+	}
+	
+	h4 {
+	.font-size(3);	
+	}
+	
+	&:last-child{
+	.mag-bot(0);		
+	}
+}

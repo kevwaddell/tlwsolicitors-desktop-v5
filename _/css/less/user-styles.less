@@ -1,0 +1,171 @@
+body#login {
+	
+	#user-wrap {	
+	width: 100%;
+	height: 100%;
+	.min-h(40);
+	.bg-img('user-bg.png');
+	.bg-repeat(no-repeat);
+	background-position: center center;
+	.bg-col(@grayLt);
+	.bg-size;
+	.rel;
+	
+		@media (min-width: @screen-sm) {
+		.pad-top(0);
+		}
+	}
+	
+	.wrap-center {
+	text-align: center;	
+	.pad-all(2);
+	height: 100%;
+		&:before {
+			content: "";
+			.in-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em;
+		}
+	}
+		
+	.login {
+	.in-block;
+	vertical-align: middle;
+	.rounded(20px);
+	.pad(10;4;4;4);
+	.trans-bg(white; 0.9);
+	.bg-img('tlw-logo-wide.png');
+	.bg-repeat(no-repeat);
+	background-position: 50% 10px;
+	width: 80%;
+	.max-w(50);
+	.drop-shadow( 0, 0, 20px, 0.5); 	
+	
+		.form-control {
+		.h(5);	
+			&:focus {
+			.border-col(@red);	
+			}
+		}
+		
+		p.submit {
+			input.btn {
+			.bg-col(@gray);
+			.col(white);
+			.caps;
+			.border-col(@grayDk);	
+			.h(5);
+				&:hover, &:active, &:focus {
+				.bg-col(lighten(@gray, 10%));
+				}
+			}
+		}
+	
+		.tml-action-links {
+		.mag(2;0;2;0);
+		.pad-all(0);
+		list-style: none;
+		
+			li {
+			.mag-bot(1);	
+			}
+		
+			a {
+			.block;
+			.h(5);
+			.line-h(5);
+			.col(black);
+			text-align: center;
+			.rounded(4px);
+			.no-text-dec;
+			.border(@grayDk, 0.1);
+			.caps;
+			.font-size(1.4);
+				&:hover, &:active, &:focus {
+				.bg-col(@gray);
+				.col(white);
+				}	
+			}
+		}
+	}
+	
+}
+
+.user-links {
+.fixed;
+.top(0);
+.bottom(0);	
+.w(30);
+.transition(0.2s, ease-in-out);
+.bg-col(@wht);
+z-index: 9999996;
+
+	#user-btn {
+	.abs;
+	.right(-5.4);
+	.bottom(0);
+	.w(5.4);
+	.h(5.4);
+	.no-border;
+	.border-right(white; 0.4);
+	.border-top(white; 0.4);
+	.no-rounded;
+	.bg-col-grayDk;
+	.col(@wht);
+	.drop-shadow(0, 0, 10px, 0.7);
+		&:hover, &:active, &:focus {
+		.col(@gray);	
+		}
+	}
+
+	&.open {
+	.left(0);	
+	.drop-shadow(2px, 0, 10px, 0.5);
+		#user-btn {
+		.w(4);
+		.h(4);
+		.right(1);
+		.bottom(1);
+		.rounded(100%);
+		.bg-col-grayLt;
+		.txt-col-grayDk;
+		.no-border;
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+			.col(@wht);
+			}
+		}
+	}
+	
+	&.closed {
+	.left(-30);	
+	}
+
+	ul {
+	padding-left: 0;
+	list-style: none;
+	.mag-bot(0);
+	.pad-all(1);
+	
+		li {
+		.mag-bot(.5);	
+		}
+	
+		a {
+		.block;
+		.h(5);
+		.line-h(5);
+		.bg-col(@grayDk);
+		.col(white);
+		text-align: center;
+		.no-text-dec;
+		.rounded(4px);
+			&:hover, &:active, &:focus {
+			.col(@grayDk);
+			.bg-col(@grayLt);	
+			}
+		}	
+	}
+	
+}

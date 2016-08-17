@@ -1,0 +1,119 @@
+.post-list {	
+	article.post, article.page {	
+	//.mag-bot(2);
+	.border-bot(@gray, 0.1);
+	.pad-top(4);
+	.pad-bot(4);
+	
+	&:last-child {
+	.mag-bot(0);	
+	.no-border;
+	}
+	
+		h4 {
+		.col(@grayDk);	
+		.normal;
+		.font-size(4);
+		.line-h(4.5);
+		}
+		
+		p {
+		.font-size(2);
+		.line-h(3);
+		.col(@grayDk);	
+		.mag-bot(0);
+		}
+		
+		time {
+		.col(@red);
+		.block;
+		.mag-bot(1);
+		text-align: center;
+			span {
+			.block;	
+			}
+			
+			span.month, span.year {
+			.bg-col(@gray);
+			.col(white);
+			.caps;
+			.font-size(1.2);
+			.line-h(2);
+			}
+			
+			span.day {
+			.bg-col(lighten(@gray, 20%));
+			.col(@redMid);
+			.bold;
+			.font-size(3);	
+			.line-h(5);
+			.border-top(white; 0.4);
+			.border-bot(white; 0.4);
+			}
+		}
+	
+		a {
+		.rel;
+		.no-text-dec;
+		.mag-top(1.5);
+		.pad-all(0);
+		.line-h(5);
+		text-align: left;
+		.indent(1.5);
+		.no-border;
+		.no-rounded;
+		.bg-col-red;
+		.txt-col-wht;
+		.font-slab-serif;
+		.caps;
+		.bold;
+		.font-size(2);
+			i {
+			.fright;
+			.line-h(5);
+			.pad-right(1.5);	
+			.font-size(2);
+			}
+				
+			&:hover, &:active, &:focus {
+			.bg-col-red-dk;	
+			}	
+		}
+	}
+	
+}
+
+.search-list {
+
+	article.post, article.page {
+		h4 span.search-everything-highlight-color {
+		.col(white);
+		.pad(0; 0.5; 0; 0.5);	
+		}
+			
+		time {
+		text-align: left;	
+		}	
+			
+		p span.search-everything-highlight-color {
+		.col(white);	
+		.pad(0; 0.2; 0; 0.2);	
+		}
+	}	
+	
+}
+
+.posts-message {
+.bg-col-red;
+.txt-col-wht;
+	h3 {
+	.font-size(5);	
+	.line-h(5.5);
+	.txt-col-wht;
+	}	
+	
+	p {
+	.font-size(2);
+	.line-h(3);
+	}
+}

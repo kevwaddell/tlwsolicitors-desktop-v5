@@ -1,0 +1,278 @@
+/* RESET */
+html {
+height: 100%;
+width: 100%;	
+-webkit-text-size-adjust: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer, header {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@lite-font: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@reg-font: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+body {
+background-color: #918F8F;
+font-family: @reg-font;
+}
+
+#wrapper {
+height: 100%;
+width: 100%;
+position: relative;
+background-image: url('img/striped-img-overlay.png');
+}
+
+.col-strip {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 20px;
+border-bottom: 4px solid white;
+z-index: 2;
+
+	.col-block {
+	height: 20px;
+	width: 20%;
+	float: left;
+	border-right: 4px solid white;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	}
+	
+	.col-purple {
+	background-color: #A677B4;
+	}
+	
+	.col-green {
+	background-color: #ACD15C;	
+	}
+	
+	.col-pink {
+	background-color: #EA5677;	
+	}
+	
+	.col-orange {
+	background-color: #FBAD4F;
+	}
+	
+	.col-blue {
+	background-color: #2D7EA9;
+	border: none;
+	}
+}
+
+.wrap-center {
+text-align: center;	
+height: 100%;
+background-image: url('img/user-bg.png');
+background-image: url('img/user-bg.png');
+background-position: center center;
+background-repeat: no-repeat;
+ -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size:  cover;
+
+	@media (min-width: 768px) { 
+	 -webkit-background-size: contain;
+	 -moz-background-size: contain;
+	 -o-background-size: contain;
+	 background-size:  contain;	
+	}
+
+	&:before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+}
+
+.content-inner {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	background-color: white;
+	width: 80%;
+	max-width: 500px;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+	  -webkit-border-radius: 20px;
+	  -moz-border-radius: 20px;
+	  border-radius: 20px;
+
+}
+
+#header h1 {
+text-indent: -9999px;
+width: 100%;
+height: 60px;
+background-image: url('img/tlw-banner-logo-lrg.png');
+background-repeat: no-repeat;
+background-position: center top;
+ -webkit-background-size: contain;
+-moz-background-size: contain;
+-o-background-size: contain;
+background-size:  contain;
+
+	@media (min-width: 768px) { 
+	height: 100px;		
+	}
+	
+}
+
+#content h2 {
+text-align: center;
+font-size: 20px;
+color: #c60751;
+font-weight: bold;
+margin-bottom: 20px;
+font-weight: normal;
+}
+
+@media (min-width: 768px) { 
+	#content h2 {
+	font-size: 30px;	
+	}
+}
+
+#content p {
+text-align: center;
+font-size: 12px;
+margin-bottom: 10px;
+color: black;
+	@media (min-width: 768px) { 
+	font-size: 16px;	
+	}
+}
+
+@media (min-width: 768px) { 
+	#content p {
+	font-size: 20px;
+	color: #918e8e;	
+	}
+}
+
+#content a {
+color: #c60751;
+}
+
+#content a:hover {
+color: #7a003c;
+}
+
+#footer {
+position: fixed;
+background-color: #C60751;
+bottom: 0;
+width: 100%;
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+text-align: center;
+padding: 10px 0px;
+	
+	@media (min-width: 768px) { 
+	padding: 20px 0 20px 0;
+	}
+	
+}
+
+#footer a.login-link {
+display: none;
+position: absolute;
+right: 0px;
+top: 0px;
+height: 30px;
+line-height: 30px;
+padding: 0px 20px 0px 20px;
+opacity: 0.0;
+color: #7a003c;
+text-decoration: none;
+	&:hover, &:active, &:focus {
+	background-color: white;
+	background-color: hsla(hue(white), saturation(white), lightness(white), 0.7);
+	opacity: 1.0;	
+	}
+	
+	@media (min-width: 768px) { 
+	display: block;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	line-height: 54px;
+	}
+}
+
+#footer p {
+color: white;
+font-weight: bold;
+line-height: 14px;
+font-size: 12px;
+	
+	@media (max-device-width: 480px) and (orientation: landscape) {
+		br {
+		display: none;	
+		}
+	}
+
+	@media (min-width: 768px) { 
+	font-size: 16px;
+		br {
+		display: none;	
+		}
+	}
+}
+
+
+#footer p a {
+color: white;
+}
+
+#footer p a:hover,
+#footer p a:active,
+#footer p a:focus {
+color: #7A1039;	
+}

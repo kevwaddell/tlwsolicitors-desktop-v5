@@ -1,0 +1,40 @@
+#small-map {
+.bg-col(white);
+.rel;
+.over-hide;
+.border(@gray; 0.3);
+
+	#sml-map-canvas {
+	.h(22);	
+	width: 100%;
+	}
+	.google-maps {
+	width: 100%;	
+	}
+}
+
+#location-map {
+	.mag-right(0);
+	.mag-left(0);
+	.mag-top(-3);
+	.over-hide;
+	.rel;
+		
+	&:focus {
+	outline: none;
+	}
+	
+	#map-canvas {
+	.h(42);
+	width: 100%;
+	}
+	
+	.panel-head {
+	.h(4);
+	.bg-col(@red);
+	.col(white);
+	.font-size(1.6);
+	.line-h(4);
+	text-align: center;
+	}
+}

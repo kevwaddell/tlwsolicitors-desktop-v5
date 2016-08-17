@@ -1,0 +1,135 @@
+@import url('vars.less');
+@import url('elements.less');
+@import url('mixins.less');
+
+body {
+.font-normal;
+.max-w(104.3);	
+}
+
+h1, h2, h3, h4, h5 {
+.mag-top(0);
+.col(@gray);
+}
+
+h1 {
+.font-size(7);
+.line-h(8);	
+.font-lite;
+.txt-col-grayDk;
+.mag-bot(3);
+}
+
+h3 {
+.font-size(3.5);
+.line-h(4.5);
+.mag-bot(2);	
+.font-lite;
+.caps;	
+}
+
+p, ul, ol {
+.font-size(2);
+.line-h(3);	
+}
+
+p {
+	.mag-bot(2);
+	&.intro {
+	.col(lighten(@grayDk, 10%));	
+	}
+	
+	&.bold {
+	.bold;	
+	}
+	
+	&.lrg {
+	.pad-bot(5);
+	.font-size(2.5);
+	.line-h(3);
+	.mag-bot(0);
+	.col(@gray);
+	}
+	
+	&:last-child {
+	.mag-bot(0);	
+	}
+	
+	&.lead {
+	.font-size(3.5);
+	.line-h(4.5);	
+	.col(@gray);	
+	}
+}
+
+//Unordered list
+ul {
+list-style: none;
+.pad-left(2);
+.mag-bot(2);
+	li {
+	.pad-left(2);
+	.rel;
+	}
+	li:before {
+	.abs;
+	.left(0);
+	content: "\00BB";
+	.col(@gray);
+	.bold;		
+	.mag-right(1);
+	}
+	
+	&.cols-2 {
+	.columns(50%, 2, 30px, @trans, none, 0px);
+	}
+}
+
+//Ordered list
+ol {
+list-style: none;
+.pad-left(2);
+.mag-bot(2);
+list-style-position: inside;
+counter-reset: item;
+	li {
+	//counter-increment: list-counter;
+	//.pad-left(2);
+	.rel;
+		&:before {
+		content: counters(item, ".") " - ";
+		counter-increment: item;
+		.col(@gray);
+		.bold;
+		}
+	}
+}
+
+blockquote {
+.italic;
+.col(@gray);
+.border-col( lighten(@grayDk, 20%) );	
+.pad-top(0.5);
+.pad-bot(0.5);
+}
+
+.caps {
+.caps;	
+}
+
+hr {
+.border-col(lighten(@gray, 20%));	
+}
+
+a {
+.col(@red);
+.bold;
+text-decoration: underline;
+	&:hover, &:active, &:focus {
+	.col(@redMid);
+	}	
+}
+
+.well {
+.bg-col(@grayLt);	
+}

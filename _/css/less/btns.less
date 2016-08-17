@@ -1,0 +1,321 @@
+.page-tools {
+.pad-top(2);
+	.tool-btns-wrap {
+	.mag-bot(3);
+		button.btn {
+		.pad-all(0);
+		.block;
+		.w(4);
+		.h(4);
+		.no-border;
+		.bg-col-grayDk;
+		.col(@wht);	
+		.font-size(2.5);
+		.mag-left(0.4);
+		.mag-right(0.4);
+		.mag-bot(1);
+		.rel;
+		
+		span.sr-only {
+		.transition(0.2s, ease-out);
+		.h(3);
+		.top(0.5);
+		.mag(0);
+		}
+		
+			&:hover, &:active, &:focus {
+			.bg-col-gray;
+				span.sr-only {
+				.w(10);
+				.h(3);
+				.left(-12);
+				.top(0.5);
+				.bg-col-grayDk;
+				.col(@wht);
+				clip: inherit;
+				.font-size(1.4);
+				.line-h(3);
+				.mag(0);
+				overflow: visible;
+				.rounded(4px);
+					&:after {
+					content: "";
+					.abs;
+					.right(-2);
+					top: 50%;
+					.mag-top(-0.5);
+					.w(2);
+					.h(1);
+					border-top: 5px solid @trans;
+					border-bottom: 5px solid @trans;
+					border-left: 20px solid @grayDk;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+a.icon-btn {
+.block;
+.bg-col(@grayDk);
+.col(white);
+.h(5);
+.line-h(5);
+.pad-all(0);
+.font-size(1.6);
+.mag-top(1);
+.no-text-dec;
+.indent(2);
+text-align: left;
+.no-border;
+.rounded(8px);
+.rel;
+
+	&:after {
+	content: "\f0a9";	
+	font-family: FontAwesome;	
+	.abs;
+	.right(0);
+	.top(0);
+	.col(@gray);
+	.line-h(5);
+	.pad-right(2);
+	.font-size(2);
+	}
+	
+	&.download-btn:after {
+	content: "\f0ab";	
+	}
+
+	&.big-btn {
+	.h(6);
+	.line-h(6);	
+	.font-size(2);
+		&:after {
+		.line-h(6);	
+		.font-size(2.4);
+		}
+	}
+	
+	&:hover, &:active, &:focus {
+	.col(white);	
+	.bg-col(@red);	
+		&:after {
+		.col(@redMid);	
+		}
+	}	
+	
+	&:last-child {
+	.mag-top(0);	
+	}
+}
+
+button.sb-menu-btn, button.service-menu-btn {
+.h(5);
+.line-h(5);
+.pad-all(0);
+.font-size(1.6);
+.indent(2);
+text-align: left;
+.no-border;
+.no-rounded;
+.col(white);
+.bg-col(@redMid);
+.rel;
+
+	&:after {
+	content: "\f0c9";	
+	font-family: FontAwesome;	
+	.abs;
+	.right(0);
+	.top(0);
+	.col(white);
+	.line-h(5);
+	.pad-right(2);
+	.font-size(2);
+	}
+	
+	&:hover, &:active, &:focus {
+	.bg-col(@red);
+	.col(white);
+	}
+	
+}
+
+a.side-link {
+.block;
+.font-size(1.6);
+.line-h(5);
+.h(5);
+.bg-col(@gray);
+.col(white);
+.no-text-dec;
+.mag-top(3);
+.indent(2);
+.mag-bot(0.1);
+-webkit-font-smoothing: subpixel-antialiased;
+		
+		i {
+		.fright;
+		.w(5);
+		.line-h(5);
+		text-align: center;
+		.indent(0);
+		}//icons
+
+}
+
+button.icon-btn, a.download-btn {
+.block;
+width: 100%;
+.bg-col(@grayDk);
+.col(white);
+.h(5);
+.line-h(5);
+.pad-all(0);
+.font-size(1.6);
+.mag-top(3);
+.no-text-dec;
+.no-rounded;
+.indent(2);
+.no-border;
+text-align: left;
+.rel;
+.caps;
+.font-lite;
+
+	i {
+	.abs;
+	.right(2);
+	.top(0);
+	.h(5);
+	.line-h(5);
+	.indent(0);
+	text-align: center;
+	}
+	
+	&:hover, &:active, &:focus {
+	.bg-col(@gray);	
+	.col(white);
+	}	
+	
+	&.icon-btn-lg {
+	.h(7);
+	.line-h(7);	
+	.font-size(2);
+		i {
+		.h(7);
+		.line-h(7);
+		}
+	}
+}
+
+button.btn-col-red, a.btn-col-red {
+.bg-col(@red);	
+	&:hover, &:active, &:focus {
+	.bg-col(@redMid);	
+	}	
+}
+
+button.btn-col-purple, a.btn-col-purple  {
+.bg-col(@purple);	
+	&:hover, &:active, &:focus {
+	.bg-col(darken(@purple, 20%));	
+	}	
+}
+
+button.btn-col-green, a.btn-col-green  {
+.bg-col(@green);	
+	&:hover, &:active, &:focus {
+	.bg-col(darken(@green, 20%));	
+	}	
+}
+
+button.btn-col-pink, a.btn-col-pink {
+.bg-col(@pink);	
+	&:hover, &:active, &:focus {
+	.bg-col(darken(@pink, 20%));	
+	}	
+}
+
+button.btn-col-orange, a.btn-col-orange {
+.bg-col(@orange);	
+	&:hover, &:active, &:focus {
+	.bg-col(darken(@orange, 20%));	
+	}	
+}
+
+button.btn-col-blue, a.btn-col-blue {
+.bg-col(@blue);	
+	&:hover, &:active, &:focus {
+	.bg-col(darken(@blue, 20%));	
+	}	
+}
+
+button#back-2-top {
+.fixed;
+.bottom(3);
+.right(3);	
+.no-border;
+.rounded(4px);
+.h(5);
+.w(5);
+.pad-all(0);
+.trans-bg(@gray; 0.7);
+.col(white);
+.animated;
+
+	i {
+	.line-h(5);	
+	}
+	
+		&:hover, &:active, &:focus {
+		.bg-col(@red);
+		}
+	
+	.visible {
+	.block;
+	}
+	
+	.hidden {
+	.block;
+	}
+}
+
+#catapult-cookie-bar {
+
+	&.rounded-corners {
+	.rounded(10px) !important;	
+	}
+	
+	button#catapultCookie {
+	.no-border;
+	.rounded(4px);
+	.mag-right(0);	
+	width: 70%;	
+	.caps;
+	text-align: left;
+	.pad(0;0;0;2);
+	.h(4);
+	}
+
+	.ctcc-right-side {
+	.rel;
+	
+		&:after {
+		content: "\f058";	
+		font-family: FontAwesome;	
+		.abs;
+		.right(0);
+		.top(0);
+		.col(white);
+		.line-h(4);
+		padding-right: 20%;
+		.font-size(2);
+		}
+	
+	}
+}
+
