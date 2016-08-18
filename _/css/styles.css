@@ -12980,13 +12980,12 @@ html.svg section.pg-section .with-icon-logo {
   transition: all 0.5s ease-out;
 }
 #quick-links-sml button.dir-btn {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  border: none;
-  margin: 5px;
+  border: 5px solid white;
 }
 #quick-links-sml button.dir-btn:hover,
 #quick-links-sml button.dir-btn:active,
@@ -13003,13 +13002,9 @@ html.svg section.pg-section .with-icon-logo {
 #quick-links-sml .ql-section-links a {
   position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  background-color: #4b4b4b;
-  margin: 15px;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
 }
 #quick-links-sml .ql-section-links a span {
   -webkit-transition: all 0.2s ease-out;
@@ -13024,13 +13019,23 @@ html.svg section.pg-section .with-icon-logo {
   filter: alpha(opacity=0);
   height: 30px;
 }
+#quick-links-sml .ql-section-links a i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #4b4b4b;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: auto;
+}
 #quick-links-sml .ql-section-links a:hover span.sr-only,
 #quick-links-sml .ql-section-links a:active span.sr-only,
 #quick-links-sml .ql-section-links a:focus span.sr-only {
   width: 200px;
   height: 30px;
-  right: -220px;
-  top: -5px;
+  right: -200px;
+  top: 10px;
   background-color: #4b4b4b;
   color: white;
   clip: inherit;
@@ -13065,6 +13070,9 @@ html.svg section.pg-section .with-icon-logo {
 #quick-links-sml .ql-section-links a.active {
   background-color: #C60751;
   pointer-events: none;
+}
+#quick-links-sml .ql-section-links a.active i {
+  background-color: white;
 }
 #quick-links-sml .ql-section-links a.active span.sr-only {
   display: none;

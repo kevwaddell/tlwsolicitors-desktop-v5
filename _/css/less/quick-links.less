@@ -8,11 +8,10 @@
 	.transition(0.5s, ease-out);
 	
 	button.dir-btn {
-	.w(4);
-	.h(4);
+	.w(5);
+	.h(5);
 	.rounded(100%);	
-	.no-border;
-	.mag-all(0.5);
+	.border(@wht; 0.5);
 		&:hover, &:active, &:focus {
 		.bg-col-grayDk;
 		.txt-col-wht;
@@ -28,23 +27,31 @@
 		a {
 		.rel;
 		.block;
-		.w(2);
-		.h(2);
-		.rounded(100%);	
-		.bg-col-grayDk;
-		.mag-all(1.5);
+		.w(5);
+		.h(5);
+		.pad-top(1.5);
+		
 			span {
 			.transition(0.2s, ease-out);
 			.opacity(0);
 			.h(3);	
 			}	
 			
+			i {
+			.block;
+			.w(2);
+			.h(2);	
+			.bg-col-grayDk;
+			.rounded(100%);	
+			.mag-auto;
+			}
+			
 			&:hover, &:active, &:focus {
 				span.sr-only {
 				.w(20);
 				.h(3);
-				.right(-22);
-				.top(-0.5);
+				.right(-20);
+				.top(1);
 				.bg-col-grayDk;
 				.col(@wht);
 				clip: inherit;
@@ -72,6 +79,9 @@
 			&.active {
 			.bg-col-red;	
 			pointer-events: none;
+				i {
+				.bg-col(@wht);	
+				}
 				span.sr-only {
 				.none;	
 				}	
