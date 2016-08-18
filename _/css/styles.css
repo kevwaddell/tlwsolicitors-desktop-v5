@@ -5520,8 +5520,14 @@ body.loading .tlw-wrapper {
   -ms-filter: blur(20px);
   filter: blur(20px);
 }
+body.loading #quick-links-sml {
+  left: -70px;
+}
 body.loaded {
   overflow: auto;
+}
+body.loaded #quick-links-sml {
+  left: 20px;
 }
 body.modal-open {
   overflow: hidden;
@@ -9560,7 +9566,7 @@ body#landing-page .lp-form .gform_page_footer input.gform_button {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 #quick-links.closed {
-  left: -300px;
+  left: 0px;
 }
 section#post-top-banner {
   position: relative;
@@ -12944,6 +12950,124 @@ body.home article.content-section .container {
 }
 html.svg section.pg-section .with-icon-logo {
   background-image: url(/wp-content/themes/tlwsolicitors-v4/_/css/img/bg-icon-logo-wht.svg);
+}
+#quick-links-sml {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 50%;
+  width: 50px;
+  background-color: white;
+  -webkit-border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -webkit-border-top-left-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -moz-border-radius-bottomright: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  -moz-border-radius-topleft: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+#quick-links-sml button.dir-btn {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: none;
+  margin: 5px;
+}
+#quick-links-sml button.dir-btn:hover,
+#quick-links-sml button.dir-btn:active,
+#quick-links-sml button.dir-btn:focus {
+  background-color: #4b4b4b;
+  color: white;
+}
+#quick-links-sml button.dir-btn i {
+  font-size: 20px;
+}
+#quick-links-sml .ql-section-links {
+  text-align: center;
+}
+#quick-links-sml .ql-section-links a {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #4b4b4b;
+  margin: 15px;
+}
+#quick-links-sml .ql-section-links a span {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  height: 30px;
+}
+#quick-links-sml .ql-section-links a:hover span.sr-only,
+#quick-links-sml .ql-section-links a:active span.sr-only,
+#quick-links-sml .ql-section-links a:focus span.sr-only {
+  width: 200px;
+  height: 30px;
+  right: -220px;
+  top: -5px;
+  background-color: #4b4b4b;
+  color: white;
+  clip: inherit;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0px 0px 0px 0px;
+  overflow: visible;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+#quick-links-sml .ql-section-links a:hover span.sr-only:after,
+#quick-links-sml .ql-section-links a:active span.sr-only:after,
+#quick-links-sml .ql-section-links a:focus span.sr-only:after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -5px;
+  width: 20px;
+  height: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 20px solid #4b4b4b;
+}
+#quick-links-sml .ql-section-links a.active {
+  background-color: #C60751;
+  pointer-events: none;
+}
+#quick-links-sml .ql-section-links a.active span.sr-only {
+  display: none;
 }
 /** --------------------------- /
 /* User styles */

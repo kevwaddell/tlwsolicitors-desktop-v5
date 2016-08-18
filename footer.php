@@ -81,7 +81,7 @@
 			
 	</div><!-- MAIN WRAPPER END -->
 
-	<?php include (STYLESHEETPATH . '/_/inc/sections/quick-links.inc'); ?>
+	<?php include (STYLESHEETPATH . '/_/inc/sections/quick-links-sml.inc'); ?>
 	
 	<?php include (STYLESHEETPATH . '/_/inc/sections/text-only.inc'); ?>
 	

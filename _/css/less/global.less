@@ -39,10 +39,18 @@ min-height: 100%;
 		-ms-filter: blur(20px);
 		filter: blur(20px);	
 		}
+		
+		#quick-links-sml {
+		.left(-7);	
+		}
 	}
 	
 	&.loaded {
-	overflow: auto;	
+	overflow: auto;
+	
+		#quick-links-sml {
+		.left(2);	
+		}	
 	}
 	
 	&.modal-open {
