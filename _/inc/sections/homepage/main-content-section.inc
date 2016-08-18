@@ -8,7 +8,7 @@ $team_pg_icon = get_field('page_icon', $team_pg->ID);
 $feedback_pg = get_page_by_title('Why Choose TLW');
 $feedback_pg_icon = get_field('page_icon', $feedback_pg->ID);
 
-$section_title = "Service information";	
+$section_title = "TLW introduction";	
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'service-info-txt'];
 ?>
 <article <?php post_class("content-section"); ?>>
