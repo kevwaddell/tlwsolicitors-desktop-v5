@@ -543,7 +543,7 @@
 			$(this).addClass('active');
     		//console.log(hash);
     		 
-    		$('html, body').animate({ scrollTop: scrollTarget }, 500);	   
+    		$('html, body').animate({ scrollTop: scrollTarget }, 300);	   
     		  			
 			return false;
 		
@@ -574,10 +574,10 @@
 					scrollTarget = $(prev_section).offset().top;
 					}
 				
-					$('html, body').animate({ scrollTop: scrollTarget }, 500);
+					$('html, body').animate({ scrollTop: scrollTarget }, 300);
 						
 				} else {
-					$('html, body').animate({ scrollTop: 0 }, 500);	
+					$('html, body').animate({ scrollTop: 0 }, 300);	
 					current_section = "#top";	
 				}
 			 
@@ -597,7 +597,7 @@
 				if ($(next_section).find('a.section-target')) {
 					
 					scrollTarget = $(next_section).offset().top - 40;
-					$('html, body').animate({ scrollTop: scrollTarget }, 500);		
+					$('html, body').animate({ scrollTop: scrollTarget }, 300);		
 				}
 			 
 			} else {
@@ -612,7 +612,7 @@
 					scrollTarget = $(next_section).offset().top;
 					}
 					
-				$('html, body').animate({ scrollTop: scrollTarget }, 500);		
+				$('html, body').animate({ scrollTop: scrollTarget }, 300);		
 				}
 			}
 			
