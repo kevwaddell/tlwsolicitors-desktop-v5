@@ -254,6 +254,31 @@ article.page, article.post, article.tlw_landing_page {
 			}
 		}
 		
+		.thank-you-message {
+		.bg-col-red;
+			h1, p {
+			.txt-col-wht;
+			}	
+			
+			a.btn {
+			width: 50%;
+			.mag-auto;
+			.txt-col-wht;
+			.font-slab-serif;	
+			.caps;
+			.font-size(2);
+			.bg-col(@wht);
+			.txt-col-red;
+				&:hover, &:active, &:focus {
+				.bg-col-red-dk;
+				.txt-col-wht;
+					&:after {
+					.txt-col-red;	
+					}
+				}
+			}
+		}
+		
 		a {
 		.col(@red);
 		.bold;
