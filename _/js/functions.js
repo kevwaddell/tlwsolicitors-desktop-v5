@@ -3,6 +3,7 @@
 	var tagInterval;
 	var current_section = "#top";
 	var current_section_id;
+	var section_targets;
 	var ot_target = 0;
 	var ot_wrapper_pos = parseInt($('#our-team-wrapper-inner').css('left'));
 	var ot_outer_w = $('.our-team-wrapper').outerWidth();
@@ -44,9 +45,9 @@
 	ot_outer_w = $('.our-team-wrapper').outerWidth();
 	});
 		
-	$(document).ready(function (){
+	$(document).ready(function(){
 	
-	var section_targets = $('a.section-target');
+	section_targets = $('a.section-target');
 	
 	if (section_targets.length > 0) {
 		section_targets.each(function(index, elem){
@@ -792,8 +793,7 @@
 
 		var scroll = $(window).scrollTop();
 		var h = $(window).height();
-		var section_targets = $('a.section-target');
-		var current_section_id;
+		section_targets = $('a.section-target');
 		
 		if (scroll <= (h / 2)) {
 		current_section = "#top";
