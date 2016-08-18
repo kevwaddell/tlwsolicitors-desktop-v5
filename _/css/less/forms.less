@@ -8,92 +8,6 @@
 	}
 
 }
-
-.contact-form {
-	
-	.well {
-	.bg-col(@grayLt);	
-	}
-	
-	.gform_wrapper {
-	//.pad-right(3);
-	
-		div.validation_error {
-		.no-rounded;
-		.no-border;
-		width: 100%;
-		.pad-all(1);
-		.bg-col(@red);
-		.col(white);
-		}
-		
-
-	}	
-	
-	.gform_confirmation_message {
-		h3 {
-		.font-lite;
-		.caps;
-		.txt-col-gray;
-		.mag-top(0);	
-		}
-		p {
-		.mag-bot(2);
-		.col(@grayDk);	
-		}
-	}
-}
-
-.contact-panel {
-.mag-top(3);	
-
-	
-	h3.icon-header {
-	.caps;
-	.rel;
-	.font-size(2)!important;
-	
-		i {
-		.abs;
-		.top(-1);
-		.right(0);
-		.w(7);
-		.h(7);	
-		.bg-col(@red);
-		.border(white; 0.4);	
-		.col(white);
-		.rounded(35px);
-		.line-h(6.2);
-		}
-	
-	}
-	
-	.contact-form .gform_wrapper {
-	.pad-right(0);	
-		}
-	
-	&.landing-pg-form {
-		.bg-col(@grayLt);	
-		.mag-top(0);
-		.pad-bot(5);
-		
-		header.panel-header {
-		.bg-col(@redMid);	
-		.mag-bot(3);
-		}
-		
-		h3 {
-		.mag-bot(0);
-		.indent(0);	
-		}
-		
-		.gform_wrapper .gform_heading .gform_description {
-		.pad-top(0);	
-		}
-		
-	}
-	
-}
 	
 .gform_wrapper {
 max-width: 100% !important;
@@ -301,26 +215,6 @@ max-width: 100% !important;
 	
 }
 
-.sb-form-right {
-	.gform_wrapper {
-		
-		.gform_heading {
-		text-align: center;
-		}
-		
-		textarea.large {
-		.h(3.4);
-			&:focus {
-			.h(20);	
-			}
-		}
-		
-		.gfield {
-		.mag-bot(0.5);	
-		}
-	}
-}
-
 #search-form {
 	.h(5);
 	.mag-bot(4);
@@ -387,23 +281,6 @@ form.route-finder {
 		&:hover, &:active, &:focus {
 		.bg-col(@gray);	
 		}
-	}
-}
-
-#booklet-download {
-	.over-hide;
-	
-	.form-wrap {
-	.pad(1;2;2;2);
-	.bg-col(lighten(@gray, 30%));		
-	}
-	
-	&.form-open {
-	height: auto;	
-	}
-	
-	&.form-closed {
-	.h(0);	
 	}
 }
 

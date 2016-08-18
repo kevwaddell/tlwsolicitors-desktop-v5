@@ -448,11 +448,47 @@ h3 {
   font-stretch: normal;
   text-transform: uppercase;
 }
+h4,
+h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #918F8F;
+  font-size: 25px;
+}
 p,
 ul,
 ol {
   font-size: 20px;
   line-height: 30px;
+}
+hr {
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 1px;
+  position: relative;
+}
+hr:before,
+hr:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 50%;
+}
+hr:before {
+  bottom: -1px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#918F8F));
+  background-image: -webkit-linear-gradient(left, transparent, #918F8F);
+  background-image: -moz-linear-gradient(left, transparent, #918F8F);
+  background-image: -o-linear-gradient(left, transparent, #918F8F);
+}
+hr:after {
+  right: 0px;
+  bottom: -1px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#918F8F), to(transparent));
+  background-image: -webkit-linear-gradient(left, #918F8F, transparent);
+  background-image: -moz-linear-gradient(left, #918F8F, transparent);
+  background-image: -o-linear-gradient(left, #918F8F, transparent);
 }
 p {
   margin-bottom: 20px;

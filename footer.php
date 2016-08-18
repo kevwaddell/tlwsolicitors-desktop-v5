@@ -79,8 +79,6 @@
 				
 			</section>
 			
-<!-- 			<div class="nav-overlay"></div> -->
-			
 	</div><!-- MAIN WRAPPER END -->
 
 	<?php include (STYLESHEETPATH . '/_/inc/sections/quick-links.inc'); ?>
