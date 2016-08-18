@@ -9,7 +9,7 @@
 		
 		<?php include (STYLESHEETPATH . '/_/inc/sections/global-telephone-number.inc'); ?>	
 		
-		<?php include (STYLESHEETPATH . '/_/inc/global/col-strip.php'); ?>	
+		<?php include (STYLESHEETPATH . '/_/inc/global/col-strip.inc'); ?>	
 		
 		<div class="container">	
 			
