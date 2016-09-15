@@ -3,8 +3,8 @@
 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 <?php 
 $freephone_num = get_field('freephone_num', 'option');
-$form = get_field('form');
-$form_active = get_field('form_activated');
+$form = get_field('lp_form');
+$form_active = get_field('lp_form_active');
 $color = get_field('page_colour');
 $page_icon = get_field('page_icon');
 $hide_title = get_field('hide_title'); 
@@ -36,7 +36,7 @@ $all_forms_active = get_field('all_forms_active', 'option');
 			
 		 	</div>
 		 
-			 <?php get_template_part( 'parts/sidebars/sidebar', 'landing-page' ); ?>			 	
+			 <?php include (STYLESHEETPATH . '/_/inc/sections/sidebar-landing-page.inc'); ?>				 	
 		 			
 	</div>
 	
@@ -63,7 +63,5 @@ $all_forms_active = get_field('all_forms_active', 'option');
 <?php if ($form_active && $all_forms_active) { ?>
 <?php include (STYLESHEETPATH . '/_/inc/landing-page/contact-form-modal.inc'); ?>	
 <?php } ?>
-
-<?php include (STYLESHEETPATH . '/_/inc/service-page/how-it-works.php'); ?>
 
 <?php get_template_part( 'parts/footers/footer', 'landing-page' ); ?>
