@@ -11507,6 +11507,12 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
 }
 .pg-section#form-section {
   border-top: 4px solid white;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, white), color-stop(1, #E9E9E9));
+  background: -ms-linear-gradient(bottom, white, #E9E9E9);
+  background: -moz-linear-gradient(center bottom, white 0%, #E9E9E9 100%);
+  background: -o-linear-gradient(#E9E9E9, white);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E9E9E9', endColorstr='white', GradientType=0);
 }
 .pg-section#form-section .container {
   position: relative;
@@ -14465,6 +14471,17 @@ form.route-finder input.btn:focus {
 #form-section .gform_wrapper label,
 #form-section .gform_wrapper .gfield_no_follows_desc {
   color: #4b4b4b;
+}
+#form-section .radio_marketing,
+#form-section .radio_updates {
+  padding-top: 20px;
+  border-top: 1px solid #918F8F;
+}
+#form-section .radio_marketing .gfield_label,
+#form-section .radio_updates .gfield_label {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold !important;
 }
 #form-section .gfield_no_follows_desc {
   padding-top: 47px;
