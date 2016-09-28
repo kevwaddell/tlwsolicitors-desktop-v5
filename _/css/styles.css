@@ -9892,9 +9892,9 @@ section#top-banner .img-overlay {
 section#top-banner .top-drk-grad {
   position: absolute;
   left: 0px;
-  top: 130px;
+  top: 0px;
   width: 100%;
-  height: 50%;
+  height: 70%;
   background: -moz-linear-gradient(top, #333333 0%, rgba(51, 51, 51, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #333333 0%, rgba(51, 51, 51, 0) 100%);

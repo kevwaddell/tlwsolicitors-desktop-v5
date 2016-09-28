@@ -1,4 +1,4 @@
-<header class="header<?php echo (is_page_template('page-templates/toolkit-page.php') || is_page_template('page-templates/service-home-page.php') || is_page_template('page-templates/new-home-page.php')) ? ' abs-header':''; ?>" role="banner">
+<header class="header<?php echo (is_page_template('page-templates/toolkit-page.php') || is_page_template('page-templates/service-home-page.php') || is_front_page()) ? ' abs-header':''; ?>" role="banner">
 
 	<?php 
 	$freephone_num = get_field('freephone_num', 'option');
