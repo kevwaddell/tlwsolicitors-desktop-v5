@@ -2212,6 +2212,18 @@ article.content-section {
 		
 		}
 		
+		&.bg-col-gray {
+		.gradient(@gray, @gray ,@grayDk);
+			
+			.gform_wrapper .gform_footer input.gform_button {
+			.bg-col-grayDk;
+				&:hover, &:active, &:focus {
+				.bg-col-gray;
+				}
+			}
+		
+		}
+		
 		&.bg-col-red {
 		.gradient(@red, @red ,@redMid);
 			

@@ -11528,6 +11528,22 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
 .pg-section#form-section[class*=" bg-col-"] .gform_wrapper .gfield_no_follows_desc {
   color: white;
 }
+.pg-section#form-section.bg-col-gray {
+  background: #918F8F;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #918F8F), color-stop(1, #4b4b4b));
+  background: -ms-linear-gradient(bottom, #918F8F, #4b4b4b);
+  background: -moz-linear-gradient(center bottom, #918F8F 0%, #4b4b4b 100%);
+  background: -o-linear-gradient(#4b4b4b, #918F8F);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b4b4b', endColorstr='#918F8F', GradientType=0);
+}
+.pg-section#form-section.bg-col-gray .gform_wrapper .gform_footer input.gform_button {
+  background-color: #4b4b4b;
+}
+.pg-section#form-section.bg-col-gray .gform_wrapper .gform_footer input.gform_button:hover,
+.pg-section#form-section.bg-col-gray .gform_wrapper .gform_footer input.gform_button:active,
+.pg-section#form-section.bg-col-gray .gform_wrapper .gform_footer input.gform_button:focus {
+  background-color: #918F8F;
+}
 .pg-section#form-section.bg-col-red {
   background: #C60751;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #C60751), color-stop(1, #7A1039));
