@@ -8,12 +8,18 @@ $section_title = $section['section_title'];
 if (empty($section_title)) {
 $section_title = "Recent blog articles";
 }
+
 $blog_categories = $section['blog_section_articles'];
 $recent_posts_args = array (
 'posts_per_page' => 3,
 'category__in'	=> $blog_categories,
-'year'	=> date("Y")
 );
+
+if ( date("n") >= 4 ) {
+$recent_posts_args['year'] = date("Y");
+}
+
+//echo '<pre class="debug">';print_r( $recent_posts_args );echo '</pre>';
 
 $recent_posts = get_posts($recent_posts_args);
 
