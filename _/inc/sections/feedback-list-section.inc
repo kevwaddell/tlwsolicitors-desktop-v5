@@ -24,6 +24,10 @@ if ($feedback_quotes) { ?>
 		$location = get_field('location', $fb->ID);	
 		$quote = get_field('quote', $fb->ID);
 		$gender = get_field('gender', $fb->ID);
+		$company = get_field('company', $fb->ID);
+		if (!empty($company)) {
+		$location = $company.', '.$location;	
+		}
 		?>
 		
 		<div class="item bg-col-<?php echo $colors[$k]; ?>">

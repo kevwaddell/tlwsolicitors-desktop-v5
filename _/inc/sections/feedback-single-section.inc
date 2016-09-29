@@ -21,7 +21,10 @@ $quote_txt = get_field('quote', $feedback_id);
 $client_name = get_field('client_name', $feedback_id);		
 $location = get_field('location', $feedback_id);	
 $gender = get_field('gender', $feedback_id);
-
+$company = get_field('company', $feedback_id);
+if (!empty($company)) {
+$location = $company.', '.$location;	
+}
 //echo '<pre class="debug">';print_r($gender);echo '</pre>';
 
 $quick_links[] = ['link_title' => "Client feedback", 'link_anchor' => 'feedback'];	 

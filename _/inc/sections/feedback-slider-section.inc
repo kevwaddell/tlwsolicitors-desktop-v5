@@ -20,6 +20,10 @@ $colors = ['purple','green','pink','orange','blue'];
 		$client_name = get_field('client_name', $quote_id);		
 		$location = get_field('location', $quote_id);	
 		$gender = get_field('gender', $quote_id);
+		$company = get_field('company', $quote_id);
+		if (!empty($company)) {
+		$location = $company.', '.$location;	
+		}
 		?>
 			<div class="item bg-col-<?php echo $colors[$k]; ?><?php echo ($k == 0) ? " active":""; ?>">
 				<div class="container feedback-quote">
