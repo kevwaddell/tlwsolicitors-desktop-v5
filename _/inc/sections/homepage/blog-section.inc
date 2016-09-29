@@ -25,6 +25,10 @@ $from_category_active = $section['from_category'];
 if ($from_category_active) {
 $blog_categories = $section['blog_categories'];	
 $recent_posts_args['category__in'] = $blog_categories;
+
+	if ( date("n") >= 4 ) {
+	$recent_posts_args['year'] = date("Y");
+	}
 }
 
 $recent_posts = get_posts($recent_posts_args);
