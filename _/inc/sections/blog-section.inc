@@ -18,6 +18,8 @@ $recent_posts_args = array (
 $recent_posts = get_posts($recent_posts_args);
 
 //echo '<pre class="debug">';print_r($recent_posts);echo '</pre>';
+?>
+<?php if (!empty($recent_posts) ) { 
 $cats_args = array(
 	'hide_empty'               => 1,
 	'hierarchical'             => 0
@@ -36,7 +38,6 @@ $archives = wp_get_archives($archives_args);
 
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'recent-blog-articles'];	
 ?>
-
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 <a name="recent-blog-articles" id="recent-blog-articles" class="section-target"></a>
 	<div class="overlay"></div>
@@ -113,5 +114,5 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'recent-blog-
 			</div>
 	</div>
 </section>
-
+<?php } ?>
 <?php } ?>
