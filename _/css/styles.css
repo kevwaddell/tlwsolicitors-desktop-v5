@@ -6887,6 +6887,25 @@ article.tlw_landing_page hr:after {
   background-image: -moz-linear-gradient(left, #918F8F, transparent);
   background-image: -o-linear-gradient(left, #918F8F, transparent);
 }
+article.page .main-txt .with-icon-img,
+article.post .main-txt .with-icon-img,
+article.tlw_landing_page .main-txt .with-icon-img {
+  position: relative;
+}
+article.page .main-txt .with-icon-img .icon-img,
+article.post .main-txt .with-icon-img .icon-img,
+article.tlw_landing_page .main-txt .with-icon-img .icon-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+}
+article.page .main-txt .with-icon-img .icon-left-txt,
+article.post .main-txt .with-icon-img .icon-left-txt,
+article.tlw_landing_page .main-txt .with-icon-img .icon-left-txt {
+  padding-left: 130px;
+}
 article.page .main-txt .well,
 article.post .main-txt .well,
 article.tlw_landing_page .main-txt .well {
@@ -11278,13 +11297,13 @@ article.content-section #content-extra #content-extra-inner {
 }
 article.content-section #content-extra #close-content-extra-btn {
   padding: 0px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
   border: none;
   position: absolute;
-  bottom: 10px;
-  right: -50px;
+  bottom: -70px;
+  right: 0px;
   width: 50px;
   height: 50px;
   line-height: 48px;

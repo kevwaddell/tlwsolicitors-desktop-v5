@@ -593,3 +593,16 @@ a:focus {
 .well {
   background-color: #E9E9E9;
 }
+.with-icon-img {
+  position: relative;
+}
+.with-icon-img .icon-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+}
+.with-icon-img .icon-left-txt {
+  padding-left: 130px;
+}

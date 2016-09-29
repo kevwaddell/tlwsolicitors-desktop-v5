@@ -11,7 +11,8 @@ $section_title = "Recent blog articles";
 $blog_categories = $section['blog_section_articles'];
 $recent_posts_args = array (
 'posts_per_page' => 3,
-'category__in'	=> $blog_categories
+'category__in'	=> $blog_categories,
+'year'	=> date("Y")
 );
 
 $recent_posts = get_posts($recent_posts_args);
