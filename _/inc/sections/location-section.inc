@@ -15,11 +15,6 @@ $map_active = $section['map_active'];
 	$map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
 	$quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'find-us'];	
 ?>
-<style>
-	li.office-location-link {
-	display: none !important;	
-	}
-</style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=wide_map_init"></script>
 <script>
 var TLW_MAP_ID = 'TLW_style';
