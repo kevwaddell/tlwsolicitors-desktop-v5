@@ -3,7 +3,7 @@ $section_title = "Related articles";
 $related_posts = get_field('related_posts_articles');
 $related_posts_total = count($related_posts);
 
-//echo '<pre class="debug">';print_r($recent_posts);echo '</pre>';
+//echo '<pre class="debug">';print_r($related_posts);echo '</pre>';
 $cats_args = array(
 	'hide_empty'               => 1,
 	'hierarchical'             => 0
@@ -31,7 +31,7 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'related-arti
 	<div id="posts-list-carousel" class="posts-list carousel slide" data-ride="carousel">
 		<div class="carousel-inner" role="listbox">
 			<?php foreach ($related_posts as $k => $rpost) { 
-			$ID = $rpost->ID;
+			$ID = $rpost['related_article'];
 			$date = get_the_date('F jS Y', $ID);
 			?>
 			<div class="item<?php echo ($k === 0) ? " active":""; ?>">
