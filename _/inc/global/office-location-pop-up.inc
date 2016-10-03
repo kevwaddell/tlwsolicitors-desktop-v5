@@ -5,7 +5,7 @@ $office_location = get_field('global_location', 'options');
 $office_map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png"; 
 ?>
 <?php if ($post->ID != $contact_pg->ID) { ?>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>		
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=location_map_init"></script>		
 
 <script>
 	var TLW_MAP_ID = 'TLW_style';
@@ -43,8 +43,9 @@ $office_map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
 		
 	};
 	
+	google.maps.event.addDomListener(window, 'load', location_map_init);
+	
 </script>
-
 <div id="office-location-pop-up" class="off">
 	<div class="office-location-pop-up-inner-wrap">
 		<div class="office-location-pop-up-inner">
