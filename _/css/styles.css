@@ -8735,6 +8735,7 @@ body#landing-page .lp-form .gform_page_footer input.gform_button {
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 .toolkit-banner .tk-banner-panel i.txt-icon {
   display: block;
@@ -8751,7 +8752,7 @@ body#landing-page .lp-form .gform_page_footer input.gform_button {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  margin: -80px auto 0px;
+  margin: -80px auto 10px;
   background-color: #918F8F;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
@@ -11419,85 +11420,45 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   z-index: 1;
 }
 .pg-section#downloads-section .download-item {
+  height: 140px;
+}
+.pg-section#downloads-section .download-item .cover-img {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-}
-.pg-section#downloads-section .download-item img {
-  margin-bottom: 20px;
-  height: 390px;
-  width: auto;
+  width: 140px;
+  padding: 10px;
   background-color: white;
-  padding: 4px;
-  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-.pg-section#downloads-section .download-item a,
-.pg-section#downloads-section .download-item span,
 .pg-section#downloads-section .download-item img {
-  display: inline-block;
+  height: 120px;
+  width: auto;
+}
+.pg-section#downloads-section .download-item .dwnload-title {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .pg-section#downloads-section .download-item a {
-  color: white;
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  color: #4b4b4b;
   position: relative;
   text-decoration: none;
   overflow: hidden;
-}
-.pg-section#downloads-section .download-item a:after {
-  content: "\f107";
-  font-family: FontAwesome;
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  width: 80px;
-  height: 80px;
-  margin-left: -40px;
-  margin-top: -40px;
-  line-height: 80px;
-  font-size: 40px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #4b4b4b;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  display: none;
-}
-.pg-section#downloads-section .download-item a span {
-  text-transform: uppercase;
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 20px;
-  line-height: 20px;
-  height: 40px;
-  width: 280px;
 }
 .pg-section#downloads-section .download-item a:hover,
 .pg-section#downloads-section .download-item a:active,
 .pg-section#downloads-section .download-item a:focus {
   font-weight: bold;
-}
-.pg-section#downloads-section .download-item a:hover img,
-.pg-section#downloads-section .download-item a:active img,
-.pg-section#downloads-section .download-item a:focus img {
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  -moz-opacity: 0.7;
-  -khtml-opacity: 0.7;
-  -webkit-opacity: 0.7;
-  opacity: 0.7;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
-  filter: alpha(opacity=70);
-}
-.pg-section#downloads-section .download-item a:hover:after,
-.pg-section#downloads-section .download-item a:active:after,
-.pg-section#downloads-section .download-item a:focus:after {
-  display: block;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
 }
 .pg-section#downloads-section.bg-col-purple a:hover img,
 .pg-section#downloads-section.bg-col-purple a:active img,
@@ -12118,7 +12079,7 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  margin: -80px auto 0px;
+  margin: -80px auto 10px;
   background-color: #918F8F;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
