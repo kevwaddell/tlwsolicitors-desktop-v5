@@ -7921,6 +7921,7 @@ OLD TEAM PROFILE STYLES
 }
 .search-form-wrap {
   text-align: center;
+  padding-top: 20px;
 }
 .search-form-wrap input.form-control {
   -webkit-border-radius: 8px;
@@ -7968,6 +7969,7 @@ OLD TEAM PROFILE STYLES
 }
 #site-map-lists {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 #site-map-lists h3 {
   height: 50px;
