@@ -26,26 +26,28 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'related-arti
 <a name="related-articles" id="related-articles" class="section-target"></a>
 	<div class="container">
 		<h2 class="text-center section-header bg-col-grayDk"><?php echo $section_title; ?></h2>
-		<div class="container">
-			<div class="row posts-list">
-				<?php foreach ($related_posts as $rpost) { 
-				$ID = $rpost['related_article'];
-				$date = get_the_date('F jS Y', $ID);
-				?>
-				<?php if ($related_posts_total == 1) { ?>
-				<div class="col-xs-6 col-xs-offset-3 recent-post">
-				<?php } else if ($related_posts_total == 2) { ?>
-				<div class="col-xs-6 recent-post">
-				<?php } else { ?>
-				<div class="col-xs-4 recent-post">
-				<?php } ?>
-					<time class="article-date" datetime="<?php get_the_date( 'Y-m-d',  $ID); ?>"><?php echo $date; ?></time>
-					<h3><a href="<?php echo get_permalink($ID); ?>"><?php echo get_the_title($ID); ?></a></h3>
-					<a href="<?php echo get_permalink($ID); ?>" class="view-post-btn">View Article</a>
+	</div>
+	
+	<div id="posts-list-carousel" class="posts-list carousel slide" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+			<?php foreach ($related_posts as $k => $rpost) { 
+			$ID = $rpost->ID;
+			$date = get_the_date('F jS Y', $ID);
+			?>
+			<div class="item<?php echo ($k === 0) ? " active":""; ?>">
+				<div class="container">
+					<div class="recent-post">
+						<time class="article-date" datetime="<?php get_the_date( 'Y-m-d',  $ID); ?>"><?php echo $date; ?></time>
+						<h3><a href="<?php echo get_permalink($ID); ?>"><?php echo get_the_title($ID); ?></a></h3>
+						<a href="<?php echo get_permalink($ID); ?>" class="view-post-btn">View Article</a>
+					</div>
 				</div>
-				<?php } ?>
-				
 			</div>
+			<?php } ?>
+		</div>
+	</div>
+
+	<div class="container">
 			<div class="row blog-dropdowns">
 				<div class="col-xs-6">
 					<?php if ($cats) { ?>
@@ -96,5 +98,5 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'related-arti
 				</div>
 			</div>
 		</div>
-	</div>
+	
 </section>
