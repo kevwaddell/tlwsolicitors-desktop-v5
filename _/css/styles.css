@@ -11342,9 +11342,6 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   opacity: 0.2;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
   filter: alpha(opacity=20);
-  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
 }
 .pg-section .col-overlay {
   position: absolute;
@@ -11359,6 +11356,9 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   filter: alpha(opacity=50);
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
 }
 .pg-section.with-icon-logo {
   background-attachment: fixed;
