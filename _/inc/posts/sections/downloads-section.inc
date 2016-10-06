@@ -1,19 +1,10 @@
-<?php
-$downloads_active = $section['downloads_active'];
-?>
-<?php if ($downloads_active) { ?>
 <?php 
-$section_title = $section['section_title'];	
-$download_files = $section['files'];
-$bg_col = $section['bg_color'];
-
-if (empty($bg_col)) {
-$bg_col = "grayDk";	
-}
+$section_title = get_field( "downloads_section_title");	
+$download_files = get_field( "download_section_files");	
 
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'downloads'];	
 ?>
-<section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section with-icon-logo bg-col-<?php echo $bg_col; ?>">
+<section id="downloads-section" class="pg-section with-icon-logo bg-col-red">
 <a name="downloads" id="downloads" class="section-target"></a>
 	<div class="overlay"></div>
 	<div class="container">
@@ -21,16 +12,16 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'downloads'];
 	</div>		
 	<div class="container">		
 	
-	<?php if ( !empty($download_section_files) ) { ?>
+	<?php if ( !empty($download_files) ) { ?>
 	<div class="download-items">
 	
-	<?php foreach ($download_section_files as $k => $file) { 
+	<?php foreach ($download_files as $k => $file) { 
 	$img = wp_get_attachment_image_src($file['file_image'], 'medium' );	
 	?>
 	<div class="text-center download-item">
-		<a href="<?php echo $file['file_download']; ?>" target="_blank">
+		<a href="<?php echo $file['file']; ?>" target="_blank">
 			<span class="cover-img"><img src="<?php echo $img[0]; ?>" height="120" /></span>
-			<span class="dwnload-title"><?php echo $file['file_title']; ?></span>
+			<span class="dwnload-title"><?php echo $file['file_name']; ?></span>
 		</a>
 	</div>
 	<?php } ?>
@@ -50,4 +41,3 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'downloads'];
 	</div>
 		
 </section>
-<?php } ?>

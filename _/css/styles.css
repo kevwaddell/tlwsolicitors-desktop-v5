@@ -11422,19 +11422,46 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
 }
 .pg-section#downloads-section .download-item {
   height: 140px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.pg-section#downloads-section .download-item a {
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #4b4b4b;
+}
+.pg-section#downloads-section .download-item a:after {
+  content: "\f01a";
+  font-family: FontAwesome;
+  height: 140px;
+  width: 100px;
+  line-height: 140px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 30px;
+}
+.pg-section#downloads-section .download-item a a:hover,
+.pg-section#downloads-section .download-item a a:active,
+.pg-section#downloads-section .download-item a a:focus {
+  color: white;
 }
 .pg-section#downloads-section .download-item .cover-img {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 140px;
-  padding: 10px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.7);
 }
 .pg-section#downloads-section .download-item img {
   height: 120px;
   width: auto;
+  margin: 10px;
 }
 .pg-section#downloads-section .download-item .dwnload-title {
   display: table-cell;
@@ -11442,44 +11469,89 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   text-align: center;
   width: auto;
   text-transform: uppercase;
-  font-size: 20px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 25px;
+  line-height: 25px;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-right: 140px;
 }
-.pg-section#downloads-section .download-item a {
-  display: table;
-  vertical-align: middle;
-  text-align: center;
-  width: 100%;
-  color: #4b4b4b;
-  position: relative;
-  text-decoration: none;
-  overflow: hidden;
+.pg-section#downloads-section.bg-col-red {
+  background: #C60751;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #C60751), color-stop(1, #7A1039));
+  background: -ms-linear-gradient(bottom, #C60751, #7A1039);
+  background: -moz-linear-gradient(center bottom, #C60751 0%, #7A1039 100%);
+  background: -o-linear-gradient(#7A1039, #C60751);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7A1039', endColorstr='#C60751', GradientType=0);
 }
-.pg-section#downloads-section .download-item a:hover,
-.pg-section#downloads-section .download-item a:active,
-.pg-section#downloads-section .download-item a:focus {
-  font-weight: bold;
+.pg-section#downloads-section.bg-col-red a:hover,
+.pg-section#downloads-section.bg-col-red a:active,
+.pg-section#downloads-section.bg-col-red a:focus {
+  background-color: #7A1039;
+  background-color: rgba(122, 16, 57, 0.7);
+  color: white;
 }
-.pg-section#downloads-section.bg-col-purple a:hover img,
-.pg-section#downloads-section.bg-col-purple a:active img,
-.pg-section#downloads-section.bg-col-purple a:focus img {
+.pg-section#downloads-section.bg-col-purple {
+  background: #A677B4;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #A677B4), color-stop(1, #6C4480));
+  background: -ms-linear-gradient(bottom, #A677B4, #6C4480);
+  background: -moz-linear-gradient(center bottom, #A677B4 0%, #6C4480 100%);
+  background: -o-linear-gradient(#6C4480, #A677B4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6C4480', endColorstr='#A677B4', GradientType=0);
+}
+.pg-section#downloads-section.bg-col-purple a:hover,
+.pg-section#downloads-section.bg-col-purple a:active,
+.pg-section#downloads-section.bg-col-purple a:focus {
   background-color: #6C4480;
+  background-color: rgba(108, 68, 128, 0.7);
+  color: white;
+}
+.pg-section#downloads-section.bg-col-green {
+  background: #ACD15C;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ACD15C), color-stop(1, #698037));
+  background: -ms-linear-gradient(bottom, #ACD15C, #698037);
+  background: -moz-linear-gradient(center bottom, #ACD15C 0%, #698037 100%);
+  background: -o-linear-gradient(#698037, #ACD15C);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#698037', endColorstr='#ACD15C', GradientType=0);
 }
 .pg-section#downloads-section.bg-col-green a:hover img,
 .pg-section#downloads-section.bg-col-green a:active img,
 .pg-section#downloads-section.bg-col-green a:focus img {
   background-color: #698037;
 }
+.pg-section#downloads-section.bg-col-pink {
+  background: #EA5677;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EA5677), color-stop(1, #B8445D));
+  background: -ms-linear-gradient(bottom, #EA5677, #B8445D);
+  background: -moz-linear-gradient(center bottom, #EA5677 0%, #B8445D 100%);
+  background: -o-linear-gradient(#B8445D, #EA5677);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B8445D', endColorstr='#EA5677', GradientType=0);
+}
 .pg-section#downloads-section.bg-col-pink a:hover img,
 .pg-section#downloads-section.bg-col-pink a:active img,
 .pg-section#downloads-section.bg-col-pink a:focus img {
   background-color: #B8445D;
 }
+.pg-section#downloads-section.bg-col-orange {
+  background: #FBAD4F;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FBAD4F), color-stop(1, #AA7A39));
+  background: -ms-linear-gradient(bottom, #FBAD4F, #AA7A39);
+  background: -moz-linear-gradient(center bottom, #FBAD4F 0%, #AA7A39 100%);
+  background: -o-linear-gradient(#AA7A39, #FBAD4F);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AA7A39', endColorstr='#FBAD4F', GradientType=0);
+}
 .pg-section#downloads-section.bg-col-orange a:hover img,
 .pg-section#downloads-section.bg-col-orange a:active img,
 .pg-section#downloads-section.bg-col-orange a:focus img {
   background-color: #AA7A39;
+}
+.pg-section#downloads-section.bg-col-blue {
+  background: #2D7EA9;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2D7EA9), color-stop(1, #184358));
+  background: -ms-linear-gradient(bottom, #2D7EA9, #184358);
+  background: -moz-linear-gradient(center bottom, #2D7EA9 0%, #184358 100%);
+  background: -o-linear-gradient(#184358, #2D7EA9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#184358', endColorstr='#2D7EA9', GradientType=0);
 }
 .pg-section#downloads-section.bg-col-blue a:hover img,
 .pg-section#downloads-section.bg-col-blue a:active img,

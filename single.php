@@ -20,6 +20,10 @@
 				
 				<?php include (STYLESHEETPATH . '/_/inc/posts/sections/main-content-section.inc'); ?>
 				
+				<?php if ($download_active) { ?>
+				<?php include (STYLESHEETPATH . '/_/inc/posts/sections/downloads-section.inc'); ?>
+				<?php } ?>
+				
 				<?php if ($form_active && $all_forms_active) { ?>
 				<?php include (STYLESHEETPATH . '/_/inc/posts/sections/form-section.inc'); ?>
 				<?php } ?>

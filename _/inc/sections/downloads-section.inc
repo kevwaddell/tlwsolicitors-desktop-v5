@@ -7,8 +7,12 @@ $downloads_active = $section['downloads_active'];
 $section_title = $section['section_title'];	
 $download_section_files = $section['download_section_files'];
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'downloads'];	
+
+if (empty($color)) {
+$color = "red";	
+}
 ?>
-<section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section with-icon-logo bg-col-<?php echo (!empty($color)) ? $color : 'red'; ?>">
+<section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section with-icon-logo bg-col-<?php echo $color; ?>">
 <a name="downloads" id="downloads" class="section-target"></a>
 	<div class="overlay"></div>
 	<div class="container">
@@ -24,8 +28,8 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'downloads'];
 	?>
 	<div class="text-center download-item">
 		<a href="<?php echo $file['file_download']; ?>" target="_blank">
-		<span class="cover-img"><img src="<?php echo $img[0]; ?>" height="120" /></span>
-		<span class="dwnload-title"><?php echo $file['file_title']; ?></span>
+			<span class="cover-img"><img src="<?php echo $img[0]; ?>" height="120" /></span>
+			<span class="dwnload-title"><?php echo $file['file_title']; ?></span>
 		</a>
 	</div>
 	<?php } ?>
