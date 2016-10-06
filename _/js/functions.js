@@ -474,21 +474,17 @@
 		});
 		
 		/* QUICK LINKS BUTTONS */
+		
 		$('body').on(event_type,'button#quick-links-btn-show', function(){
-    	
-    		$('#quick-links').toggleClass('open closed');
+			
+			var parent = $(this).parent();
+			
+			$(parent).toggleClass('open closed');
     		     	     			
 			return false;
 		
 		});
 		
-		$('body').on(event_type,'button#quick-links-close', function(){
-    	
-    		$('#quick-links').toggleClass('open closed');
-    		     	     			
-			return false;
-		
-		});
 		
 		$('body').on(event_type,'.ql-section-links a', function(){
     		 

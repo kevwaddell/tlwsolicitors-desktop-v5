@@ -4,7 +4,9 @@ $quick_links_total = count($quick_links);
 ?>
 <!-- INTERNAL PAGE QUICK LINKS -->	
 <?php if (!empty($quick_links) && count($quick_links) > 1) { ?>
-	<div id="quick-links-sml" style="margin-top: -<?php echo ($quick_links_total * 50 + 100) / 2; ?>px">
+	<div id="quick-links-sml" class="open" style="margin-top: -<?php echo ($quick_links_total * 50 + 100) / 2; ?>px">
+		
+		<button id="quick-links-btn-show"><span class="sr-only">Internal page links</span></button>
 		
 		<nav class="quick-links-inner">
 			<button id="quick-links-btn-up" class="dir-btn"><i class="fa fa-angle-up"></i><span class="sr-only">Previous section</span></button>

@@ -6,7 +6,7 @@
 	.bg-col(@wht);
 	.border-radius(25px, 25px, 25px, 25px);
 	.transition(0.5s, ease-out);
-	
+		
 	button.dir-btn {
 	.w(5);
 	.h(5);
@@ -19,6 +19,44 @@
 		
 		i {
 		.font-size(2);	
+		}
+	}
+	
+	button#quick-links-btn-show {
+	.abs;
+	.transition(0.5s, ease-out);
+	.left(0);
+	.bottom(-6);
+	.no-border;
+	//.border-radius(0, 0, 100%, 100%);	
+	.rounded(100%);
+	.w(5);
+	.h(5);
+	.bg-col(@wht);
+	.pad-all(0);
+	.drop-shadow(0, 0, 10px, 0.7);
+		&:after {
+		content: "\f060";	
+		font-family: FontAwesome;	
+		.block;
+		.col(@gray);
+		.line-h(5);
+		.w(5);
+		text-align: center;
+		.font-size(2);
+		}
+	}
+	
+	&.closed {
+	.left(-8);	
+		button#quick-links-btn-show {
+		bottom: 50%;
+		.mag-bot(-2.5);
+		.left(8);	
+		.border-radius(100%, 100%, 0, 0);	
+			&:after {
+			content: "\f0c9";	
+			}
 		}
 	}
 	
