@@ -9831,7 +9831,7 @@ section#top-banner {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 section#top-banner.fixed-bg {
   background-attachment: fixed;

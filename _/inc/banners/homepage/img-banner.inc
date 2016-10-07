@@ -5,7 +5,7 @@ $hp_banner_quick_links = get_field('hp_banner_quick_links', 'option');
 $hp_other_service_links = get_field('hp_other_service_links', 'option');
 $extra_links_cols = 4;
 ?>
-<section id="top-banner" class="top-banner-img fixed-bg no-title" style="background-image: url(<?php echo $banner_bg_img;?>)">
+<section id="top-banner" class="top-banner-img no-title" style="background-image: url(<?php echo $banner_bg_img;?>)">
 	
 	<div class="tag-scroller">
 		<?php if (!empty($banner_tags)) { ?>
