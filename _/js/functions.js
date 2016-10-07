@@ -735,6 +735,21 @@
 		});
 		
 		/* END OF XMAS POP UP FUNCTIONS */	
+		
+		/* FAQ's BUTTON ACTIONS
+		This function controls the FAQ's answers button
+		which shows and hides the answer to the question
+	    */
+	    
+	     $('body').on(event_type,'button.view-faq-btn', function(){
+		   
+	    	$(this).parent().toggleClass('open closed');     
+	    	      			
+			return false;
+			
+		});
+	    
+		
 			
 	});
 

@@ -2065,6 +2065,130 @@ article.content-section {
 	.rel;
 	z-index: 1;
 	}
+	
+	// -->> FAQ's SECTION
+	
+	&#faqs-section {
+	.border-top(@grayDk; 0.4);	
+	.gradient(@wht, @wht , @grayLt);
+	.pad-bot(6);
+	
+		.container {
+		.rel;
+		z-index: 2;	
+		}
+	
+		.faq-items {
+		.border-bot(@gray; 0.2);
+		}
+		
+		.question {
+		.font-size(3.5);
+		.line-h(4.5);	
+		.font-slab-serif;
+		.bold;
+		.mag-bot(4);
+		.rel; 
+		.txt-col-gray;
+		}
+			
+		.view-faq-btn {
+		.h(5);
+		.pad-all(0);
+		.font-size(2);
+		.caps;
+		.line-h(5);
+		.pad(0;2;0;2);
+		.txt-col-wht;
+		.font-slab-serif;	
+		.bold;
+			
+			&:after {
+			font-family: FontAwesome;	
+			.line-h(5);
+			.fright;
+			}
+
+		}
+				
+		.answer {
+		.over-hide;	
+		.rel;
+		
+			p {
+			.font-size(2.5);
+			.line-h(3.5);	
+			}
+		}
+		
+		.faq-item {
+		.border-top(@gray; 0.2);
+		.pad-top(4);
+		.mag-bot(4);
+		.transition(0.3s, ease-in-out);
+		.rel;
+			
+			&.open {	
+				
+				.view-faq-btn {
+				.abs;
+				.bottom(-6);
+				left: 50%;
+				.mag-left(-2.5);
+				.w(4);
+				.h(4);
+				.pad-all(0);
+				.rounded(100%);
+				.bg-col-gray;
+				z-index: 2;
+				
+					span {
+					.none;	
+					}
+					
+					&:after {
+					content: "\f068";
+					.block;
+					.w(4);	
+					.line-h(4);
+					.font-size(1.6);
+					text-align: center;
+					}
+					
+					&:hover, &:active, &:focus {
+					.bg-col-grayDk;
+					}
+					
+				}
+				
+				.answer {
+				height: auto;	
+				}
+			}
+			
+			&.closed {
+				
+				.view-faq-btn {
+				.block;	
+				width: 100%;	
+				.bg-col-grayDk;
+					
+					&:hover, &:active, &:focus {
+					.bg-col-gray;
+					}
+				
+					&:after {
+					content: "\f067";	
+					}
+				}
+				
+				.answer {
+				.h(0);	
+				}
+			}
+		}
+		
+	}
 
 	// -->> DOWNLOADS SECTION
 		

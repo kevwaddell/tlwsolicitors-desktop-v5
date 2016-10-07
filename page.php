@@ -54,6 +54,11 @@
 					<?php include (STYLESHEETPATH . '/_/inc/sections/feedback-section.inc'); ?>		
 				<?php } ?>
 				
+				<?php if ($section['acf_fc_layout'] == 'faqs-section') { ?>
+				<!-- FEEDBACK SECTION -->
+					<?php include (STYLESHEETPATH . '/_/inc/sections/faqs-section.inc'); ?>		
+				<?php } ?>
+				
 				<?php if ($section['acf_fc_layout'] == 'form-section') { ?>
 				<!-- FORM SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/form-section.inc'); ?>		
