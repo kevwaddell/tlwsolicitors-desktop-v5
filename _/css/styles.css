@@ -12237,10 +12237,6 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   font-stretch: normal;
   color: #4b4b4b;
 }
-.pg-section#toolkit-section .tk-pg-intro br,
-.pg-section#toolkit-section p.lead br {
-  display: none;
-}
 .pg-section#toolkit-section .tk-banner-panels {
   padding-top: 90px;
   padding-bottom: 80px;
