@@ -11482,11 +11482,28 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   transition: all 0.3s ease-in-out;
   position: relative;
 }
+.pg-section#faqs-section .faq-item:after {
+  font-family: FontAwesome;
+  content: "\f086";
+  position: absolute;
+  top: -20px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #918F8F;
+  color: white;
+}
 .pg-section#faqs-section .faq-item.open .view-faq-btn {
   position: absolute;
-  bottom: -60px;
+  bottom: -62px;
   left: 50%;
-  margin-left: -25px;
+  margin-left: -20px;
   width: 40px;
   height: 40px;
   padding: 0px;
