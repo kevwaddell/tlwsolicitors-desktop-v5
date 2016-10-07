@@ -14006,6 +14006,86 @@ body.logged-in #xmas-popup-btn-wrap .holly.left {
   left: 60px;
 }
 /** --------------------------- /
+/* Awards pop-uop styles */
+/* --------------------------- */
+#awards-pop-up {
+  height: 104px;
+  background-color: #036937;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: relative;
+  -webkit-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+#awards-pop-up.open {
+  height: 104px;
+}
+#awards-pop-up.closed {
+  height: 0px;
+}
+#awards-pop-up #awards-pop-up-inner {
+  height: 104px;
+  border-bottom: 4px solid white;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+}
+#awards-pop-up #awards-pop-up-inner .inner-left,
+#awards-pop-up #awards-pop-up-inner .inner-right {
+  width: 50%;
+  height: 100%;
+}
+#awards-pop-up #awards-pop-up-inner .inner-left {
+  float: left;
+  padding-right: 10px;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/law-awards-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: right center;
+}
+#awards-pop-up #awards-pop-up-inner .inner-right {
+  float: right;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/law-awards-text-right-2016.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+#awards-pop-up #awards-pop-up-inner #nla-logo {
+  float: right;
+  height: 100%;
+  width: 300px;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/northern-Law-Awards-logo.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+#awards-pop-up button#close-awards-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  color: #036937;
+  background-color: #02371d;
+  border: none;
+}
+/** --------------------------- /
 /* GRAVITY FORMS BOOTSTRAP STYLES */
 /* --------------------------- */
 .gform_wrapper ul {

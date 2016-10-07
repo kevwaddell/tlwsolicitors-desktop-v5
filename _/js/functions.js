@@ -716,6 +716,18 @@
 			return false;
 		});
 		
+		/* Law Awards Pop up Function
+	   This function controls the Xmas pop up box
+    	*/
+    	
+    	 $('body').on(event_type,'button#close-awards-btn', function(){
+		    
+		   $(this).parent().removeClass('open').addClass('closed');   
+	    	      			
+			return false;
+			
+		});
+		
 		
 	});
 

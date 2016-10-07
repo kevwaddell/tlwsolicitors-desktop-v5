@@ -20,10 +20,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <?php } ?>
 
-<?php include (STYLESHEETPATH . '/_/inc/global/top-nav.inc'); ?>	
+<?php include (STYLESHEETPATH . '/_/inc/global/top-nav.inc'); ?>
+
+<?php include (STYLESHEETPATH . '/_/inc/global/awards-pop-up.inc'); ?>	
 
 <div class="tlw-wrapper">
-	
+
 	<!-- HEADER LOGO AND NAVIGATION -->
 	<?php include (STYLESHEETPATH . '/_/inc/global/masthead.inc'); ?>	
 		

@@ -1,0 +1,67 @@
+#awards-pop-up {
+.h(10.4);
+.bg-col(@awardsGreen);	
+.over-hide;
+.transition(0.3s, ease-out);
+.rel;
+.inner-shadow(0, -5px, 10px, 0.5);
+
+	&.open {	
+	.h(10.4);	
+	}
+	&.closed {
+	.h(0);	
+	}
+	#awards-pop-up-inner {
+	.h(10.4);	
+	.border-bot(@wht; 0.4);
+	.col(@wht);
+	font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+	
+		.inner-left, .inner-right {
+		width: 50%;	
+		height: 100%;
+		}
+		
+		.inner-left {
+		.fleft;	
+		.pad-right(1);
+		.bg-img("law-awards-bg.png");
+		.bg-repeat(no-repeat);
+		.bg-size(contain);
+		background-position: right center;
+		}
+		
+		.inner-right {
+		.fright;	
+		.bg-img('law-awards-text-right-2016.png');
+		background-position: left center;	
+		.bg-repeat(no-repeat);
+		.bg-size(contain);
+		}
+		
+		#nla-logo {
+		.fright;
+		height: 100%;
+		.w(30);
+		.bg-img('northern-Law-Awards-logo.png');
+		.bg-repeat(no-repeat);
+		background-position: right center;
+		.bg-size(contain);	
+		}
+		
+	}
+	
+	button#close-awards-btn {
+	.abs;	
+	.right(1);
+	.top(1);
+	.w(3);
+	.h(3);
+	.pad-all(0);
+	.rounded(100%);
+	.col(@awardsGreen);
+	.bg-col(darken(@awardsGreen, 10%));
+	.no-border;
+	}
+}
