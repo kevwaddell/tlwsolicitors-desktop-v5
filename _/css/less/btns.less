@@ -164,11 +164,16 @@ button.btn-col-blue, a.btn-col-blue {
 	.no-border;
 	.rounded(4px);
 	.mag-right(0);	
-	width: 70%;	
+	width: 100%;	
 	.caps;
 	text-align: left;
 	.pad(0;0;0;2);
 	.h(4);
+	.block;
+	
+		&:hover, &:active, &:focus {
+		.bg-col-red-dk;
+		}
 	}
 
 	.ctcc-right-side {
@@ -182,7 +187,7 @@ button.btn-col-blue, a.btn-col-blue {
 		.top(0);
 		.col(white);
 		.line-h(4);
-		padding-right: 20%;
+		.pad-right(1.5);
 		.font-size(2);
 		}
 	
