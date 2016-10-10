@@ -771,16 +771,6 @@
 			});
 
 		}
-		
-		if ($('.scroll-sidebar').length === 1) {
-		
-			$('.sidebar').hcSticky({
-			top: 20,
-			bottom: 0,
-			stickTo: '.content',
-			followScroll: false
-			});
-		}
 
 	});
 	
