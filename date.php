@@ -6,7 +6,7 @@ $news_page = get_page($news_page_id);
 $page_icon = get_field('page_icon', $news_page->ID);
 
 if ( has_post_thumbnail($news_page_id) ) {
-$img_post = $news_page_id;
+$img_post = $news_page;
 }
 ?>
 <!-- MAIN CONTENT START -->
