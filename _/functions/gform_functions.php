@@ -19,10 +19,8 @@ add_filter("gform_field_value_gclid", "populate_google_click");
 
 function populate_google_click($value){
 	
-	if ( isset($_GET['gclid']) ) {
-		session_start(); 
-		$_SESSION['gclid'] = $_GET['gclid'];
-		
+	if ( isset($_SESSION['gclid']) ) {
+				
 		return $_SESSION['gclid'];
 	}
 }
