@@ -30,7 +30,7 @@
 	
 			
 	if ($_SERVER['REMOTE_ADDR'] === "194.73.123.212" || $_SERVER['REMOTE_ADDR'] === "127.0.0.1" ) {
-	echo '<pre class="debug">';print_r($_COOKIE);echo '</pre>';	
+	echo '<pre class="debug">';print_r($_GET);echo '</pre>';	
 	}
 	?>
 </head>
