@@ -27,6 +27,7 @@
 	if ( isset($_GET['gclid']) ) {
 		session_start(); 
 		$_SESSION["gclid"] = $_GET['gclid'];
+		echo '<pre class="debug">';print_r($_SESSION);echo '</pre>';	
 	}
 	?>
 </head>
