@@ -26,7 +26,6 @@
 	
 	if ( isset($_GET['gclid']) ) {
 		setcookie("gclid",$_GET['gclid'] ,0, '/' );
-			
 	}
 	?>
 	

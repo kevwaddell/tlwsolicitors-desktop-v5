@@ -27,10 +27,5 @@
 	if ( isset($_GET['gclid']) ) {
 		setcookie("gclid",$_GET['gclid'] ,0, '/' );	
 	}
-	
-			
-	if ($_SERVER['REMOTE_ADDR'] === "194.73.123.212" || $_SERVER['REMOTE_ADDR'] === "127.0.0.1" ) {
-	//echo '<pre class="debug">';print_r($_COOKIE);echo '</pre>';	
-	}
 	?>
 </head>
