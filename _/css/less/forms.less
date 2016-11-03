@@ -453,5 +453,26 @@ form.route-finder {
 	
 	.validation_error {
 	text-align: center;	
-	}	
+	}
+		
+	.gform_confirmation_wrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	.pad-top(5);	
+	}
+	
+	.gform_confirmation_message {
+	.pad-all(3);
+	.rounded(20px);
+	.drop-shadow(0, 3px, 10px, 0.5);
+	.bg-col-red-dk;
+	.border(@red; 0.2);
+	.txt-col-wht;
+	.font-slab-serif;
+		p {
+		.font-size(3);
+		.line-h(4);		
+		}
+	}
 }

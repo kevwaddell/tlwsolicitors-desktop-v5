@@ -15174,3 +15174,28 @@ form.route-finder input.btn:focus {
 #form-section .validation_error {
   text-align: center;
 }
+#form-section .gform_confirmation_wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+#form-section .gform_confirmation_message {
+  padding: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: #7A1039;
+  border: 2px solid #C60751;
+  color: white;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+}
+#form-section .gform_confirmation_message p {
+  font-size: 30px;
+  line-height: 40px;
+}

@@ -1,5 +1,6 @@
 (function($){
 	//var previousScroll = 0;
+	//var console;
 	var tagInterval;
 	var current_section = "#top";
 	var current_section_id;
@@ -748,9 +749,7 @@
 			return false;
 			
 		});
-	    
-		
-			
+	
 	});
 
 	/* END DOC READY FUNCTION */

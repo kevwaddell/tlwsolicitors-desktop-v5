@@ -24,6 +24,8 @@ function populate_google_click($value){
 	}
 }
 
+add_filter( 'gform_confirmation_anchor_24', '__return_true' );
+
 function gform_column_splits($content, $field, $value, $lead_id, $form_id) {
 if(IS_ADMIN) return $content; // only modify HTML on the front end
 
