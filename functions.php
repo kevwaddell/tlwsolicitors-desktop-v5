@@ -175,6 +175,9 @@ include (STYLESHEETPATH . '/_/functions/tlw_how_it_works_cpt.php');
 /* REGISTER FAQ's CPT */
 include (STYLESHEETPATH . '/_/functions/tlw_faqs_cpt.php');
 
+/* REGISTER Vacancies CPT */
+include (STYLESHEETPATH . '/_/functions/tlw_jobs_cpt.php');
+
 /* REGISTER POSITIONS TAX */
 include (STYLESHEETPATH . '/_/functions/tlw_positions_tax.php');
 

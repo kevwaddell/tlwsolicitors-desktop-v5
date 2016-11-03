@@ -213,7 +213,7 @@
 		
 		$('button#continue-read-btn').removeClass('hidden');
 		
-		$('html, body').animate({scrollTop: ($('h1').offset().top - 200)}, 500);
+		$('html, body').animate({scrollTop: ($('.main-txt').offset().top - 200)}, 500);
 			
 		$('#content-extra').animate({height: "0px"}, 500, function(){
 			$('#content-extra').removeClass('open').addClass('closed').removeAttr('style');	
