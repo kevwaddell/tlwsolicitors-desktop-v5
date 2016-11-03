@@ -1,6 +1,7 @@
 (function($){
 	//var previousScroll = 0;
 	//var console;
+	//var alert;
 	var tagInterval;
 	var current_section = "#top";
 	var current_section_id;
@@ -12,6 +13,22 @@
 	
 	var event_type = 'click';	
 
+	function getUrlVars() {
+	    var hash;
+	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+	    
+	    for(var i = 0; i < hashes.length; i++)
+	    {
+	        hash = hashes[i].split('=');	        
+	        
+	        if (hash[0] === "gclid" ) { 
+		    $.cookie(hash[0], hash[1], {expires: 1, path: '/'});  
+	        }   
+	        
+	    }
+	}
+	
+	getUrlVars();
 	
 	function printPage() {
     window.print();
