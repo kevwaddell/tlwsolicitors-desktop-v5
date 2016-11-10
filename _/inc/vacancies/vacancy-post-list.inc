@@ -62,7 +62,7 @@ $post_count = $wp_query->post_count;
 				<div class="col-xs-6 col-xs-offset-3">
 					<div class="well well-lg">
 						<h3 class="text-center">There are no positions available at the moment</h3>
-						<p class="text-center">Please send us your CV using our online form and we will contact you if a relevant post comes available.</p>	
+						<p class="text-center">Please send us your CV and we will keep you on file for when a relevant post comes available.</p>
 					</div>		
 				</div>
 			</div>
