@@ -12,6 +12,9 @@ h1, h2 {
 .line-h(4.4);
 .mag-bot(3);
 .font-lite;	
+	small {
+	.font-size(3);	
+	}
 }
 
 p, ul, ol {
@@ -60,7 +63,43 @@ time.date-today {
 	}	
 }
 	
-article.page, article.post, article.tlw_landing_page {
+article.page, 
+article.post, 
+article.tlw_vacancies_cpt,
+article.tlw_landing_page {
+	
+	.label {
+	.in-block;
+	.font-size(2);	
+	.pad(0;1.5;0;1.5);
+	.line-h(3);
+	.mag-bot(1.5);
+	}
+	
+	.vacancy-details {
+	.no-rounded;
+	.no-border;
+	.shadow-inset-none;
+		.panel-heading {
+		.no-rounded;
+		.bg-col-gray;
+		.txt-col-wht;
+		.font-size(2);
+		.border-bot(@wht; 0.4);
+		}
+		
+		.table-bordered {
+		.no-border;
+		.bg-col-grayLt;
+			&:last-child {
+			.no-rounded;	
+			}
+			
+			th, td {
+			.border(@wht; 0.4);	
+			}
+		}
+	}
 	
 	.entry {
 		&.wide-entry {

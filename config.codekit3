@@ -1058,6 +1058,12 @@
 		"oAP": "\/_\/functions\/tlw_how_it_works_cpt.php",
 		"oF": 0
 		},
+	"\/_\/functions\/tlw_jobs_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/functions\/tlw_jobs_cpt.php",
+		"oF": 0
+		},
 	"\/_\/functions\/tlw_landing_pages_cpt.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -1512,6 +1518,36 @@
 		"oAP": "\/_\/inc\/toolkit\/toolkit-slides.inc",
 		"oF": 0
 		},
+	"\/_\/inc\/vacancies\/img-banner-slim.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/vacancies\/img-banner-slim.inc",
+		"oF": 0
+		},
+	"\/_\/inc\/vacancies\/sections\/form-section.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/vacancies\/sections\/form-section.inc",
+		"oF": 0
+		},
+	"\/_\/inc\/vacancies\/sections\/main-content-section.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/vacancies\/sections\/main-content-section.inc",
+		"oF": 0
+		},
+	"\/_\/inc\/vacancies\/vacancy-details-panel.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/vacancies\/vacancy-details-panel.inc",
+		"oF": 0
+		},
+	"\/_\/inc\/vacancies\/vacancy-post-list.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/vacancies\/vacancy-post-list.inc",
+		"oF": 0
+		},
 	"\/_\/inc\/xmas\/pop-up.inc": {
 		"ft": 8192,
 		"oA": 2,
@@ -1544,6 +1580,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/archive-tlw_vacancies_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-tlw_vacancies_cpt.php",
+		"oF": 0
 		},
 	"\/archive.php": {
 		"ft": 8192,
@@ -1753,6 +1795,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/single-tlw_landing_page.php",
+		"oF": 0
+		},
+	"\/single-tlw_vacancies_cpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-tlw_vacancies_cpt.php",
 		"oF": 0
 		},
 	"\/single.php": {

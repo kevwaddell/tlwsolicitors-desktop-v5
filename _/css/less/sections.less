@@ -2066,6 +2066,93 @@ article.content-section {
 	z-index: 1;
 	}
 	
+	// -->> Jobs Section
+	&#vacancies-section {
+	.gradient(@red, @red , @redMid);
+	.border-top(@wht; 0.4);
+	
+		.container {
+		.rel;
+		z-index: 2;	
+		}
+
+		article.hentry {
+		.bg-col(@wht);
+		.pad(0;3;3;3);
+		.mag-bot(4);	
+		.rounded(10px);
+		.border(@redMid; 0.2);
+		.drop-shadow(0, 3px, 10px, 0.5);
+		
+			h4 {
+			.font-size(3);	
+			}
+			
+			.ref {
+			.txt-col-gray;
+			.mag-bot(1);	
+			}
+			
+			.close-date {
+			width: 70%;
+			.line-h(3);
+			.h(3);
+			.font-size(1.6);
+			.bg-col-red-dk;
+			.txt-col-wht;	
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: -15px;
+			margin-bottom: 20px;
+			.rounded(15px);
+			.bold;
+			}
+			
+			.description {
+			.font-size(1.6);
+			.mag-bot(2);
+			.min-h(7);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			}
+			
+			.btn {
+			.font-slab-serif;
+			.caps;
+			.pad(0;0;0;2);
+			.font-size(2);
+			.line-h(4);
+			text-align: left;	
+			.no-border;
+			.bg-col-grayDk;
+			.txt-col-wht;
+			.rel;	
+				
+				&:after {
+				content: "\f0a9";	
+				font-family: FontAwesome;	
+				.abs;
+				.right(0);
+				.top(0);
+				.col(@gray);
+				.line-h(4);
+				.pad-right(2);
+				.font-size(2);
+				}
+			
+				&:hover, &:active, &:focus {
+				.bg-col-gray;
+					&:after {
+					.col(@red);	
+					}
+				}
+
+			}
+		}
+		
+		
+	}
+	
 	// -->> FAQ's SECTION
 	
 	&#faqs-section {

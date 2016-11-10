@@ -6779,6 +6779,10 @@ h2 {
   font-weight: 300;
   font-stretch: normal;
 }
+h1 small,
+h2 small {
+  font-size: 30px;
+}
 p,
 ul,
 ol {
@@ -6820,25 +6824,88 @@ time.date-today i {
   line-height: 40px;
   color: #c4c2c2;
 }
+article.page .label,
+article.post .label,
+article.tlw_vacancies_cpt .label,
+article.tlw_landing_page .label {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0px 15px 0px 15px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+article.page .vacancy-details,
+article.post .vacancy-details,
+article.tlw_vacancies_cpt .vacancy-details,
+article.tlw_landing_page .vacancy-details {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+article.page .vacancy-details .panel-heading,
+article.post .vacancy-details .panel-heading,
+article.tlw_vacancies_cpt .vacancy-details .panel-heading,
+article.tlw_landing_page .vacancy-details .panel-heading {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #918F8F;
+  color: white;
+  font-size: 20px;
+  border-bottom: 4px solid white;
+}
+article.page .vacancy-details .table-bordered,
+article.post .vacancy-details .table-bordered,
+article.tlw_vacancies_cpt .vacancy-details .table-bordered,
+article.tlw_landing_page .vacancy-details .table-bordered {
+  border: none;
+  background-color: #E9E9E9;
+}
+article.page .vacancy-details .table-bordered:last-child,
+article.post .vacancy-details .table-bordered:last-child,
+article.tlw_vacancies_cpt .vacancy-details .table-bordered:last-child,
+article.tlw_landing_page .vacancy-details .table-bordered:last-child {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+article.page .vacancy-details .table-bordered th,
+article.post .vacancy-details .table-bordered th,
+article.tlw_vacancies_cpt .vacancy-details .table-bordered th,
+article.tlw_landing_page .vacancy-details .table-bordered th,
+article.page .vacancy-details .table-bordered td,
+article.post .vacancy-details .table-bordered td,
+article.tlw_vacancies_cpt .vacancy-details .table-bordered td,
+article.tlw_landing_page .vacancy-details .table-bordered td {
+  border: 4px solid white;
+}
 article.page .entry.wide-entry,
 article.post .entry.wide-entry,
+article.tlw_vacancies_cpt .entry.wide-entry,
 article.tlw_landing_page .entry.wide-entry {
   margin-left: -30px;
 }
 article.page .entry img.alignleft,
 article.post .entry img.alignleft,
+article.tlw_vacancies_cpt .entry img.alignleft,
 article.tlw_landing_page .entry img.alignleft {
   margin-right: 10px;
   margin-bottom: 10px;
 }
 article.page .entry img.alignright,
 article.post .entry img.alignright,
+article.tlw_vacancies_cpt .entry img.alignright,
 article.tlw_landing_page .entry img.alignright {
   margin-left: 10px;
   margin-bottom: 10px;
 }
 article.page time.date,
 article.post time.date,
+article.tlw_vacancies_cpt time.date,
 article.tlw_landing_page time.date {
   display: block;
   background-color: #E9E9E9;
@@ -6851,6 +6918,7 @@ article.tlw_landing_page time.date {
 }
 article.page time.date i,
 article.post time.date i,
+article.tlw_vacancies_cpt time.date i,
 article.tlw_landing_page time.date i {
   display: block;
   float: left;
@@ -6861,6 +6929,7 @@ article.tlw_landing_page time.date i {
 }
 article.page hr,
 article.post hr,
+article.tlw_vacancies_cpt hr,
 article.tlw_landing_page hr {
   border: none;
   margin-top: 40px;
@@ -6870,9 +6939,11 @@ article.tlw_landing_page hr {
 }
 article.page hr:before,
 article.post hr:before,
+article.tlw_vacancies_cpt hr:before,
 article.tlw_landing_page hr:before,
 article.page hr:after,
 article.post hr:after,
+article.tlw_vacancies_cpt hr:after,
 article.tlw_landing_page hr:after {
   content: "";
   position: absolute;
@@ -6881,6 +6952,7 @@ article.tlw_landing_page hr:after {
 }
 article.page hr:before,
 article.post hr:before,
+article.tlw_vacancies_cpt hr:before,
 article.tlw_landing_page hr:before {
   bottom: -1px;
   background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#918F8F));
@@ -6890,6 +6962,7 @@ article.tlw_landing_page hr:before {
 }
 article.page hr:after,
 article.post hr:after,
+article.tlw_vacancies_cpt hr:after,
 article.tlw_landing_page hr:after {
   right: 0px;
   bottom: -1px;
@@ -6900,11 +6973,13 @@ article.tlw_landing_page hr:after {
 }
 article.page .main-txt .with-icon-img,
 article.post .main-txt .with-icon-img,
+article.tlw_vacancies_cpt .main-txt .with-icon-img,
 article.tlw_landing_page .main-txt .with-icon-img {
   position: relative;
 }
 article.page .main-txt .with-icon-img .icon-img,
 article.post .main-txt .with-icon-img .icon-img,
+article.tlw_vacancies_cpt .main-txt .with-icon-img .icon-img,
 article.tlw_landing_page .main-txt .with-icon-img .icon-img {
   position: absolute;
   left: 0px;
@@ -6914,16 +6989,19 @@ article.tlw_landing_page .main-txt .with-icon-img .icon-img {
 }
 article.page .main-txt .with-icon-img .icon-left-txt,
 article.post .main-txt .with-icon-img .icon-left-txt,
+article.tlw_vacancies_cpt .main-txt .with-icon-img .icon-left-txt,
 article.tlw_landing_page .main-txt .with-icon-img .icon-left-txt {
   padding-left: 130px;
 }
 article.page .main-txt .well,
 article.post .main-txt .well,
+article.tlw_vacancies_cpt .main-txt .well,
 article.tlw_landing_page .main-txt .well {
   background-color: #E9E9E9;
 }
 article.page .main-txt .well span.label,
 article.post .main-txt .well span.label,
+article.tlw_vacancies_cpt .main-txt .well span.label,
 article.tlw_landing_page .main-txt .well span.label {
   display: inline-block;
   margin-bottom: 10px;
@@ -6931,6 +7009,7 @@ article.tlw_landing_page .main-txt .well span.label {
 }
 article.page .main-txt .well h3.icon-header,
 article.post .main-txt .well h3.icon-header,
+article.tlw_vacancies_cpt .main-txt .well h3.icon-header,
 article.tlw_landing_page .main-txt .well h3.icon-header {
   line-height: 50px;
   -webkit-border-radius: 4px;
@@ -6940,25 +7019,30 @@ article.tlw_landing_page .main-txt .well h3.icon-header {
 }
 article.page .main-txt .well.striped-bg,
 article.post .main-txt .well.striped-bg,
+article.tlw_vacancies_cpt .main-txt .well.striped-bg,
 article.tlw_landing_page .main-txt .well.striped-bg {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/striped-img-overlay.png);
   background-blend-mode: color-burn;
 }
 article.page .main-txt .thank-you-message,
 article.post .main-txt .thank-you-message,
+article.tlw_vacancies_cpt .main-txt .thank-you-message,
 article.tlw_landing_page .main-txt .thank-you-message {
   background-color: #C60751;
 }
 article.page .main-txt .thank-you-message h1,
 article.post .main-txt .thank-you-message h1,
+article.tlw_vacancies_cpt .main-txt .thank-you-message h1,
 article.tlw_landing_page .main-txt .thank-you-message h1,
 article.page .main-txt .thank-you-message p,
 article.post .main-txt .thank-you-message p,
+article.tlw_vacancies_cpt .main-txt .thank-you-message p,
 article.tlw_landing_page .main-txt .thank-you-message p {
   color: white;
 }
 article.page .main-txt .thank-you-message a.btn,
 article.post .main-txt .thank-you-message a.btn,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn,
 article.tlw_landing_page .main-txt .thank-you-message a.btn {
   width: 50%;
   margin: auto;
@@ -6973,46 +7057,57 @@ article.tlw_landing_page .main-txt .thank-you-message a.btn {
 }
 article.page .main-txt .thank-you-message a.btn:hover,
 article.post .main-txt .thank-you-message a.btn:hover,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:hover,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:hover,
 article.page .main-txt .thank-you-message a.btn:active,
 article.post .main-txt .thank-you-message a.btn:active,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:active,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:active,
 article.page .main-txt .thank-you-message a.btn:focus,
 article.post .main-txt .thank-you-message a.btn:focus,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:focus,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:focus {
   background-color: #7A1039;
   color: white;
 }
 article.page .main-txt .thank-you-message a.btn:hover:after,
 article.post .main-txt .thank-you-message a.btn:hover:after,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:hover:after,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:hover:after,
 article.page .main-txt .thank-you-message a.btn:active:after,
 article.post .main-txt .thank-you-message a.btn:active:after,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:active:after,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:active:after,
 article.page .main-txt .thank-you-message a.btn:focus:after,
 article.post .main-txt .thank-you-message a.btn:focus:after,
+article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:focus:after,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:focus:after {
   color: #C60751;
 }
 article.page .main-txt a,
 article.post .main-txt a,
+article.tlw_vacancies_cpt .main-txt a,
 article.tlw_landing_page .main-txt a {
   color: #C60751;
   font-weight: bold;
 }
 article.page .main-txt a:hover,
 article.post .main-txt a:hover,
+article.tlw_vacancies_cpt .main-txt a:hover,
 article.tlw_landing_page .main-txt a:hover,
 article.page .main-txt a:active,
 article.post .main-txt a:active,
+article.tlw_vacancies_cpt .main-txt a:active,
 article.tlw_landing_page .main-txt a:active,
 article.page .main-txt a:focus,
 article.post .main-txt a:focus,
+article.tlw_vacancies_cpt .main-txt a:focus,
 article.tlw_landing_page .main-txt a:focus {
   color: #7A1039;
 }
 article.page .main-txt ul,
 article.post .main-txt ul,
+article.tlw_vacancies_cpt .main-txt ul,
 article.tlw_landing_page .main-txt ul {
   list-style: none;
   padding-left: 20px;
@@ -7020,12 +7115,14 @@ article.tlw_landing_page .main-txt ul {
 }
 article.page .main-txt ul li,
 article.post .main-txt ul li,
+article.tlw_vacancies_cpt .main-txt ul li,
 article.tlw_landing_page .main-txt ul li {
   padding-left: 20px;
   position: relative;
 }
 article.page .main-txt ul li:before,
 article.post .main-txt ul li:before,
+article.tlw_vacancies_cpt .main-txt ul li:before,
 article.tlw_landing_page .main-txt ul li:before {
   position: absolute;
   left: 0px;
@@ -7036,6 +7133,7 @@ article.tlw_landing_page .main-txt ul li:before {
 }
 article.page .main-txt ul.cols-2,
 article.post .main-txt ul.cols-2,
+article.tlw_vacancies_cpt .main-txt ul.cols-2,
 article.tlw_landing_page .main-txt ul.cols-2 {
   -moz-column-width: 50%;
   -moz-column-count: 2;
@@ -7058,6 +7156,7 @@ article.tlw_landing_page .main-txt ul.cols-2 {
 }
 article.page .main-txt ol,
 article.post .main-txt ol,
+article.tlw_vacancies_cpt .main-txt ol,
 article.tlw_landing_page .main-txt ol {
   list-style: none;
   padding-left: 20px;
@@ -7067,11 +7166,13 @@ article.tlw_landing_page .main-txt ol {
 }
 article.page .main-txt ol li,
 article.post .main-txt ol li,
+article.tlw_vacancies_cpt .main-txt ol li,
 article.tlw_landing_page .main-txt ol li {
   position: relative;
 }
 article.page .main-txt ol li:before,
 article.post .main-txt ol li:before,
+article.tlw_vacancies_cpt .main-txt ol li:before,
 article.tlw_landing_page .main-txt ol li:before {
   content: counters(item, ".") " - ";
   counter-increment: item;
@@ -7080,6 +7181,7 @@ article.tlw_landing_page .main-txt ol li:before {
 }
 article.page .main-txt blockquote,
 article.post .main-txt blockquote,
+article.tlw_vacancies_cpt .main-txt blockquote,
 article.tlw_landing_page .main-txt blockquote {
   font-style: italic;
   color: #918F8F;
@@ -7089,9 +7191,11 @@ article.tlw_landing_page .main-txt blockquote {
 }
 article.page .main-txt h2,
 article.post .main-txt h2,
+article.tlw_vacancies_cpt .main-txt h2,
 article.tlw_landing_page .main-txt h2,
 article.page .main-txt h3,
 article.post .main-txt h3,
+article.tlw_vacancies_cpt .main-txt h3,
 article.tlw_landing_page .main-txt h3 {
   font-size: 25px;
   line-height: 25px;
@@ -7103,9 +7207,11 @@ article.tlw_landing_page .main-txt h3 {
 }
 article.page .main-txt h4,
 article.post .main-txt h4,
+article.tlw_vacancies_cpt .main-txt h4,
 article.tlw_landing_page .main-txt h4,
 article.page .main-txt h5,
 article.post .main-txt h5,
+article.tlw_vacancies_cpt .main-txt h5,
 article.tlw_landing_page .main-txt h5 {
   font-size: 18px;
 }
@@ -7929,6 +8035,79 @@ OLD TEAM PROFILE STYLES
 .page-links .wp-pagenavi a.last:focus,
 .page-links .wp-pagenavi a.first:focus {
   background-color: #c4c2c2;
+}
+.vacs-page-links .wp-pagenavi {
+  font-size: 16px;
+  color: white;
+  height: 50px;
+  text-align: left;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-weight: bold;
+}
+.vacs-page-links .wp-pagenavi span {
+  display: inline-block;
+  line-height: 50px;
+}
+.vacs-page-links .wp-pagenavi span.pages {
+  display: block;
+  float: right;
+  margin-bottom: 0px;
+  color: white;
+}
+.vacs-page-links .wp-pagenavi span.current {
+  background-color: white;
+  color: #C60751;
+  width: 50px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 10px;
+}
+.vacs-page-links .wp-pagenavi span.extend {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 4px solid white;
+}
+.vacs-page-links .wp-pagenavi a {
+  display: inline-block;
+  width: 50px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  text-decoration: none;
+  line-height: 42px;
+  text-align: center;
+  color: white;
+  border: 4px solid white;
+  margin-right: 10px;
+}
+.vacs-page-links .wp-pagenavi a.page,
+.vacs-page-links .wp-pagenavi a.nextpostslink,
+.vacs-page-links .wp-pagenavi a.previouspostslink,
+.vacs-page-links .wp-pagenavi a.last,
+.vacs-page-links .wp-pagenavi a.first {
+  background-color: transparent;
+}
+.vacs-page-links .wp-pagenavi a.page:hover,
+.vacs-page-links .wp-pagenavi a.nextpostslink:hover,
+.vacs-page-links .wp-pagenavi a.previouspostslink:hover,
+.vacs-page-links .wp-pagenavi a.last:hover,
+.vacs-page-links .wp-pagenavi a.first:hover,
+.vacs-page-links .wp-pagenavi a.page:active,
+.vacs-page-links .wp-pagenavi a.nextpostslink:active,
+.vacs-page-links .wp-pagenavi a.previouspostslink:active,
+.vacs-page-links .wp-pagenavi a.last:active,
+.vacs-page-links .wp-pagenavi a.first:active,
+.vacs-page-links .wp-pagenavi a.page:focus,
+.vacs-page-links .wp-pagenavi a.nextpostslink:focus,
+.vacs-page-links .wp-pagenavi a.previouspostslink:focus,
+.vacs-page-links .wp-pagenavi a.last:focus,
+.vacs-page-links .wp-pagenavi a.first:focus {
+  background-color: white;
+  color: #C60751;
 }
 .search-form-wrap {
   text-align: center;
@@ -11424,6 +11603,96 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   position: relative;
   z-index: 1;
 }
+.pg-section#vacancies-section {
+  background: #C60751;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #C60751), color-stop(1, #7A1039));
+  background: -ms-linear-gradient(bottom, #C60751, #7A1039);
+  background: -moz-linear-gradient(center bottom, #C60751 0%, #7A1039 100%);
+  background: -o-linear-gradient(#7A1039, #C60751);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7A1039', endColorstr='#C60751', GradientType=0);
+  border-top: 4px solid white;
+}
+.pg-section#vacancies-section .container {
+  position: relative;
+  z-index: 2;
+}
+.pg-section#vacancies-section article.hentry {
+  background-color: white;
+  padding: 0px 30px 30px 30px;
+  margin-bottom: 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #7A1039;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+.pg-section#vacancies-section article.hentry h4 {
+  font-size: 30px;
+}
+.pg-section#vacancies-section article.hentry .ref {
+  color: #918F8F;
+  margin-bottom: 10px;
+}
+.pg-section#vacancies-section article.hentry .close-date {
+  width: 70%;
+  line-height: 30px;
+  height: 30px;
+  font-size: 16px;
+  background-color: #7A1039;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.pg-section#vacancies-section article.hentry .description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  min-height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pg-section#vacancies-section article.hentry .btn {
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  padding: 0px 0px 0px 20px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
+  border: none;
+  background-color: #4b4b4b;
+  color: white;
+  position: relative;
+}
+.pg-section#vacancies-section article.hentry .btn:after {
+  content: "\f0a9";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #918F8F;
+  line-height: 40px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+.pg-section#vacancies-section article.hentry .btn:hover,
+.pg-section#vacancies-section article.hentry .btn:active,
+.pg-section#vacancies-section article.hentry .btn:focus {
+  background-color: #918F8F;
+}
+.pg-section#vacancies-section article.hentry .btn:hover:after,
+.pg-section#vacancies-section article.hentry .btn:active:after,
+.pg-section#vacancies-section article.hentry .btn:focus:after {
+  color: #C60751;
+}
 .pg-section#faqs-section {
   border-top: 4px solid #4b4b4b;
   background: white;
@@ -14497,7 +14766,8 @@ figure.alignnone {
 .gform_wrapper input[type=email],
 .gform_wrapper input[type=tel],
 .gform_wrapper input[type=number],
-.gform_wrapper input[type=password] {
+.gform_wrapper input[type=password],
+.gform_wrapper input[type=file] {
   font-size: 14px !important;
   border: 1px solid #918F8F;
   width: 100% !important;
@@ -14507,7 +14777,8 @@ figure.alignnone {
 .gform_wrapper input[type=email]:focus,
 .gform_wrapper input[type=tel]:focus,
 .gform_wrapper input[type=number]:focus,
-.gform_wrapper input[type=password]:focus {
+.gform_wrapper input[type=password]:focus,
+.gform_wrapper input[type=file]:focus {
   border-color: #C60751;
 }
 .gform_wrapper input.small {
@@ -14772,11 +15043,25 @@ form.route-finder input.btn:focus {
 }
 #form-section .gform_wrapper input[type="text"],
 #form-section .gform_wrapper input[type="email"],
-#form-section .gform_wrapper input[type="tel"] {
+#form-section .gform_wrapper input[type="tel"],
+#form-section .gform_wrapper input[type="file"] {
   height: 60px;
   font-size: 20px !important;
   padding: 10px;
   border-color: #4b4b4b;
+  background-color: white;
+}
+#form-section .gform_wrapper .name_first label,
+#form-section .gform_wrapper .name_last label {
+  font-size: 16px;
+  color: #918F8F;
+  padding-top: 5px;
+}
+#form-section .gform_wrapper #extensions_message {
+  font-size: 16px;
+  display: block;
+  color: #918F8F;
+  font-weight: bold;
 }
 #form-section .bootstrap-select.btn-group .dropdown-menu li.selected a {
   background-color: #4b4b4b;
@@ -14810,6 +15095,12 @@ form.route-finder input.btn:focus {
 }
 #form-section .gform_wrapper label {
   font-size: 20px;
+}
+#form-section .captcha label {
+  display: none;
+}
+#form-section .ginput_recaptcha > div {
+  margin: auto;
 }
 #form-section .gform_wrapper label,
 #form-section .gform_wrapper .gfield_no_follows_desc {
@@ -14882,4 +15173,29 @@ form.route-finder input.btn:focus {
 }
 #form-section .validation_error {
   text-align: center;
+}
+#form-section .gform_confirmation_wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+#form-section .gform_confirmation_message {
+  padding: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: #7A1039;
+  border: 2px solid #C60751;
+  color: white;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+}
+#form-section .gform_confirmation_message p {
+  font-size: 30px;
+  line-height: 40px;
 }

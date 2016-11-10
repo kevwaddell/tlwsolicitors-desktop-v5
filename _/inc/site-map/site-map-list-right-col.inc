@@ -1,67 +1,10 @@
 <div class="col-xs-6">
-	<?php if ($services_for_biz) { ?>
-	
-	<h3><a href="<?php echo get_permalink($for_biz_pg); ?>"><?php echo ($for_biz_page_icon) ? '<i class="icon fa '.$for_biz_page_icon.' f-lg"></i>': ''; ?><?php echo get_the_title($for_biz_pg); ?><i class="fa fa-angle-right fa-lg"></i></a></h3>
-	
-
-	<?php foreach ($services_for_biz as $service) { ?>
-	
-	<?php 
-	$icon = get_field('page_icon', $service->ID);
-	
-	if (!empty($icon)) {
-	$icon_tag = '<i class="icon fa '.$icon.'"></i>';	
-	}
-	
-	$service_args = array(
-	'posts_per_page' => -1,
-	'post_type'		=> 'page',
-	'orderby'		=> 'menu_order',
-	'post_parent'	=> $service->ID,
-	'order'			=> 'ASC'
-	);
-	
-	$service_children = get_posts($service_args);
-	 ?>
-	
-		<div class="list-block">
-			<h4><a href="<?php echo get_permalink($service->ID); ?>"><?php echo ($icon_tag) ? $icon_tag: ''; ?><?php echo $service->post_title; ?><i class="fa fa-angle-right fa-lg"></i></a></h4>
-			
-		<?php if ($service_children) { ?>
-			<ul class="list-unstyled">
-			
-			<?php foreach ($service_children as $service_child) { 
-			$gc_args = array(
-			'posts_per_page' => -1,
-			'post_type'		=> 'page',
-			'orderby'		=> 'menu_order',
-			'post_parent'	=> $service_child->ID,
-			'order'			=> 'ASC'
-			);
-			$service_gchildren = get_posts($gc_args);
-			?>
-			<li><a href="<?php echo get_permalink($service_child->ID); ?>"><?php echo $service_child->post_title; ?></a></li>
-				<?php if ($service_gchildren) { ?>
-					<?php foreach ($service_gchildren as $g_child) { ?>
-					<li><a href="<?php echo get_permalink($g_child->ID); ?>"><?php echo get_the_title($g_child->ID); ?></a></li>
-					<?php } ?>
-				<?php } ?>
-
-			<?php } ?>
-			
-		<?php } ?>
-		
-			</ul>
-		
-		</div>
-	
-	<?php } ?>
-	
-	<?php } ?>
 	
 	<h3><a href="<?php echo get_permalink($company_page->ID); ?>"><?php echo ($company_page_icon) ? '<i class="icon fa '.$company_page_icon.' f-lg"></i>': ''; ?><?php echo $company_page->post_title; ?><i class="fa fa-angle-right fa-lg"></i></a></h3>
 	
-	<?php if ($company_pages) { ?>
+	<?php if ($company_pages) { 
+	$vacancies_pg = get_page_by_title( "Vacancies" );	
+	?>
 		<div class="list-block">
 	
 			<ul class="list-unstyled">
@@ -69,7 +12,9 @@
 				<?php foreach ($company_pages as $company_page) { ?>
 				<li><a href="<?php echo get_permalink($company_page->ID); ?>"><?php echo $company_page->post_title; ?></a></li>
 				<?php } ?>
-			
+				<?php if ($vacancies_pg) { ?>
+				<li><a href="<?php echo get_permalink($vacancies_pg->ID); ?>"><?php echo $vacancies_pg->post_title; ?></a></li>			
+				<?php } ?>
 			</ul>
 			
 		</div>

@@ -18,7 +18,8 @@ max-width: 100% !important;
 	input[type=email],
 	input[type=tel],
 	input[type=number],
-	input[type=password] {
+	input[type=password],
+	input[type=file] {
 	.font-size(1.4)!important;
 	.border(@gray, 0.1);
 	width: 100% !important;
@@ -311,11 +312,27 @@ form.route-finder {
 	
 	.gform_wrapper input[type="text"],
 	.gform_wrapper input[type="email"],
-	.gform_wrapper input[type="tel"] {
+	.gform_wrapper input[type="tel"],
+	.gform_wrapper input[type="file"] {
 	.h(6);	
 	.font-size(2) !important;
 	.pad-all(1);
 	.border-col(@grayDk);
+	.bg-col(@wht);
+	}
+	
+	.gform_wrapper .name_first label,
+	.gform_wrapper .name_last label {
+	.font-size(1.6);	
+	.txt-col-gray;
+	.pad-top(0.5);
+	}
+	
+	.gform_wrapper #extensions_message {
+	.font-size(1.6);
+	.block;	
+	.txt-col-gray;
+	.bold;
 	}
 
 	
@@ -359,6 +376,14 @@ form.route-finder {
 	
 	.gform_wrapper label {
 	.font-size(2);	
+	}
+	
+	.captcha label {
+	.none;	
+	}
+	
+	.ginput_recaptcha > div {
+	margin: auto;	
 	}
 	
 	.gform_wrapper label, .gform_wrapper .gfield_no_follows_desc {
@@ -428,5 +453,26 @@ form.route-finder {
 	
 	.validation_error {
 	text-align: center;	
-	}	
+	}
+		
+	.gform_confirmation_wrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	.pad-top(5);	
+	}
+	
+	.gform_confirmation_message {
+	.pad-all(3);
+	.rounded(20px);
+	.drop-shadow(0, 3px, 10px, 0.5);
+	.bg-col-red-dk;
+	.border(@red; 0.2);
+	.txt-col-wht;
+	.font-slab-serif;
+		p {
+		.font-size(3);
+		.line-h(4);		
+		}
+	}
 }

@@ -27,15 +27,13 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
+	<?php gravity_form_enqueue_scripts( 24, true ); ?>
+	
 	<?php wp_head(); ?>
 	
 	<?php 
 	if ( isset($_GET['src']) && $_GET['src'] == "mis-sold-solar-co-uk" ) {
 	setcookie("src",$_GET['src'] , strtotime( '+6 months' ), "/financial-mis-selling/solar-panel-mis-selling" );
-	}
-	
-	if ( isset($_GET['gclid']) ) {
-		setcookie("gclid",$_GET['gclid'] ,0, '/' );	
 	}
 	?>
 </head>
