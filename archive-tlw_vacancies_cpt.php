@@ -5,6 +5,7 @@ $jobs_pg = get_page_by_title( "Vacancies" );
 $content = apply_filters( 'the_content', $jobs_pg->post_content );
 $all_forms_active = get_field('all_forms_active', 'option');
 $form_active = get_field('add_form', $jobs_pg->ID);	
+$quick_links = array();
 	
 	if ( has_post_thumbnail($jobs_pg->ID) ) {
 	$img_post = $jobs_pg;
@@ -19,7 +20,7 @@ $form_active = get_field('add_form', $jobs_pg->ID);
 	<?php } ?>	
 		
 	<article <?php post_class("content-section"); ?>>
-	
+	<a name="vacancy-txt" id="vacancy-txt" class="section-target"></a>
 	<?php include (STYLESHEETPATH . '/_/inc/sections/global-telephone-number.inc'); ?>		
 	
 	<?php include (STYLESHEETPATH . '/_/inc/global/col-strip.inc'); ?>

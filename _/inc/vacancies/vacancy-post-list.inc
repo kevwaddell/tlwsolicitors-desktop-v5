@@ -20,9 +20,12 @@ $wp_query = new WP_Query( $args );
 
 $section_title = "Positions available";	
 $post_count = $wp_query->post_count;
+
+$quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'positions-available'];	
 ?>
 
 <section id="vacancies-section" class="pg-section">
+	<a name="positions-available" id="positions-available" class="section-target"></a>
 	<h2 class="text-center section-header bg-col-grayDk"><?php echo $section_title; ?></h2>
 	
 	<?php if ( have_posts() ): ?>
