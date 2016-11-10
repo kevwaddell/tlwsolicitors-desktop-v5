@@ -11616,6 +11616,12 @@ article.content-section #content-extra #close-content-extra-btn:focus i {
   position: relative;
   z-index: 2;
 }
+.pg-section#vacancies-section .well {
+  margin-bottom: 40px;
+}
+.pg-section#vacancies-section .well p {
+  margin-bottom: 0px;
+}
 .pg-section#vacancies-section article.hentry {
   background-color: white;
   padding: 0px 30px 30px 30px;
