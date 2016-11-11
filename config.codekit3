@@ -215,7 +215,7 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/color-icon.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/_\/css\/img\/drawn-arrow.png": {
 		"ft": 32768,
@@ -287,7 +287,7 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/northern-Law-Awards-logo.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/_\/css\/img\/snowflake-1.png": {
 		"ft": 32768,
