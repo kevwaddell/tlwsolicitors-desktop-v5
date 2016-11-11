@@ -20,6 +20,7 @@ $wp_query = new WP_Query( $args );
 
 $section_title = "Positions available";	
 $post_count = $wp_query->post_count;
+$found_posts = $wp_query->found_posts;
 
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'positions-available'];	
 ?>
@@ -51,7 +52,7 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'positions-av
 			</div>
 		<?php endwhile; ?>
 			</div>
-			<?php if ($post_count > $posts_per_page) { ?>
+			<?php if ($found_posts > $posts_per_page) { ?>
 			<div class="vacs-page-links">	
 				<?php wp_pagenavi(); ?>
 			</div>	
