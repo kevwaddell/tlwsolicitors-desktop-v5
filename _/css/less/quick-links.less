@@ -47,8 +47,18 @@
 		}
 	}
 	
+	&.open {
+	.left(2);
+		&.nav-open {
+		.left(-8);	
+		}	
+	}
+	
 	&.closed {
 	.left(-8);	
+		&.nav-open {
+		.left(-14);	
+		}	
 		button#quick-links-btn-show {
 		bottom: 50%;
 		.mag-bot(-2.5);
