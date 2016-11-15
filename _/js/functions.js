@@ -22,9 +22,7 @@
 	        hash = hashes[i].split('=');
 	        
 	        if ($('input#field_23_12').length === 1) {
-		      console.log($('input#field_23_12').val(hash[1]));
 		      $('input#field_23_12').val(hash[1]);  
-		      console.log($('input#field_23_12').val());
 	        }	        
 	        
 	        if (hash[0] === "gclid" ) { 
