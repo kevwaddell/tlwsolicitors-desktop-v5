@@ -98,10 +98,8 @@
 	<?php include (STYLESHEETPATH . '/_/inc/global/site-loader.inc'); ?>
 	<?php endif; ?>
 	
-<!--
 	<script type="text/javascript" src="https://api.feefo.com/api/javascript/tlw-solicitors" async></script>
 	<div id="feefo-service-review-floating-widgetId"></div>
--->
 	
 	<?php wp_footer(); ?>
 
