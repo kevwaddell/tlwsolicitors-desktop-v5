@@ -19,7 +19,13 @@
 	    
 	    for(var i = 0; i < hashes.length; i++)
 	    {
-	        hash = hashes[i].split('=');	        
+	        hash = hashes[i].split('=');
+	        
+	        if ($('input#field_23_12').length === 1) {
+		      console.log($('input#field_23_12').val(hash[1]));
+		      $('input#field_23_12').val(hash[1]);  
+		      console.log($('input#field_23_12').val());
+	        }	        
 	        
 	        if (hash[0] === "gclid" ) { 
 		    $.cookie(hash[0], hash[1], {expires: 1, path: '/'});  
