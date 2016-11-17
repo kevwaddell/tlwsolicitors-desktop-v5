@@ -42,6 +42,7 @@ function my_acf_save_post( $post_id )
 
 	}
 	
+/*
 	if ($current_screen->id == 'tlw_vacancies_cpt') {
 		//echo '<pre>';print_r($_POST);echo '</pre>';
 		$job_title = $_POST['acf']['field_5819c30322de9'];
@@ -53,6 +54,7 @@ function my_acf_save_post( $post_id )
 		wp_update_post( array( 'ID' => $post_id, 'post_title' => $title, 'post_name' => $slug) );
 
 	}
+*/
 	
 }
  
