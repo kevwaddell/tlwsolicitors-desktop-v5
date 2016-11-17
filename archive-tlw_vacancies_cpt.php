@@ -20,8 +20,7 @@ $quick_links = array();
 	<?php } ?>	
 		
 	<article <?php post_class("content-section"); ?>>
-	<a name="vacancy-txt" id="vacancy-txt" class="section-target"></a>
-	<?php include (STYLESHEETPATH . '/_/inc/sections/global-telephone-number.inc'); ?>		
+	<a name="vacancy-txt" id="vacancy-txt" class="section-target"></a>	
 	
 	<?php include (STYLESHEETPATH . '/_/inc/global/col-strip.inc'); ?>
 		

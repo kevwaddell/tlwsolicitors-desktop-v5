@@ -20,9 +20,7 @@ $today = date('Ymd');
 $job_display_to_date = get_field( 'job_display_to_date');
 ?>
 <article <?php post_class("content-section"); ?>>
-	<a name="vacancy-txt" id="vacancy-txt" class="section-target"></a>
-	
-	<?php include (STYLESHEETPATH . '/_/inc/sections/global-telephone-number.inc'); ?>		
+	<a name="vacancy-txt" id="vacancy-txt" class="section-target"></a>	
 	
 	<?php include (STYLESHEETPATH . '/_/inc/global/col-strip.inc'); ?>	
 	
