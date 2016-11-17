@@ -23,6 +23,10 @@
 	        
 	        if (hash[0] === "gclid" && $('input#field_23_12').length === 1) {
 		      $('input#field_23_12').val(hash[1]);  
+	        }
+	        
+	         if (hash[0] === "gclid" && $('input#field_22_27').length === 1) {
+		      $('input#field_22_27').val(hash[1]);  
 	        }	        
 	        
 	        if (hash[0] === "gclid" ) { 
