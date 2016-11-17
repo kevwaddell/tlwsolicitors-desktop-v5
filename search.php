@@ -35,6 +35,12 @@
 							<?php if ($post->post_type == 'post') { ?>
 							<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><i class="fa fa-calendar"></i> <?php echo $date; ?></time>
 							<?php } ?>
+							
+							<?php if ($post->post_type == 'tlw_vacancies_cpt') { 
+							$job_closing_date = get_field( 'job_closing_date', $post->ID);	
+							?>
+							<time><i class="fa fa-calendar"></i> Closing date: <?php echo (empty($job_closing_date)) ? "TBA": date('l - jS F - Y', strtotime($job_closing_date) ); ?></time>
+							<?php } ?>
 									
 							<?php the_excerpt(); ?>	
 								

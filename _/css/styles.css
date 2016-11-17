@@ -7583,45 +7583,52 @@ OLD TEAM PROFILE STYLES
   margin-bottom: 0px;
 }
 .post-list article.post,
-.post-list article.page {
+.post-list article.page,
+.post-list article.tlw_vacancies_cpt {
   border-bottom: 1px solid #918F8F;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 .post-list article.post:last-child,
-.post-list article.page:last-child {
+.post-list article.page:last-child,
+.post-list article.tlw_vacancies_cpt:last-child {
   margin-bottom: 0px;
   border: none;
 }
 .post-list article.post h4,
-.post-list article.page h4 {
+.post-list article.page h4,
+.post-list article.tlw_vacancies_cpt h4 {
   color: #4b4b4b;
   font-weight: normal;
   font-size: 40px;
   line-height: 45px;
 }
 .post-list article.post p,
-.post-list article.page p {
+.post-list article.page p,
+.post-list article.tlw_vacancies_cpt p {
   font-size: 20px;
   line-height: 30px;
   color: #4b4b4b;
   margin-bottom: 0px;
 }
 .post-list article.post time,
-.post-list article.page time {
+.post-list article.page time,
+.post-list article.tlw_vacancies_cpt time {
   color: #C60751;
   display: block;
   margin-bottom: 10px;
-  text-align: center;
 }
 .post-list article.post time span,
-.post-list article.page time span {
+.post-list article.page time span,
+.post-list article.tlw_vacancies_cpt time span {
   display: block;
 }
 .post-list article.post time span.month,
 .post-list article.page time span.month,
+.post-list article.tlw_vacancies_cpt time span.month,
 .post-list article.post time span.year,
-.post-list article.page time span.year {
+.post-list article.page time span.year,
+.post-list article.tlw_vacancies_cpt time span.year {
   background-color: #918F8F;
   color: white;
   text-transform: uppercase;
@@ -7629,7 +7636,8 @@ OLD TEAM PROFILE STYLES
   line-height: 20px;
 }
 .post-list article.post time span.day,
-.post-list article.page time span.day {
+.post-list article.page time span.day,
+.post-list article.tlw_vacancies_cpt time span.day {
   background-color: #c4c2c2;
   color: #7A1039;
   font-weight: bold;
@@ -7639,7 +7647,8 @@ OLD TEAM PROFILE STYLES
   border-bottom: 4px solid white;
 }
 .post-list article.post a,
-.post-list article.page a {
+.post-list article.page a,
+.post-list article.tlw_vacancies_cpt a {
   position: relative;
   text-decoration: none;
   margin-top: 15px;
@@ -7661,7 +7670,8 @@ OLD TEAM PROFILE STYLES
   font-size: 20px;
 }
 .post-list article.post a i,
-.post-list article.page a i {
+.post-list article.page a i,
+.post-list article.tlw_vacancies_cpt a i {
   float: right;
   line-height: 50px;
   padding-right: 15px;
@@ -7669,10 +7679,13 @@ OLD TEAM PROFILE STYLES
 }
 .post-list article.post a:hover,
 .post-list article.page a:hover,
+.post-list article.tlw_vacancies_cpt a:hover,
 .post-list article.post a:active,
 .post-list article.page a:active,
+.post-list article.tlw_vacancies_cpt a:active,
 .post-list article.post a:focus,
-.post-list article.page a:focus {
+.post-list article.page a:focus,
+.post-list article.tlw_vacancies_cpt a:focus {
   background-color: #7A1039;
 }
 .search-list article.post h4 span.search-everything-highlight-color,
