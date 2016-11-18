@@ -14,15 +14,19 @@ $section_title = "Article text";
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'];	
 ?>
 <article <?php post_class("content-section"); ?>>
+	<?php //echo '<pre class="debug">';print_r($post);echo '</pre>'; ?>
 	<script type="application/ld+json">
 	{ "@context": "http://schema.org", 
 	 "@type": "Article",
 	 "headline": "<?php echo the_title(); ?>",
-	 "image": "<?php add_full_page_banner_img($img_post);?>",
-	 "author": "<?php bloginfo('name'); ?>", 
-	 "url": "<?php the_permalink(); ?>",
+	 "image": {"url": "<?php add_full_page_banner_img($img_post);?>"},
+	 "author": "<?php bloginfo('name'); ?>",
+	 "publisher": "<?php bloginfo('name'); ?>", 
+	 "url": "<?php echo get_option('home'); ?>",
 	 "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
-	 "description": "<?php echo get_the_excerpt(); ?>"
+	 "dateModified": "<?php echo date('Y-m-d', strtotime($post->post_modified)); ?>",
+	 "description": "<?php echo get_the_excerpt(); ?>",
+	 "mainEntityOfPage": "<?php the_permalink(); ?>"
 	 }
 	</script>
 
