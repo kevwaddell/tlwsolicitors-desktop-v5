@@ -19,9 +19,16 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'
 	{ "@context": "http://schema.org", 
 	 "@type": "Article",
 	 "headline": "<?php echo the_title(); ?>",
-	 "image": {"url": "<?php add_full_page_banner_img($img_post);?>"},
+	 "image": {
+		"@type" : "ImageObject",
+	 	"url": "<?php add_full_page_banner_img($img_post);?>"
+	 	},
 	 "author": "<?php bloginfo('name'); ?>",
-	 "publisher": "<?php bloginfo('name'); ?>", 
+	 "publisher": {
+        "@type" : "Organization",
+        "name" : "<?php bloginfo('name'); ?>",
+        "logo": "https://www.tlwsolicitors.co.uk/wp-content/uploads/2014/02/TLW-Logo.gif"
+        },
 	 "url": "<?php echo get_option('home'); ?>",
 	 "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
 	 "dateModified": "<?php echo date('Y-m-d', strtotime($post->post_modified)); ?>",
