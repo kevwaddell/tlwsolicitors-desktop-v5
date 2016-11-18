@@ -13,7 +13,6 @@
 			<!-- MAIN CONTENT START -->
 			
 			<main class="page-col-red">
-				
 				<?php if (has_post_thumbnail()) { ?>
 				<?php include (STYLESHEETPATH . '/_/inc/banners/blog/img-banner-single-pg.inc'); ?>		
 				<?php } ?>

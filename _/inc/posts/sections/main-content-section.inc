@@ -14,6 +14,19 @@ $section_title = "Article text";
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'];	
 ?>
 <article <?php post_class("content-section"); ?>>
+	<script type="application/ld+json">
+	{ "@context": "http://schema.org", 
+	 "@type": "Article",
+	 "headline": "<?php echo the_title(); ?>",
+	 "image": "<?php add_full_page_banner_img($img_post);?>",
+	 "author": "<?php bloginfo('name'); ?>", 
+	 "url": "<?php the_permalink(); ?>",
+	 "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
+	 "description": "<?php the_excerpt(); ?>",
+	 "articleBody": "<?php the_content(); ?>"
+	 }
+	</script>
+
 	<a name="article-txt" id="article-txt" class="section-target"></a>
 	
 	<?php include (STYLESHEETPATH . '/_/inc/sections/global-telephone-number.inc'); ?>		
