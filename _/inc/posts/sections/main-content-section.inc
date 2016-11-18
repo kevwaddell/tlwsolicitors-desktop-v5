@@ -22,7 +22,7 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'
 	 "author": "<?php bloginfo('name'); ?>", 
 	 "url": "<?php the_permalink(); ?>",
 	 "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
-	 "description": "<?php the_excerpt(); ?>"
+	 "description": "<?php echo get_the_excerpt(); ?>"
 	 }
 	</script>
 
