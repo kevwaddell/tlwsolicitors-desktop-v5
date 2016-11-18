@@ -14,25 +14,27 @@ $section_title = "Article text";
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'];	
 ?>
 <article <?php post_class("content-section"); ?>>
-	<?php //echo '<pre class="debug">';print_r($post);echo '</pre>'; ?>
+	<?php echo '<pre class="debug">';print_r($post);echo '</pre>'; ?>
 	<script type="application/ld+json">
 	{ "@context": "http://schema.org", 
-	 "@type": "Article",
+	 "@type": "BlogPosting",
 	 "headline": "<?php echo the_title(); ?>",
+	 "description": "<?php echo get_the_excerpt(); ?>",
 	 "image": {
 		"@type" : "ImageObject",
 	 	"url": "<?php add_full_page_banner_img($img_post);?>"
 	 	},
-	 "author": "<?php bloginfo('name'); ?>",
+	 "author": {
+        "@type" : "Organization",
+        "name" : "<?php bloginfo('name'); ?>"
+        },
 	 "publisher": {
         "@type" : "Organization",
-        "name" : "<?php bloginfo('name'); ?>",
-        "logo": "https://www.tlwsolicitors.co.uk/wp-content/uploads/2014/02/TLW-Logo.gif"
+        "name" : "<?php bloginfo('name'); ?>"
         },
-	 "url": "<?php echo get_option('home'); ?>",
-	 "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
-	 "dateModified": "<?php echo date('Y-m-d', strtotime($post->post_modified)); ?>",
-	 "description": "<?php echo get_the_excerpt(); ?>",
+	 "url": "<?php the_permalink(); ?>",
+	 "datePublished": "<?php echo $post->post_date; ?>",
+	 "dateModified": "<?php echo $post->post_modified; ?>",
 	 "mainEntityOfPage": "<?php the_permalink(); ?>"
 	 }
 	</script>
