@@ -12,9 +12,12 @@ $more_btn_text = "Continue Reading";
 }
 $section_title = "Article text";
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'];	
+$post_thumbnail_id = get_post_thumbnail_id( $post );
+$banner_feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' );
+//echo '<pre class="debug">';print_r($banner_feat_img);echo '</pre>';
 ?>
 <article <?php post_class("content-section"); ?>>
-	<?php echo '<pre class="debug">';print_r($post);echo '</pre>'; ?>
+	<?php //echo '<pre class="debug">';print_r($post);echo '</pre>'; ?>
 	<script type="application/ld+json">
 	{ "@context": "http://schema.org", 
 	 "@type": "BlogPosting",
@@ -22,7 +25,9 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'article-txt'
 	 "description": "<?php echo get_the_excerpt(); ?>",
 	 "image": {
 		"@type" : "ImageObject",
-	 	"url": "<?php add_full_page_banner_img($img_post);?>"
+	 	"url": "<?php echo $banner_feat_img[0];?>",
+	 	"width": "<?php echo $banner_feat_img[1];?>",
+	 	"height": "<?php echo $banner_feat_img[2];?>"
 	 	},
 	 "author": {
         "@type" : "Organization",
