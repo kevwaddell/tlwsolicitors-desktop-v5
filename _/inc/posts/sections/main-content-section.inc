@@ -36,6 +36,10 @@ $banner_feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' )
 	 "publisher": {
         "@type" : "Organization",
         "name" : "<?php bloginfo('name'); ?>"
+        "logo": {
+			"@type" : "ImageObject",
+	 		"url": "https://www.tlwsolicitors.co.uk/wp-content/uploads/2014/02/TLW-Logo.gif",
+	 		}
         },
 	 "url": "<?php the_permalink(); ?>",
 	 "datePublished": "<?php echo $post->post_date; ?>",
