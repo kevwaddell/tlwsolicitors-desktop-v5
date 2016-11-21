@@ -5558,13 +5558,7 @@ body.loading #quick-links-sml {
   left: -70px;
 }
 body.loaded {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-@media screen and (max-width: 1200px) {
-  body.loaded {
-    overflow-x: auto;
-  }
+  overflow: auto;
 }
 body.modal-open {
   overflow: hidden;
