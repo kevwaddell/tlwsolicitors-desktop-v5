@@ -50,7 +50,11 @@ min-height: 100%;
 	}
 	
 	&.loaded {
-	overflow: auto;	
+	overflow-y: auto;
+	overflow-x: hidden;	
+		@media screen and (max-width: 1200px){
+		overflow-x: auto;	
+		}
 	}
 	
 	&.modal-open {
