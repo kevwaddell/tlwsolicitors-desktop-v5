@@ -40,6 +40,16 @@
 	
 	<?php wp_head(); ?>
 	
+	<!-- Adwords Call tracking -->
+	<script type="text/javascript">
+	(function(a,e,c,f,g,h,b,d){var
+	k={ak:"966769174",cl:"lASLCOjY32sQlvT-zAM",autoreplace:"08001695925"};a[c]=a[c]|
+	|function(){(a[c].q=a[c].q||[]).push(arguments)};a[g]||
+	(a[g]=k.ak);b=e.createElement(h);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(h)[0];d.parentNode.insertBefore(b,d);a[f]=function(b,d,e){a[c](2,b,k,d,null,new
+	Date,e)};a[f]()})(window,document,"_googWcmImpl","_googWcmGet","_googWcmAk","script");
+	</script>
+	<!-- Adwords Call tracking -->
+	
 	<?php 
 	if ( isset($_GET['src']) && $_GET['src'] == "mis-sold-solar-co-uk" ) {
 	setcookie("src",$_GET['src'] , strtotime( '+6 months' ), "/financial-mis-selling/solar-panel-mis-selling" );
