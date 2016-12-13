@@ -17,9 +17,10 @@
 	    var hash;
 	    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
 	    
-	    for(var i = 0; i < hashes.length; i++)
-	    {
+	    for(var i = 0; i < hashes.length; i++) {
 	        hash = hashes[i].split('=');
+	        
+	        console.log(hash);
 	        
 	        if (hash[0] === "gclid" && $('input#field_23_12').length === 1) {
 		      $('input#field_23_12').val(hash[1]);  
