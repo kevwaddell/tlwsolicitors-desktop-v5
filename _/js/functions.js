@@ -20,11 +20,11 @@
 	    for(var i = 0; i < hashes.length; i++) {
 	        hash = hashes[i].split('=');
 	        
-	        if (hash[0] === "gclid" && $('input#field_23_12').length === 1) {
+	        if (hash[0] === "gclid" && $('input#input_23_12').length === 1) {
 		      $('input#field_23_12').val(hash[1]);  
 	        }
 	        
-	         if (hash[0] === "gclid" && $('input#field_22_27').length === 1) {
+	         if (hash[0] === "gclid" && $('input#input_22_27').length === 1) {
 		       console.log(hash);
 		      $('input#field_22_27').val(hash[1]);  
 	        }	        
