@@ -1,6 +1,4 @@
-window.onload = function () {
-
-	(function($){
+(function($){
 		//var previousScroll = 0;
 		//var console;
 		//var alert;
@@ -854,6 +852,4 @@ window.onload = function () {
 		});
 		
 		
-	})(window.jQuery);
-
-};
+})(window.jQuery);
