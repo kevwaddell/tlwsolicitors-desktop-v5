@@ -8,6 +8,7 @@
  * Copyright 2013-2016 bootstrap-select
  * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 select.bs-select-hidden,
 select.selectpicker {
