@@ -21,7 +21,14 @@
 	<!-- End Google Tag Manager -->
 	<?php } ?>
 
-	<script async="async" src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>	
+	WebFont.load({
+   	  google: {
+      families: ['Open Sans Condensed:700', 'Lobster']
+	  }
+	});
+	</script>
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
