@@ -11,9 +11,10 @@ $main_email = get_field('main_email', 'option');
 ?>		
 
 <?php if ($today < $turn_off_date) { ?>
-<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 			
 <style>
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
 button#back-2-top {
 bottom: 110px;
 }	
