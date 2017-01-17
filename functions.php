@@ -122,6 +122,7 @@ add_filter( 'image_downsize', 'change_featured_image_size_in_admin_28512', 10, 3
 
 /* POST THUMBNAIL FUNCTIONS */
 
+/*
 function add_toolkit_banner_img( $post ) {	
 		
 	$post_thumbnail_id = get_post_thumbnail_id( $post );
@@ -132,6 +133,7 @@ function add_toolkit_banner_img( $post ) {
 	//echo '<pre>';print_r( $wide_banner_img[0] );echo '</pre>';
 	
 }
+*/
 
 /*
 function add_full_page_banner_img( $post ) {	

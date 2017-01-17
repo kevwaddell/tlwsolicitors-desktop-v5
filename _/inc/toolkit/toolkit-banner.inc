@@ -1,4 +1,11 @@
-<section class="toolkit-banner fixed-bg" style="background-image: url(<?php add_toolkit_banner_img($img_post);?>)">
+<?php  
+$post_thumbnail_id = get_post_thumbnail_id($img_post);
+$banner_feat_full_src = wp_get_attachment_image_src($post_thumbnail_id, 'full' );
+$banner_feat_thumb_src = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' );
+//echo '<pre class="debug">';print_r($banner_feat_thumb_src);echo '</pre>';
+?>
+
+<section class="toolkit-banner full-bg-img fixed-bg" data-src="<?php echo $banner_feat_full_src[0]; ?>" data-src="<?php echo $banner_feat_full_src[0]; ?>"style="background-image: url(<?php echo $banner_feat_thumb_src[0]; ?>)">
 				
 	<div class="tk-title-strip col-<?php echo (!empty($color)) ? $color : 'red'; ?>">
 		<div class="container text-center">

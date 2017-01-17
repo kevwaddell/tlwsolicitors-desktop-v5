@@ -76,6 +76,12 @@
 			
 	//console.log( $('.top-banner-img') );
 	
+	WebFont.load({
+   	  google: {
+      families: ['Open Sans Condensed:700', 'Lobster']
+	  }
+	});
+	
 	$('.full-bg-img').each(function(index, Element) {
 		var src = $(Element).data('src');
 		//console.log(src);
