@@ -16,7 +16,7 @@ function tlw_scripts() {
 	//wp_enqueue_script( 'jquery' );
 	//wp_deregister_script('jquery');
 	//wp_enqueue_script( 'jquery-ui-core' );
-    //wp_enqueue_script('jquery-min', "//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js", null, '1.11.3');
+    //wp_enqueue_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js', null, '1.10.2', true);
     wp_enqueue_script( 'modernizr-min', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array('jquery'), '2.8.3', false );
 	wp_enqueue_script( 'jquery-cookie', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', array(), '1.4.1', true );
 	wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array(), '1.3.6', true );
@@ -31,7 +31,10 @@ function add_async_attribute($tag, $handle) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
    
    // add script handles to the array below
-   $scripts_to_defer = array('modernizr-min', 'jquery', 'plupload', 'jquery-cookie', 'slim-scroll', 'bootstrap-select', 'functions');
+   $scripts_to_defer = array(
+   'modernizr-min', 
+   'plupload'
+   );
    
    foreach($scripts_to_defer as $defer_script) {
       if ($defer_script === $handle) {
