@@ -31,7 +31,7 @@ function add_async_attribute($tag, $handle) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
    
    // add script handles to the array below
-   $scripts_to_defer = array('modernizr-min', 'jquery', 'plupload');
+   $scripts_to_defer = array('modernizr-min', 'jquery', 'plupload', 'jquery-cookie', 'slim-scroll', 'bootstrap-select', 'functions');
    
    foreach($scripts_to_defer as $defer_script) {
       if ($defer_script === $handle) {
