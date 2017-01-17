@@ -39,6 +39,7 @@
 	
 	<?php wp_head(); ?>
 	
+	<?php if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') { ?>
 	<!-- Adwords Call tracking -->
 	<script type="text/javascript">
 	(function(a,e,c,f,g,h,b,d){var
@@ -48,6 +49,7 @@
 	Date,e)};a[f]()})(window,document,"_googWcmImpl","_googWcmGet","_googWcmAk","script");
 	</script>
 	<!-- Adwords Call tracking -->
+	<?php } ?>
 	
 	<?php 
 	if ( isset($_GET['src']) && $_GET['src'] == "mis-sold-solar-co-uk" ) {

@@ -12,8 +12,13 @@
 		</div>	
 		<?php while ( have_posts() ) : the_post();
 		$date = get_the_date('l - jS F - Y');
+		$img_post = get_the_ID();
+		$post_thumbnail_id = get_post_thumbnail_id($img_post);
+		$banner_feat_full_src = wp_get_attachment_image_src($post_thumbnail_id, 'full' );
+		$banner_feat_thumb_src = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' );
+		//echo '<pre>';print_r($banner_feat_thumb_src);echo '</pre>';
 		?>	
-			<article <?php post_class("col-".$cols[$post_counter]); ?> style="background-image: url(<?php add_full_page_banner_img(get_the_id());?>)">
+			<article <?php post_class("full-bg-img col-".$cols[$post_counter]); ?> data-src="<?php echo $banner_feat_full_src[0]; ?>" style="background-image: url(<?php echo $banner_feat_thumb_src[0] ;?>)">
 			<div class="overlay"></div>
 			<div class="stripes-overlay"></div>
 				<div class="container">

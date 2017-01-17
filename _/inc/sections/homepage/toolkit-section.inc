@@ -33,10 +33,11 @@ $quick_links[] = ['link_title' => "TLW ".$section_title, 'link_anchor' => 'toolk
 		$pg_icon = get_field('page_icon', $tk_page->ID);
 		$post_thumbnail_id = get_post_thumbnail_id( $tk_page );
 		$feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'full' );
+		$feat_img_thumb = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' );
 		?>
 		<a href="<?php echo get_permalink($tk_page->ID); ?>" class="toolkit-link link-col-<?php echo $pg_col; ?>">
 				
-				<div class="bg-img" style="background-image: url(<?php echo $feat_img[0] ; ?>)">
+				<div class="bg-img full-bg-img" data-src="<?php echo $feat_img[0];?>" style="background-image: url(<?php echo $feat_img_thumb[0] ; ?>)">
 					<div class="img-overlay"></div>
 				</div>
 				

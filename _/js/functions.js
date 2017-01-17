@@ -73,6 +73,16 @@
 	});
 		
 	$(document).ready(function(){
+			
+	//console.log( $('.top-banner-img') );
+	
+	$('.full-bg-img').each(function(index, Element) {
+		var src = $(Element).data('src');
+		//console.log(src);
+		if (src !== undefined) {
+			$(Element).css('background-image', 'url(' +src+ ')');
+  		}
+	});
 	
 	section_targets = $('a.section-target');
 	

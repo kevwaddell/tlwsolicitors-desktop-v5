@@ -1,8 +1,12 @@
 <?php  
 $banner_parts = get_field('banner_parts');
 $banner_title_active = get_field('banner_title_active');
+$post_thumbnail_id = get_post_thumbnail_id($img_post);
+$banner_feat_full_src = wp_get_attachment_image_src($post_thumbnail_id, 'full' );
+$banner_feat_thumb_src = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' );
+//echo '<pre class="debug">';print_r($banner_feat_thumb_src);echo '</pre>';
 ?>
-<section id="top-banner" class="top-banner-img fixed-bg<?php echo ($banner_title_active) ? '' : ' no-title'; ?>" style="background-image: url(<?php add_full_page_banner_img($img_post);?>)">
+<section id="top-banner" class="top-banner-img full-bg-img fixed-bg<?php echo ($banner_title_active) ? '' : ' no-title'; ?>" data-src="<?php echo $banner_feat_full_src[0]; ?>" style="background-image: url(<?php echo $banner_feat_thumb_src[0]; ?>)">
 	<?php if ($banner_title_active) { ?>
 	<header class="banner-title text-center bold mid-gradient-<?php echo (!empty($color)) ? $color : 'red'; ?>">
 		<div class="container">
