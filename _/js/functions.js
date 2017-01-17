@@ -98,6 +98,7 @@
 		});
 	}
 
+/*
 	 $(".selectpicker").selectpicker({
       style: 'btn-lg hp-select',
       size: 5
@@ -107,6 +108,7 @@
 		style: 'btn btn-group btn-default', 
 		width: '100%'
 	});
+*/
 	
 	//Scroll to button
 	
@@ -791,15 +793,24 @@
 
 	/* END DOC READY FUNCTION */
 	
-	$(window).load(function(){
+	$(window).bind("load", function(){
+		
+		//console.log("Loading");
+		
+		 $(".selectpicker").selectpicker({
+	      style: 'btn-lg hp-select',
+	      size: 5
+		  });
+		  
+		 $('.selectpicker').find('select').selectpicker({
+			style: 'btn btn-group btn-default', 
+			width: '100%'
+		});
 
 		
-		if ($('a#call-2-action-radio').length === 1) {
-			$('#call-2-action-radio').removeAttr('disabled');
-			$('i.fa-spinner').hide();
-		}
-		
+/*
 		if ($('body').hasClass('loading') && $('#site-loader').length === 1) {
+			
 			$('body').removeClass('loading').addClass('loaded');	
 		
 			$('#site-loader').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -807,6 +818,7 @@
 			});
 
 		}
+*/
 
 	});
 	
