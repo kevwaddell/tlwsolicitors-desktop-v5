@@ -32,7 +32,7 @@ function add_async_attribute($tag, $handle) {
    
    // add script handles to the array below
    $scripts_to_defer = array(
-   'jquery',
+   //'jquery',
    'modernizr-min', 
    'plupload'
    );
