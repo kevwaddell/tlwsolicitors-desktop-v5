@@ -4,7 +4,7 @@ $banner_feat_full_src = wp_get_attachment_image_src($post_thumbnail_id, 'full' )
 $banner_feat_thumb_src = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' );
 //echo '<pre class="debug">';print_r($banner_feat_thumb_src);echo '</pre>';
 ?>
-
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 <section class="toolkit-banner full-bg-img fixed-bg" data-src="<?php echo $banner_feat_full_src[0]; ?>" data-src="<?php echo $banner_feat_full_src[0]; ?>"style="background-image: url(<?php echo $banner_feat_thumb_src[0]; ?>)">
 				
 	<div class="tk-title-strip col-<?php echo (!empty($color)) ? $color : 'red'; ?>">
