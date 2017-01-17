@@ -21,6 +21,8 @@
 	<!-- End Google Tag Manager -->
 	<?php } ?>
 	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Lobster' rel='stylesheet' type='text/css'>
+	
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	

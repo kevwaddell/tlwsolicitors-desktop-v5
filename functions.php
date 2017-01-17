@@ -26,12 +26,12 @@ function tlw_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
 
-if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
+//if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 function add_async_attribute($tag, $handle) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
    
    // add script handles to the array below
-   $scripts_to_defer = array('modernizr-min', 'jquery');
+   $scripts_to_defer = array('modernizr-min', 'jquery', 'plupload');
    
    foreach($scripts_to_defer as $defer_script) {
       if ($defer_script === $handle) {
@@ -42,7 +42,7 @@ function add_async_attribute($tag, $handle) {
 }
 
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
-}
+//}
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
