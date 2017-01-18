@@ -54,7 +54,7 @@ min-height: 100%;
 	overflow: auto;
 	}
 */
-	
+		
 	&.modal-open {
 	overflow: hidden;	
 	}
@@ -77,6 +77,12 @@ a {
 
 h2,h3,h4,h5 {
 font-weight: normal;	
+}
+
+#site-loader {
+	.loaded {
+	display: none;	
+	}
 }
 
 /*
@@ -109,14 +115,17 @@ z-index: 1004002;
 */
 
 html.no-svg {
+/*
 	#site-loader .loader {
 	.animated;
 	.animated.infinite;
 	.animated.flip;
 	}
+*/
 }
 
 html.svg {
+/*
 	#site-loader {
 		.loader {
 		.mag-top(-25);
@@ -126,6 +135,7 @@ html.svg {
 		.bg-img("tlw-animated-icon.svg");
 		}
 	}
+*/
 }
 
 .tlw-wrapper {
@@ -346,6 +356,7 @@ z-index: 99999;
 	}
 }
 
+/*
 body.loading {	
 	#site-loader {
 	.block;
@@ -358,6 +369,7 @@ body.loaded {
 	.fadeOut;	
 	}
 }
+*/
 
 #wpadminbar {
 .min-w(117)!important;

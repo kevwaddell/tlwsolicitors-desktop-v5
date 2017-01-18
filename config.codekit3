@@ -21,6 +21,16 @@
 		"oAP": "\/503.php",
 		"oF": 0
 		},
+	"\/_\/css\/criticalCSS.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/_\/css\/criticalCSS-ck.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/_\/css\/custom-editor-style.css": {
 		"aP": 0,
 		"bl": 0,
@@ -537,6 +547,23 @@
 		"oAP": "\/_\/css\/css\/content.css",
 		"oF": 0,
 		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/_\/css\/less\/criticalCSS.less": {
+		"aP": 1,
+		"bl": 1,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_\/css\/criticalCSS.css",
+		"oF": 2,
+		"oS": 1,
 		"rU": 0,
 		"sI": 0,
 		"sM": 0,

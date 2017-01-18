@@ -98,6 +98,8 @@
 	<script type="text/javascript" src="https://api.feefo.com/api/javascript/tlw-solicitors" async></script>
 	<div id="feefo-service-review-floating-widgetId"></div>
 	
+	<?php include (STYLESHEETPATH . '/_/inc/global/site-loader.inc'); ?>
+	
 	<?php wp_footer(); ?>
 
 	</body>
