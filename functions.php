@@ -28,7 +28,7 @@ add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 function add_async_attribute($tag, $handle) {
-	echo '<pre>';print_r($handle);echo '</pre>';
+	//echo '<pre>';print_r($handle);echo '</pre>';
    
    // add script handles to the array below
    $scripts_to_defer = array(
