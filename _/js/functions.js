@@ -838,8 +838,8 @@
 					if ( isScrolledIntoView($(elem)) ) {
 					current_section_id = $(elem).attr('id');
 					current_section = "#"+current_section_id;
-					$('a[href='+current_section+']').siblings().removeClass('active');
-					$('a[href='+current_section+']').addClass('active');
+					$('a#ql-'+current_section_id).siblings().removeClass('active');
+					$('a#ql-'+current_section_id).addClass('active');
 					return false;
 					} else {
 					current_section = "#top";	
