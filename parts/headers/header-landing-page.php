@@ -29,7 +29,7 @@ $bg_img_url = $bg_img[0];
 $tag_line = get_field('tag_line', 'options');
 ?>
 
-<?php include (STYLESHEETPATH . '/_/inc/global/site-loader.inc'); ?>
+<?php //include (STYLESHEETPATH . '/_/inc/global/site-loader.inc'); ?>
 	
 <div class="tlw-wrapper">
 	<div class="lp-bg-img" style="background-image: url(<?php echo $bg_img_url; ?>)"></div>
