@@ -10,6 +10,7 @@ add_action( 'after_setup_theme', 'editor_styles' );
 function tlw_scripts() {
 	// Load stylesheets.
 	wp_enqueue_style( 'print-styles', get_stylesheet_directory_uri().'/_/css/print-styles.css', null, filemtime( get_stylesheet_directory().'/_/css/print-styles.css' ), 'print' );
+	//wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', array('twitter-bootstrap'), filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
 	wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', array('twitter-bootstrap'), filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
 	
 	// Load JS
