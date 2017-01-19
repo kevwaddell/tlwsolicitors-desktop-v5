@@ -26,7 +26,7 @@ function tlw_scripts() {
 	wp_deregister_script('jquery');
 	//wp_enqueue_script( 'jquery-ui-core' );
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js', array(), '3.0.0', true);
-    wp_enqueue_script( 'modernizr-min', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3', true );
+	wp_enqueue_script( 'modernizr-min', get_stylesheet_directory_uri() . '/_/js/modernizr-min.js', array(), '2.8.3', true );
 	wp_enqueue_script( 'jquery-cookie', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', array('jquery'), '1.4.1', true );
 	wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array('jquery'), '1.3.6', true );
 	wp_enqueue_script( 'bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js', array('jquery'), '1.11.2', true );
@@ -43,17 +43,35 @@ function add_async_attribute($tag, $handle) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
    }
    // add script handles to the array below
-   $scripts_to_defer = array(
+   $scripts_to_asyc = array(
    'jquery',
-  // 'modernizr-min', 
-  // 'plupload'
+   'jquery-cookie',
+   'slim-scroll', 
+   'bootstrap-select',
+   'functions'
    );
    
-   foreach($scripts_to_defer as $defer_script) {
-      if ($defer_script === $handle) {
+/*
+    $scripts_to_defer = array(
+   'jquery-cookie',
+   'slim-scroll', 
+   'bootstrap-select'
+   );
+*/
+   
+   foreach($scripts_to_asyc as $asyn_script) {
+      if ($asyn_script === $handle) {
          return str_replace(' src', ' async defer src', $tag);
       }
    }
+   
+/*
+    foreach($scripts_to_defer as $defer_script) {
+      if ($defer_script === $handle) {
+         return str_replace(' src', ' defer src', $tag);
+      }
+   }
+*/
    return $tag;
 }
 
