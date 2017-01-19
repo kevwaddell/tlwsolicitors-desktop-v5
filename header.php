@@ -20,7 +20,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager -->
 <?php } ?>
-
+	
+<?php include (STYLESHEETPATH . '/_/inc/global/site-loader.inc'); ?>
+	
 <?php include (STYLESHEETPATH . '/_/inc/global/top-nav.inc'); ?>
 
 <?php include (STYLESHEETPATH . '/_/inc/global/awards-pop-up.inc'); ?>	
