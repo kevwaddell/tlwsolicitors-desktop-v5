@@ -14,7 +14,6 @@ function tlw_scripts() {
 	
 	// Load JS
 	$functions_dep = array(
-	'jquery-core',
 	'bootstrap-select', 
 	'jquery-cookie', 
 	'slim-scroll'
@@ -24,11 +23,11 @@ function tlw_scripts() {
 	//wp_deregister_script('gform_gravityforms');
 	wp_deregister_script('jquery-core');
 	//wp_enqueue_script( 'jquery-ui-core' );
-    wp_enqueue_script('jquery-core', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js', array(), '3.0.0', true);
-    wp_enqueue_script( 'modernizr-min', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array('jquery-core'), '2.8.3', false );
-	wp_enqueue_script( 'jquery-cookie', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', array('jquery-core'), '1.4.1', true );
-	wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array('jquery-core'), '1.3.6', true );
-	wp_enqueue_script( 'bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js', array('jquery-core'), '1.11.2', true );
+//     wp_enqueue_script('jquery-core', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js', array(), '3.0.0', true);
+    wp_enqueue_script( 'modernizr-min', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3', false );
+	wp_enqueue_script( 'jquery-cookie', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', array(), '1.4.1', true );
+	wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array(), '1.3.6', true );
+	wp_enqueue_script( 'bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js', array(), '1.11.2', true );
 	wp_enqueue_script( 'functions', get_stylesheet_directory_uri() . '/_/js/functions-min.js', $functions_dep, filemtime( get_stylesheet_directory().'/_/js/functions.js' ), true );
 	
 }
@@ -38,8 +37,10 @@ add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
 add_filter( 'gform_init_scripts_footer', '__return_true' );
 
 function add_async_attribute($tag, $handle) {
-	//echo '<pre>';print_r($handle);echo '</pre>';
-   
+	if (!is_admin()) {
+	//echo '<pre>';print_r($handle);echo '</pre>';	
+	}
+	
    // add script handles to the array below
    $scripts_to_defer = array(
    //'jquery-core',
