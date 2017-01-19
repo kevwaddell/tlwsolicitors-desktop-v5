@@ -40,7 +40,7 @@ add_filter( 'gform_init_scripts_footer', '__return_true' );
 
 function add_async_attribute($tag, $handle) {
 	if (!is_admin()) {
-	echo '<pre>';print_r($handle);echo '</pre>';
+	//echo '<pre>';print_r($handle);echo '</pre>';
    }
    // add script handles to the array below
    $scripts_to_defer = array(
