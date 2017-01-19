@@ -35,7 +35,7 @@
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/_/img/favicon.ico">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
-	<?php gravity_form_enqueue_scripts( 24, true ); ?>
+	<?php //gravity_form_enqueue_scripts( 24, true ); ?>
 	
 	<?php wp_head(); ?>
 	

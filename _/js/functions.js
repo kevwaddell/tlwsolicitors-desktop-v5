@@ -81,8 +81,19 @@
 			$(this).removeClass('loading').addClass('loaded');
 			$('body').removeClass('loading');
 		});
-*/
 		
+*/
+
+		$(".selectpicker").selectpicker({
+	      style: 'btn-lg hp-select',
+	      size: 5
+		  });
+		  
+		 $('.selectpicker').find('select').selectpicker({
+			style: 'btn btn-group btn-default', 
+			width: '100%'
+		});
+					
 		section_targets = $('a.section-target');
 		
 		if (section_targets.length > 0) {
@@ -783,16 +794,6 @@
 		$(window).bind("load", function(){
 			
 			//console.log("Loading");
-			
-			 $(".selectpicker").selectpicker({
-		      style: 'btn-lg hp-select',
-		      size: 5
-			  });
-			  
-			 $('.selectpicker').find('select').selectpicker({
-				style: 'btn btn-group btn-default', 
-				width: '100%'
-			});
 			
 			$('.full-bg-img').each(function(index, Element) {
 			var src = $(Element).data('src');

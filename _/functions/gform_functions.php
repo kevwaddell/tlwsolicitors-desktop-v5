@@ -72,7 +72,7 @@ function custom_gf_class($classes, $field, $form) {
 
 	 if($field["type"] == "select"){
         $classes .= " selectpicker";
-       // echo '<pre>';print_r($classes);echo '</pre>';
+        //echo '<pre>';print_r($classes);echo '</pre>';
     }
     return $classes;
 }	
