@@ -24,7 +24,7 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'request-a-ca
 	</div>
 	
 	<div class="form-container container">
-		<?php gravity_form($form->id, false, true, false, null, true); ?>
+		<?php gravity_form($form->id, false, true, false, '', false); ?>
 	</div>
 
 </section>

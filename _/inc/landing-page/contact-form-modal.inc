@@ -15,7 +15,7 @@
 	 	
 	 	<div class="lp-form lp-form-<?php echo (!empty($color)) ? $color : 'red'; ?>">
 	
-		 	<?php gravity_form($form->id, false, true, false, array(), true); ?>
+		 	<?php gravity_form($form->id, false, true, false, '', false); ?>
 			
 	 	</div>	
 	 	
