@@ -501,6 +501,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/_\/css\/less\/bootstrap.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_\/css\/css\/bootstrap.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/_\/css\/less\/breadcrumbs.less": {
 		"aP": 0,
 		"bl": 0,
@@ -1578,6 +1595,15 @@
 		"oA": 2,
 		"oAP": "\/_\/inc\/xmas\/pop-up.inc",
 		"oF": 0
+		},
+	"\/_\/js\/bootstrap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_\/js\/bootstrap-min.js",
+		"oF": 2,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/_\/js\/functions-min.js": {
 		"ft": 64,
