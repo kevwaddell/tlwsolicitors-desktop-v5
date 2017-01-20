@@ -8,10 +8,23 @@ update_option('home','http://tlwsolicitors.dev');
 add_action( 'after_setup_theme', 'editor_styles' );
 
 function tlw_scripts() {
+	global $post;
 	// Load stylesheets.
 	wp_enqueue_style( 'print-styles', get_stylesheet_directory_uri().'/_/css/print-styles.css', null, filemtime( get_stylesheet_directory().'/_/css/print-styles.css' ), 'print' );
 	//wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', array('twitter-bootstrap'), filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
 	wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', null, filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
+	
+	if (is_page() || is_single()) {
+	wp_dequeue_style('wprssmi_template_styles');	
+	}
+	
+	if( !has_shortcode( $post->post_content, 'theme-my-login') ) {
+	wp_dequeue_style('theme-my-login');
+	}
+	
+	if ( isset($_COOKIE['catAccCookies']) ) {
+	wp_dequeue_style('cookie-consent-style');
+	}
 	
 	// Load JS
 	$functions_dep = array(
@@ -37,6 +50,14 @@ function tlw_scripts() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
+// Custom deque to force remove unwanted css
+function custom_dequeue() {
+    wp_dequeue_style('autoptimize-toolbar');
+    wp_deregister_style('autoptimize-toolbar');
+}
+
+add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
+add_action( 'wp_head', 'custom_dequeue', 9999 );
 
 //if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 add_filter( 'gform_init_scripts_footer', '__return_true' );
