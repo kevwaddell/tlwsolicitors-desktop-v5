@@ -95,7 +95,7 @@
 	<?php include (STYLESHEETPATH . '/_/inc/xmas/pop-up.inc'); ?>
 	
 	
-	<script type="text/javascript" src="https://api.feefo.com/api/javascript/tlw-solicitors" async defer></script>
+	<script type="text/javascript" src="https://api.feefo.com/api/javascript/tlw-solicitors" defer></script>
 	<div id="feefo-service-review-floating-widgetId"></div>
 	
 	<?php wp_footer(); ?>

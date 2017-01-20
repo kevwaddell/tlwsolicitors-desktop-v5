@@ -70,7 +70,7 @@ function add_async_attribute($tag, $handle) {
    
    foreach($scripts_to_asyc as $asyn_script) {
       if ($asyn_script === $handle) {
-         return str_replace(' src', ' async defer src', $tag);
+         return str_replace(' src', ' defer src', $tag);
       }
    }
    
