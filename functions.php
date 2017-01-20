@@ -52,6 +52,14 @@ function add_async_attribute($tag, $handle) {
    'functions'
    );
    
+   if ($handle == 'gform_json' || $handle == 'gform_gravityforms' || $handle == 'gform_conditional_logic' || $handle == 'gform_placeholder') {
+	$scripts_to_asyc[] = 'gform_json';   
+	$scripts_to_asyc[] = 'gform_gravityforms';
+	$scripts_to_asyc[] = 'gform_conditional_logic';
+	$scripts_to_asyc[] = 'gform_placeholder';
+   }
+   
+   
 /*
     $scripts_to_defer = array(
    'jquery-cookie',
