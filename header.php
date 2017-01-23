@@ -1,10 +1,8 @@
 <?php include (STYLESHEETPATH . '/_/inc/global/head-html.inc'); 
 
-$body_classes = array();	
+$body_classes = array('desktop-css');	
 
-if ( !isset($_GET['gsdm']) ) {
 array_push($body_classes, 'loading');
-}
 ?>	
 
 <body <?php body_class($body_classes); ?>>

@@ -1596,6 +1596,15 @@
 		"oAP": "\/_\/inc\/xmas\/pop-up.inc",
 		"oF": 0
 		},
+	"\/_\/js\/bootstrap-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_\/js\/min\/bootstrap-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/_\/js\/bootstrap.js": {
 		"ft": 64,
 		"mi": 1,

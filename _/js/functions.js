@@ -73,6 +73,7 @@
 		});
 			
 		$(document).ready(function(){
+		
 		//console.log("Ready");		
 		//console.log( $('.top-banner-img') );
 		
@@ -791,6 +792,7 @@
 		$(window).bind('load',function(){
 			
 			//console.log("Loaded");
+			$('body').removeClass('loading desktop-css');
 			
 			$('.full-bg-img').each(function(index, Element) {
 			var src = $(Element).data('src');
@@ -802,7 +804,6 @@
 			
 			$('#site-loader').fadeOut(3000, function(){
 			$(this).removeClass('loading').addClass('loaded');
-			$('body').removeClass('loading');
 			});
 	
 			
