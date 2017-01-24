@@ -50,6 +50,7 @@ function tlw_scripts() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
+
 // Custom deque to force remove unwanted css
 function custom_dequeue() {
     wp_dequeue_style('autoptimize-toolbar');
@@ -105,11 +106,16 @@ function add_load_css(){
 
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
+	//$file_contents = readfile($href);
 	//echo '<pre>';print_r($handle);echo '</pre>';
-    $dom = new DOMDocument();
+	$deque_css = array('gforms_reset_css', 'gforms_formsmain_css', 'gforms_ready_class_css', 'gforms_browsers_css');
+	if ($handle != 'gforms_css') {
+	$dom = new DOMDocument();
     $dom->loadHTML($html);
     $a = $dom->getElementById($handle.'-css');
-    return "<script>loadCSS('" . $a->getAttribute('href') . "',0,'" . $a->getAttribute('media') . "');</script>\n";
+    return "<script>loadCSS('" . $a->getAttribute('href') . "',0,'" . $a->getAttribute('media') . "');</script>\n";	
+	}
+   
 }
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
