@@ -93,6 +93,7 @@ function add_async_attribute($tag, $handle) {
 
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
 
+/*
 add_action('wp_head','add_load_css',3);
 function add_load_css(){ 
     ?> 
@@ -100,6 +101,7 @@ function add_load_css(){
     readfile(get_stylesheet_directory() . '/_/js/loadCSS.js'); 
     ?></script><?php
 }
+*/
 
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {

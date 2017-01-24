@@ -36,9 +36,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	<style>
-	<?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css')."</style>"; ?>
-	</style>
+	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
+	<script id="loadcss"><?php readfile(get_stylesheet_directory() . '/_/js/loadCSS.js');  ?></script>
 	
 	<?php 
 	$form_active = get_field('lp_form_active');
