@@ -104,15 +104,20 @@ function add_load_css(){
 }
 */
 
+/*
+add_filter('style_loader_tag', 'find_styles',10,3);
+function find_styles($html, $handle, $href ) {
+return print_r($html);	
+}
+*/
+
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
-	//$file_contents = readfile($href);
-	//echo '<pre>';print_r($handle);echo '</pre>';
-	$deque_css = array('gforms_reset_css', 'gforms_formsmain_css', 'gforms_ready_class_css', 'gforms_browsers_css');
 	if ($handle != 'gforms_css') {
 	$dom = new DOMDocument();
     $dom->loadHTML($html);
     $a = $dom->getElementById($handle.'-css');
+    //return print_r($handle);	
     return "<script>loadCSS('" . $a->getAttribute('href') . "',0,'" . $a->getAttribute('media') . "');</script>\n";	
 	}
    
