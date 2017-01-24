@@ -18,7 +18,7 @@ Template Name: Why Choose TLW page template
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main>
+	<main id="main-content">
 		
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { 

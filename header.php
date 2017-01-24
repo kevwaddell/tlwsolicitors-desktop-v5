@@ -1,6 +1,6 @@
 <?php include (STYLESHEETPATH . '/_/inc/global/head-html.inc'); 
 
-$body_classes = array('desktop-css');	
+$body_classes = array('atfc-desktop-css');	
 
 array_push($body_classes, 'loading');
 ?>	

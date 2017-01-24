@@ -8,7 +8,7 @@ Template Name: Thank page template
 		
 
 		<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
-		<main>	
+		<main id="main-content">	
 		<?php 
 		if (isset($_GET['return-page'])) {
 		$return_id = $_GET['return-page'];

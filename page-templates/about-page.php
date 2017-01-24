@@ -20,7 +20,7 @@ Template Name: About page template
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main>
+	<main id="main-content">
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { 
 		$banner_type = get_field('banner_type');	

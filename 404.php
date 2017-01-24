@@ -3,7 +3,7 @@
 	<?php
 	$site_map_page = get_page_by_title('Site map');
 	?>	
-	<main>
+	<main id="main-content">
 				
 		<article <?php post_class("content-section"); ?>>
 		

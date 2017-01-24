@@ -20,7 +20,7 @@ Template Name: Service Home page
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main>
+	<main id="main-content">
 		
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { 

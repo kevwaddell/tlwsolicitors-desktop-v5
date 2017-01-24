@@ -1,6 +1,6 @@
 <?php include (STYLESHEETPATH . '/_/inc/landing-page/head-html.inc'); 
 	
-$body_classes = array();	
+$body_classes = array('atfc-desktop-css');	
 
 if ( !isset($_GET['gsdm']) ) {
 array_push($body_classes, 'loading');

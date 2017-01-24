@@ -792,7 +792,7 @@
 		$(window).bind('load',function(){
 			
 			//console.log("Loaded");
-			$('body').removeClass('loading desktop-css');
+			$('body').removeClass('loading atfc-desktop-css');
 			
 			$('.full-bg-img').each(function(index, Element) {
 			var src = $(Element).data('src');

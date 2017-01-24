@@ -32,7 +32,7 @@ Template Name: Legal pages template
 	}
 	
 	?>	
-	<main>
+	<main id="main-content">
 		
 		<?php if (has_post_thumbnail()) { ?>
 			<?php include (STYLESHEETPATH . '/_/inc/banners/img-banner-slim.inc'); ?>			
