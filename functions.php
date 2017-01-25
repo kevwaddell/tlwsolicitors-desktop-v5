@@ -113,12 +113,13 @@ return print_r($html);
 
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
+	//echo '<pre>';print_r($handle);echo '</pre>';
 	if ($handle != 'gforms_css') {
 	$dom = new DOMDocument();
     $dom->loadHTML($html);
     $a = $dom->getElementById($handle.'-css');
     //return print_r($handle);	
-    return "<script>loadCSS('" . $a->getAttribute('href') . "',0,'" . $a->getAttribute('media') . "');</script>\n";	
+    return "<script>loadCSS('" . $a->getAttribute('href') . "',document.getElementById('loadcss'),'" . $a->getAttribute('media') . "');</script>\n";	
 	}
    
 }
