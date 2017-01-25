@@ -7,7 +7,7 @@
 	
 			<div class="no-script-inner">
 				<?php echo $no_script_notice; ?>
-				<a href="<?php echo get_option('home'); ?>" title="refresh" class="btn btn-default btn-lg btn-block"><i class="fa fa-refresh fa-lg"></i> Refresh</a>
+				<a href="<?php echo get_option('home'); ?>" title="refresh" class="btn btn-default btn-lg btn-block">Refresh</a>
 			</div>
 		
 		</div>

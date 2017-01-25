@@ -2,6 +2,7 @@
 $colors = array('purple','green','pink', 'orange', 'blue');
 $slider_testimonials = get_field('slider_testimonials', 'options');	
 $banner_title_active = get_field('banner_title_active');
+$slider_bg_img_src = wp_get_attachment_image_src($slider_testimonials[0]['slide_img'], 'wide-banner-img' );	 
 if (!empty($slider_testimonials)) { ?>
 		
 <section id="testimonial-slider" class="carousel slide" data-ride="carousel">
@@ -19,7 +20,7 @@ if (!empty($slider_testimonials)) { ?>
 	<?php } ?>
 	
 
-  	 <div class="carousel-inner" role="listbox">
+  	 <div class="carousel-inner" role="listbox" style="background-image: url(<?php echo $slider_bg_img_src[0]; ?>)">
 	  	 
 	  	 <?php foreach ($slider_testimonials as $k => $item) { 
 		 $bg_img_src = wp_get_attachment_image_src($item['slide_img'], 'wide-banner-img' );	 

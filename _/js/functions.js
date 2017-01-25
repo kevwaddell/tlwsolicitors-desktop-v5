@@ -793,6 +793,7 @@
 			
 			//console.log("Loaded");
 			$('body').removeClass('loading atfc-desktop-css');
+			//$('body').removeClass('loading');
 			
 			$('.full-bg-img').each(function(index, Element) {
 			var src = $(Element).data('src');

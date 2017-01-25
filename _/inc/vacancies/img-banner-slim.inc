@@ -5,5 +5,5 @@
 	</header>
 	
 	<div class="img-overlay"></div>
-	<div class="top-drk-grad-red"></div>
+	<div class="top-drk-grad col-red"></div>
 </section>

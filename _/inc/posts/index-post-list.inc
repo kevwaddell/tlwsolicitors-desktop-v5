@@ -5,7 +5,7 @@
 		$cols = array("purple", "green", "pink", "orange", "blue");	
 		$post_counter = 0;
 		?>
-		<div class="page-links">
+		<div class="page-links top-page-links">
 			<div class="container">	
 			<?php wp_pagenavi(); ?>
 			</div>
@@ -35,7 +35,7 @@
 		<?php $post_counter++; ?>
 		<?php endwhile; ?>
 		
-		<div class="page-links">
+		<div class="page-links btm-page-links">
 			<div class="container">	
 			<?php wp_pagenavi(); ?>
 			</div>

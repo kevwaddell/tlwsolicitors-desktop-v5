@@ -13,7 +13,9 @@ $sb_plug_txt = get_field('sb_plug_txt');
 		$sb_plug_txt = get_field('sb_plug_txt');	
 		?>
 		<div class="sb-plug text-center font-slab-serif bg-col-<?php echo (!empty($color)) ? $color : 'red'; ?>-dk">
+			<div class="sb-plug-inner">
 			<?php echo $sb_plug_txt; ?>
+			</div>
 		</div>
 		<?php } ?>
 		

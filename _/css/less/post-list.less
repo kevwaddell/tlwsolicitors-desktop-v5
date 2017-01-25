@@ -84,11 +84,17 @@
 }
 
 .search-list {
-
+.mag-top(5);
+.pad-top(2);
+.border-top(@grayLt, 0.5);
 	article.post, article.page {
+	.pad-top(2);
+	.pad-bot(2);
 		h4 span.search-everything-highlight-color {
 		.col(white);
 		.pad(0; 0.5; 0; 0.5);	
+		.font-size(3);
+		.line-h(3.5);
 		}
 			
 		time {
@@ -99,7 +105,11 @@
 		.col(white);	
 		.pad(0; 0.2; 0; 0.2);	
 		}
-	}	
+	}
+	
+	.page-links {
+	border-bottom: none;	
+	}
 	
 }
 
