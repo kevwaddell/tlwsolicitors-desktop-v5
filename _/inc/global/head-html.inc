@@ -36,7 +36,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
 	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
-	<script id="loadcss"><?php readfile(get_stylesheet_directory() . '/_/js/loadCSS.js');  ?></script>
+	<script id="loadcss"><?php readfile(get_stylesheet_directory() . '/_/js/loadCSS-min.js');  ?></script>
 	
 	<?php
 	$sections_active = get_field('sections_active'); 
