@@ -99,9 +99,6 @@
 	<div id="feefo-service-review-floating-widgetId"></div>
 	
 	<?php wp_footer(); ?>
-	<noscript id="deferred-styles">
-      <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/_/css/merged-style.css?ver=<?php echo filemtime( get_stylesheet_directory().'/_/css/styles.css' ); ?>"/>
-    </noscript>
     
     <script>
       var loadDeferredStyles = function() {

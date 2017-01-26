@@ -68,6 +68,7 @@ function show_all_styles()
 	// New file location: E:xampp\htdocs\wordpress\wp-content\theme\wdc\merged-style.css
 	$merged_file_location = get_stylesheet_directory() .'/_/css/merged-style.css';
 	
+	//echo '<pre>';print_r($wp_styles->queue);echo '</pre>';
 	// loop all styles
 	foreach ($handles as $handle)
 	{
@@ -115,7 +116,7 @@ function show_all_styles()
 	file_put_contents ( $merged_file_location , $css_code);
 	
 	// #2. Load the URL of merged file
-	//wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css');
+	wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css');
 	
 	// #3. Deregister all handles
 	foreach ($handles as $handle)
@@ -186,16 +187,13 @@ return print_r($html);
 
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
-	//echo '<pre>';print_r($handle);echo '</pre>';
-/*
 	
 	if ($handle == 'merged-style') {
 	$dom = new DOMDocument();
     $dom->loadHTML($html);
-    $a = $dom->getElementById($handle.'-css');
-    return "<script>loadCSS('" . $a->getAttribute('href') . "',document.getElementById('loadcss'),'" . $a->getAttribute('media') . "');</script>\n";	
+    $a = $dom->getElementById($handle.'-css');	
+	return "<noscript id=\"deferred-styles\"><link rel=\"". $a->getAttribute('rel') ."\" type=\"text/css\" href=\"".$a->getAttribute('href')."\"/></noscript>";
 	}
-*/
    
 }
 
