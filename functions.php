@@ -115,7 +115,7 @@ function show_all_styles()
 	file_put_contents ( $merged_file_location , $css_code);
 	
 	// #2. Load the URL of merged file
-	wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css');
+	//wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css');
 	
 	// #3. Deregister all handles
 	foreach ($handles as $handle)
@@ -184,6 +184,7 @@ return print_r($html);
 }
 */
 
+/*
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
@@ -196,6 +197,7 @@ function link_to_loadCSS_script($html, $handle, $href ) {
 	}
    
 }
+*/
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
