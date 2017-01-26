@@ -67,7 +67,7 @@ function show_all_styles()
 
 	// New file location: E:xampp\htdocs\wordpress\wp-content\theme\wdc\merged-style.css
 	$merged_file_location = get_stylesheet_directory() .'/_/css/merged-style.css';
-	
+	$merged_file = file_get_contents($merged_file_location);
 	//echo '<pre>';print_r($wp_styles->queue);echo '</pre>';
 	// loop all styles
 	foreach ($handles as $handle)
@@ -113,7 +113,9 @@ function show_all_styles()
 	}
 
 	// write the merged styles into current theme directory
-	file_put_contents ( $merged_file_location , $css_code);
+	if ($merged_file != $css_code) {
+	file_put_contents ($merged_file_location , $css_code);
+	}
 	
 	// #2. Load the URL of merged file
 	wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css');
