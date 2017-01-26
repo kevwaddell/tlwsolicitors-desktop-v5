@@ -184,20 +184,20 @@ return print_r($html);
 }
 */
 
-/*
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
+/*
+	
 	if ($handle == 'merged-style') {
 	$dom = new DOMDocument();
     $dom->loadHTML($html);
     $a = $dom->getElementById($handle.'-css');
-    //return print_r($handle);	
     return "<script>loadCSS('" . $a->getAttribute('href') . "',document.getElementById('loadcss'),'" . $a->getAttribute('media') . "');</script>\n";	
 	}
+*/
    
 }
-*/
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
