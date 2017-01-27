@@ -40,6 +40,7 @@ function tlw_scripts() {
 	//wp_deregister_script('gform_gravityforms');
 	wp_deregister_script('jquery-core');
 	wp_deregister_script('jquery');
+	wp_deregister_script('autoptimize-toolbar');
 	//wp_enqueue_script( 'jquery-ui-core' );
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js', array(), '3.0.0', true);
 	wp_enqueue_script( 'modernizr-min', get_stylesheet_directory_uri() . '/_/js/modernizr-min.js', array(), '2.8.3', true );
@@ -150,12 +151,16 @@ function add_async_attribute($tag, $handle) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
    // add script handles to the array below
    $scripts_to_asyc = array(
+   'cookie-consent',
+   'addtoany',
+   'tml-themed-profiles',
    'jquery',
    'bootstrap-min',
    'jquery-cookie',
    'slim-scroll', 
    'bootstrap-select',
-   'functions'
+   'functions',
+   'wp-embed'
    );
    
    if ($handle == 'gform_json' || $handle == 'gform_gravityforms' || $handle == 'gform_conditional_logic' || $handle == 'gform_placeholder') {
