@@ -8,6 +8,7 @@ update_option('home','http://tlwsolicitors.dev');
 add_action( 'after_setup_theme', 'editor_styles' );
 
 function tlw_scripts() {
+	if (!is_admin()) {
 	global $post;
 	// Load stylesheets.
 	wp_enqueue_style( 'print-styles', get_stylesheet_directory_uri().'/_/css/print-styles.css', null, filemtime( get_stylesheet_directory().'/_/css/print-styles.css' ), 'print' );
@@ -47,14 +48,14 @@ function tlw_scripts() {
 	wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array('jquery'), '1.3.6', true );
 	wp_enqueue_script( 'bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js', array('jquery'), '1.11.2', true );
 	wp_enqueue_script( 'functions', get_stylesheet_directory_uri() . '/_/js/functions-min.js', $functions_dep, filemtime( get_stylesheet_directory().'/_/js/functions.js' ), true );
-	
+	}
 }
 add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
 
 add_action('wp_print_styles', 'show_all_styles');
-function show_all_styles()
-{
+function show_all_styles() {
 	// use global to call variable outside function
+	if(!is_admin()) {
 	global $wp_styles;
 	
 	// arrange the queue based on its dependency
@@ -125,12 +126,17 @@ function show_all_styles()
 	{
 		wp_deregister_style($handle);
 	}
+	
+	}
 }
 
 // Custom deque to force remove unwanted css
 function custom_dequeue() {
+	
+	if (!is_admin()) {
     wp_dequeue_style('autoptimize-toolbar');
     wp_deregister_style('autoptimize-toolbar');
+    }
 }
 
 add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
@@ -139,9 +145,9 @@ add_action( 'wp_head', 'custom_dequeue', 9999 );
 add_filter( 'gform_init_scripts_footer', '__return_true' );
 
 function add_async_attribute($tag, $handle) {
+	
 	if (!is_admin()) {
 	//echo '<pre>';print_r($handle);echo '</pre>';
-   }
    // add script handles to the array below
    $scripts_to_asyc = array(
    'jquery',
@@ -166,6 +172,7 @@ function add_async_attribute($tag, $handle) {
    }
    
    return $tag;
+   }
 }
 
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
@@ -190,11 +197,13 @@ return print_r($html);
 add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 function link_to_loadCSS_script($html, $handle, $href ) {
 	
-	if ($handle == 'merged-style') {
-	$dom = new DOMDocument();
-    $dom->loadHTML($html);
-    $a = $dom->getElementById($handle.'-css');	
-	return "<noscript id=\"deferred-styles\"><link rel=\"". $a->getAttribute('rel') ."\" type=\"text/css\" href=\"".$a->getAttribute('href')."\"/></noscript>";
+	if(!is_admin( )) {
+		if ($handle == 'merged-style') {
+		$dom = new DOMDocument();
+	    $dom->loadHTML($html);
+	    $a = $dom->getElementById($handle.'-css');	
+		return "<noscript id=\"deferred-styles\"><link rel=\"". $a->getAttribute('rel') ."\" type=\"text/css\" href=\"".$a->getAttribute('href')."\"/></noscript>";
+		}
 	}
    
 }

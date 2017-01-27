@@ -99,6 +99,8 @@
 	
 	<div id="feefo-service-review-floating-widgetId"></div>
 	
+	<?php wp_footer(); ?>
+		
 	<script>
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
@@ -112,8 +114,6 @@
       if (raf) { raf(function() { window.setTimeout(loadDeferredStyles, 0); });
      } else { window.addEventListener('load', loadDeferredStyles); }
     </script>
-    
-	<?php wp_footer(); ?>
     
 	</body>
 </html>
