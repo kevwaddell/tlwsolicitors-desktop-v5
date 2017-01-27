@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head id="www-wordpress-test-dev" data-template-set="tlw-base-theme">
+	<style>body{opacity: 0;}</style>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	

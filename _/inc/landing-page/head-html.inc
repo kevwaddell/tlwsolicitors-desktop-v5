@@ -20,7 +20,7 @@
 	})(window,document,'script','dataLayer','GTM-PLBR4F');</script>
 	<!-- End Google Tag Manager -->
 	<?php } ?>
-	
+	<style>body{opacity: 0;}</style>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	
