@@ -137,6 +137,8 @@ function custom_dequeue() {
 	if (!is_admin()) {
     wp_dequeue_style('autoptimize-toolbar');
     wp_deregister_style('autoptimize-toolbar');
+    wp_dequeue_script('autoptimize-toolbar');
+    wp_deregister_script('autoptimize-toolbar');
     }
 }
 
@@ -182,18 +184,20 @@ function add_async_attribute($tag, $handle) {
 
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
 
-add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
-function link_to_loadCSS_script($html, $handle, $href ) {
+if(!is_admin()) {
+	add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
+	function link_to_loadCSS_script($html, $handle, $href ) {
+		
 	
-	if(!is_admin( )) {
-		if ($handle == 'merged-style') {
-		$dom = new DOMDocument();
-	    $dom->loadHTML($html);
-	    $a = $dom->getElementById($handle.'-css');	
-		return "<noscript id=\"deferred-styles\"><link rel=\"". $a->getAttribute('rel') ."\" type=\"text/css\" href=\"".$a->getAttribute('href')."\"/></noscript>";
-		}
+			if ($handle == 'merged-style') {
+			$dom = new DOMDocument();
+		    $dom->loadHTML($html);
+		    $a = $dom->getElementById($handle.'-css');	
+			return "<noscript id=\"deferred-styles\"><link rel=\"". $a->getAttribute('rel') ."\" type=\"text/css\" href=\"".$a->getAttribute('href')."\"/></noscript>";
+			}
+	
+	   
 	}
-   
 }
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
