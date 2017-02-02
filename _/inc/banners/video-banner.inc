@@ -66,7 +66,4 @@ $banner_title_active = get_field('banner_title_active');
 
 	<?php } ?>
 	
-	<button id="scroll-down-btn" class="btn abs-bottom"><i class="fa fa-angle-down"></i><span class="sr-only">Go down to next section</span></button>
-	
-	
 </section>

@@ -3,7 +3,7 @@
 		//var console;
 		//var alert;
 		var tagInterval;
-		var current_section = "#top";
+		//var current_section = "#top";
 		var current_section_id;
 		var section_targets;
 		var ot_target = 0;
@@ -51,20 +51,15 @@
 		}
 		
 		function isScrolledIntoView(elem) {
-		    var $elem = $(elem);
-		    var $window = $(window);
+		    var $win = $(window);
 	
-		    var docViewTop = $window.scrollTop();
-		    var docViewBottom = docViewTop + ($window.height() / 2);
+		    var docViewTop = $win.scrollTop();
+		    var docViewBottom = docViewTop + $win.height();
 		
-		    var elemTop = $elem.offset().top;
-		    var elemBottom = elemTop + $elem.height();
-		    
-		    if (docViewTop === 0) {
-			return false;  
-		    } else {
-			return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));   
-		    }
+		    var elemTop = $(elem).offset().top;
+		    var elemBottom = elemTop + $(elem).height();
+		   
+			return ( (elemBottom <= docViewBottom) && (elemTop >= docViewTop) );       
 		}
 		
 			
@@ -73,17 +68,8 @@
 		});
 			
 		$(document).ready(function(){
-		
-		//console.log("Ready");		
-		//console.log( $('.top-banner-img') );
-		
-/*
-		$('#site-loader').fadeOut(3000, function(){
-			$(this).removeClass('loading').addClass('loaded');
-			$('body').removeClass('loading');
-		});
-		
-*/
+			
+		//console.log($(window).scrollTop());
 
 		$(".selectpicker").selectpicker({
 	      style: 'btn-lg hp-select',
@@ -94,20 +80,6 @@
 			style: 'btn btn-group btn-default', 
 			width: '100%'
 		});
-					
-		section_targets = $('a.section-target');
-		
-		if (section_targets.length > 0) {
-			section_targets.each(function(index, elem){
-			
-				if ( isScrolledIntoView($(elem)) ) {
-				current_section_id = $(elem).attr('id');
-				current_section = "#"+current_section_id;
-				//console.log(current_section);
-				}	
-				
-			});
-		}
 		
 		//Scroll to button
 		
@@ -424,40 +396,6 @@
 		startFeedbackInterval();
 		}
 			
-		/* BANNER SECTION SCROLL DOWN BUTTON */
-		
-		$('body').on(event_type, 'button#scroll-down-btn', function(){
-			var next = $(this).parent().next().find('a.section-target');
-			var hash = $(next).attr('id');
-			var scrollTarget = $('#'+hash).offset().top - 40;
-			if (hash === 'service-info-txt' || hash === 'article-txt') {
-	    	scrollTarget = $('#'+hash).offset().top - 4;	
-			}
-			current_section = '#'+hash;
-			
-			$('html, body').animate({ scrollTop: scrollTarget }, 500);
-			
-			//console.log(next);
-			
-			return false;
-		});
-		
-		/* SCROLL DOWN BUTTON 
-		In the intro section on the home page
-		 */
-		$('body').on(event_type, 'button#intro-scroll-down-btn', function(){
-			var next = $(this).parents('article.content-section').next().find('a.section-target');
-			var hash = $(next).attr('id');
-			var scrollTarget = $('#'+hash).offset().top - 40;
-			current_section = '#'+hash;
-			
-			$('html, body').animate({ scrollTop: scrollTarget }, 500);
-			
-			//console.log(next);
-			
-			return false;
-		});
-			
 			/* QUICK LINKS BUTTONS 
 				Buttons fixed on the right side of the page 
 				that animate a jump to the different sections	
@@ -475,99 +413,41 @@
 			
 			
 			$('body').on(event_type,'.ql-section-links a', function(){
-	    		 
-	    		var hash = $(this).attr('href');
-	    		var scrollTarget = $(hash).offset().top - 40;
-	    		
-	    		current_section = hash;
-	    		
-	    		if (current_section === "#toolkit-slides") {
-					scrollTarget -= 60;	
-				}
-						
-				if (current_section === "#service-info-txt" || current_section === "#article-txt") {
-					scrollTarget = $(hash).offset().top - 4;
-				}
+				
+				var win_top = $(window).scrollTop();
+				var win_h = $(window).height();
 					
-				$(this).siblings().removeClass('active');
-				$(this).addClass('active');
-	    		//console.log(hash);
-	    		 
-	    		$('html, body').animate({ scrollTop: scrollTarget }, 300);	   
-	    		  			
+	    		var hash = $(this).attr('href');
+	    		var scrollTarget = win_top + ($(hash).offset().top - 40);
+
+	    		if (hash == "#service-info-txt") {
+		    	scrollTarget = win_top + $(hash).offset().top;	
+	    		}
+	    		
+	    		$('html, body').animate({ scrollTop: scrollTarget }, 300);	  	
+							
 				return false;
 			
 			});
-			
-			$('body').on(event_type,'button#quick-links-2-top', function(){
-		
-			$('html, body').animate({ scrollTop: 0 }, 500);
-	
-			return false;
-			
-			});
-			
-			$('body').on(event_type,'button#quick-links-btn-up', function() {
-				
-				if (current_section !== "#top") {
-					var prev_section = $(current_section).parent().prev();
-					
-					if ($(prev_section).find('a.section-target')) {
 						
-						var scrollTarget = $(prev_section).offset().top - 40;
+			$('body').on(event_type,'button#quick-links-btn-up', function() {
+								
+					var win_top = $(window).scrollTop();
+					var win_h = $(window).height();
 					
-						if ($(prev_section).hasClass('toolkit-slider')) {
-						scrollTarget -= 60;	
-						}
-	    			
-						if ($(prev_section).hasClass('content-section')) {
-						scrollTarget = $(prev_section).offset().top;
-						}
-					
-						$('html, body').animate({ scrollTop: scrollTarget }, 300);
-							
-					} else {
-						$('html, body').animate({ scrollTop: 0 }, 300);	
-						current_section = "#top";	
-					}
-				 
-				}
+					$('html, body').animate({ scrollTop: (win_top - win_h) }, 300);	
 	
-			return false;
+					return false;
 			
 			});
 			
 			$('body').on(event_type,'button#quick-links-btn-dwn', function(){
-			var next_section;
-			var scrollTarget;
 				
-				if (current_section !== "#top") {
-					next_section = $(current_section).parent().next();
-					
-					if ($(next_section).find('a.section-target')) {
-						
-						scrollTarget = $(next_section).offset().top - 40;
-						$('html, body').animate({ scrollTop: scrollTarget }, 300);		
-					}
-				 
-				} else {
-	
-					next_section = $(section_targets[0]).parent();
-					
-					if ($(next_section).find('a.section-target')) {
-					
-					scrollTarget = $(next_section).offset().top - 40;
-					
-						if ($(next_section).hasClass('content-section')) {
-						scrollTarget = $(next_section).offset().top;
-						}
-						
-					$('html, body').animate({ scrollTop: scrollTarget }, 300);		
-					}
-				}
+				var win_top = $(window).scrollTop();
+				var win_h = $(window).height();
 				
-				current_section = next_section;
-	
+				$('html, body').animate({ scrollTop: (win_top + win_h) }, 300);	
+				
 			return false;
 			
 			});
@@ -582,8 +462,6 @@
 	    		 
 	    		var hash = $(this).attr('href');
 	    		var scrollTarget = $(hash).offset().top - 40;
-	    		
-	    		current_section = hash;
 	    		 
 	    		$('html, body').animate({ scrollTop: scrollTarget }, 500);	   
 	    		  			
@@ -802,23 +680,6 @@
 				$(Element).css('background-image', 'url(' +src+ ')');
 	  		}
 			});
-			
-			$('#site-loader').fadeOut(3000, function(){
-			$(this).removeClass('loading').addClass('loaded');
-			});
-	
-			
-	/*
-			if ($('body').hasClass('loading') && $('#site-loader').length === 1) {
-				
-				$('body').removeClass('loading').addClass('loaded');	
-			
-				$('#site-loader').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-					$(this).hide();	
-				});
-	
-			}
-	*/
 	
 		});
 		
@@ -826,28 +687,6 @@
 	
 			var scroll = $(window).scrollTop();
 			var h = $(window).height();
-			section_targets = $('a.section-target');
-			
-			if (scroll <= (h / 2)) {
-			current_section = "#top";
-			}
-			
-			if (section_targets.length > 0) {
-				section_targets.each(function(index, elem){
-				
-					if ( isScrolledIntoView($(elem)) ) {
-					current_section_id = $(elem).attr('id');
-					current_section = "#"+current_section_id;
-					$('a#ql-'+current_section_id).siblings().removeClass('active');
-					$('a#ql-'+current_section_id).addClass('active');
-					return false;
-					} else {
-					current_section = "#top";	
-					$('.ql-section-links a').removeClass('active');
-					}	
-					
-				});
-			}
 			
 		});
 		

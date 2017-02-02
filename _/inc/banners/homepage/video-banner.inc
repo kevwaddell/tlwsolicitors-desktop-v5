@@ -57,8 +57,6 @@ $extra_links_cols = 4;
 	</nav>
 	<?php } ?>
 	
-	<button id="scroll-down-btn"><i class="fa fa-angle-down"></i><span class="sr-only">Go down to next section</span></button>
-	
 	<video autoplay loop muted id="bgvid" poster="<?php echo $banner_video_poster;?>">
 		<source src="<?php echo $banner_video_webm ?>" type="video/webm" />
 		<source src="<?php echo $banner_video_mp4; ?>" type="video/mp4" />

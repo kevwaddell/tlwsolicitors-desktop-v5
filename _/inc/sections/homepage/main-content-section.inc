@@ -34,10 +34,7 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'service-info
 				<div class="col-xs-4">
 					<a href="<?php echo get_permalink($feedback_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $feedback_pg_icon; ?> fa-lg"></i> Client Feedback</a>	
 				</div>
-			</div>
-			
-			<button id="intro-scroll-down-btn"><i class="fa fa-angle-down"></i><span class="sr-only">Go down to next section</span></button>
-												
+			</div>									
 		</div>
 	</div>
 	

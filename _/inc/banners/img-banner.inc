@@ -53,8 +53,6 @@ $banner_feat_thumb_src = wp_get_attachment_image_src($post_thumbnail_id, 'thumbn
 	<?php } ?>
 
 	<?php } ?>
-
-	<button id="scroll-down-btn" class="btn abs-bottom"><i class="fa fa-angle-down"></i><span class="sr-only">Go down to next section</span></button>
 	
 	<div class="img-overlay"></div>
 	<div class="top-drk-grad"></div>

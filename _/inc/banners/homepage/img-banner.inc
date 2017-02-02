@@ -55,8 +55,6 @@ $extra_links_cols = 4;
 	</nav>
 	<?php } ?>
 	
-	<button id="scroll-down-btn"><i class="fa fa-angle-down"></i><span class="sr-only">Go down to next section</span></button>
-	
 	<div class="img-overlay"></div>
 	<div class="top-drk-grad"></div>
 </section>
