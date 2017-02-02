@@ -683,12 +683,5 @@
 	
 		});
 		
-		$(window).scroll(function(){
-	
-			var scroll = $(window).scrollTop();
-			var h = $(window).height();
-			
-		});
-		
 		
 })(window.jQuery);
