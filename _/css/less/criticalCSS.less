@@ -64,7 +64,8 @@ body.atfc-desktop-css {
 	#route-finder-modal,
 	&#landing-page .contact-details,
 	.addtoany_list,
-	#theme-my-login {
+	#theme-my-login,
+	#feefo-service-review-floating-widgetId {
 	display: none;	
 	}
 	
@@ -161,10 +162,6 @@ body.atfc-desktop-css {
 	width: 66.66666667%;
 	}
 	
-	section#top-banner #scroll-down-btn {
-	display: none;		
-	}
-	
 	.posts-top-bar {
 	height: 126px;
 	background-color: white;
@@ -180,7 +177,7 @@ body.atfc-desktop-css {
 	top: 0;
 	left: 0;
 	background-color: rgba(75, 75, 75, .6);
-	background-image: url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/thin-stripe-wht.png');
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQImU3HoQEAAAwCIOb/P7sqjWtrNBtcNpANPEhdBwSAP45MAAAAAElFTkSuQmCC');
 	z-index: 0;
 	opacity: .5;
 	}
@@ -326,18 +323,173 @@ body.atfc-desktop-css {
 	}
 	
 	.top-banner-img {
-	min-height: 900px;
-	height: 100vh;
+	//min-height: 900px;
+	//height: 100vh;
 	position: relative;
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	
+		.tag-scroller {
+			height: 380px;
+			
+			&.with-banner-title {
+			height: 420px;	
+			}
+			
+			.tag-scroller-txt {
+			display: none;	
+			}	
+		}
+	
+		.hp-banner-links {
+	position: relative;
+	z-index: 2;
+	margin-bottom: 60px;
+	padding-top: 70px;
+		.main-links {
+		margin-bottom: 60px;
+			a {
+			display: block;
+			height: 123px;
+			border: 4px solid #fff;
+			text-decoration: none;
+			text-indent: -9999px;
+			-webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+			-moz-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+			box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+			position: relative;
+				i {
+				position: absolute;
+				text-indent: -9999px;
+				left: 50%;
+				top: -50px;
+				margin-left: -50px;
+				width: 100px;
+				height: 100px;
+				-webkit-border-radius: 100%;
+				-moz-border-radius: 100%;
+				border-radius: 100%;
+				border: 4px solid #fff;
+				-webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+				-moz-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+				box-shadow: 0 3px 10px rgba(0, 0, 0, .8)	
+				}
+				
+				&.col-purple {
+				background-color: rgba(166, 119, 180, .8);
+					i {
+					background-color: #6C4480;	
+					}	
+				}
+				
+				&.col-blue {
+				background-color: rgba(45, 126, 169, .8);
+					i {
+					background-color: #184358;
+					}	
+				}
+			}
+		}	
 		
-		.tag-scroller, 
-		.hp-banner-links,
+		.extra-links {
+			a {
+			display: block;
+			height: 123px;
+			text-indent: -9999px;
+			border: 4px solid #fff;
+			text-decoration: none;
+			-webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+			-moz-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+			box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+			position: relative;
+				br {
+				display: none;	
+				}
+				i {
+				position: absolute;
+				left: 50%;
+				top: -35px;
+				margin-left: -35px;
+				text-indent: -9999px;
+				width: 70px;
+				height: 70px;
+				-webkit-border-radius: 100%;
+				-moz-border-radius: 100%;
+				border-radius: 100%;
+				border: 4px solid #fff;
+				-webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+				-moz-box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+				box-shadow: 0 3px 10px rgba(0, 0, 0, .8);	
+				}
+				
+				&.col-pink {
+				background-color: rgba(234, 86, 119, .8);
+					i {
+					background-color: #B8445D;	
+					}	
+				}
+				
+				&.col-green {
+				background-color: rgba(172, 209, 92, .8);
+					i {
+					background-color: #698037;	
+					}	
+				}
+				
+				&.col-orange {
+				background-color: rgba(251, 173, 79, .8);
+					i {
+					background-color: #AA7A39;	
+					}	
+				}
+			}
+		}
+	}
+		
 		#services-banner-links {
-		display: none;	
+		border: 4px solid #fff;
+		height: 170px;
+		margin-top: 80px;
+		margin-bottom: 60px;
+		position: relative;
+		z-index: 2;
+		-webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .7);
+		-moz-box-shadow: 0 3px 10px rgba(0, 0, 0, .7);
+		box-shadow: 0 3px 10px rgba(0, 0, 0, .7);
+		
+			.banner-links-header {
+			width: 50%;
+			background-color: #fff;
+			height: 70px;
+			margin: -37px auto 20px;
+			text-indent: -9999px;
+			}
+		
+			.main-services, .sub-services {
+			display: none;	
+			}
+			
+			&.col-purple {
+			background-color: rgba(108, 68, 128, .8);	
+			}
+			
+			&.col-blue {
+			background-color: rgba(24, 67, 88, .8);	
+			}
+			
+			&.col-pink {
+			background-color: rgba(184, 68, 93, .8);	
+			}
+			
+			&.col-green {
+			background-color: rgba(105, 128, 55, .8);	
+			}
+			
+			&.col-orange {
+			background-color: rgba(170, 122, 57, .8);	
+			}
 		}
 		
 		.top-drk-grad {
@@ -491,7 +643,25 @@ body.atfc-desktop-css {
 	height: 124px;
 	position: relative;
 	background-color: #4b4b4b;	
-		.container, .overlay {
+		
+		.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQImU3HoQEAAAwCIOb/P7sqjWtrNBtcNpANPEhdBwSAP45MAAAAAElFTkSuQmCC');
+		z-index: 0;
+		-moz-opacity: .2;
+		-khtml-opacity: .2;
+		-webkit-opacity: .2;
+		opacity: .2;
+		-webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, .7);
+		-moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, .7);
+		box-shadow: inset 0 0 20px rgba(0, 0, 0, .7);	
+		}
+		
+		.container {
 		display: none;
 		}
 	}
@@ -632,7 +802,7 @@ body.atfc-desktop-css {
 		right: 0;
 		height: 100%;
 		opacity: 0.5;
-		background-image: url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/thin-stripe-wht.png');
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQImU3HoQEAAAwCIOb/P7sqjWtrNBtcNpANPEhdBwSAP45MAAAAAElFTkSuQmCC');
 		background-blend-mode: color-burn;
 		}
 		
