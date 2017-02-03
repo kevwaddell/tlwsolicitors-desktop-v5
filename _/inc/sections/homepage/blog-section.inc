@@ -91,13 +91,13 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'recent-blog-
 					</select>
 					<script type="text/javascript">
 					<!--
-					var dropdown = document.getElementById("cats");
+					var cats_dropdown = document.getElementById("cats");
 					function onCatsChange() {
-						if ( dropdown.options[dropdown.selectedIndex].value != 0 ) {
-							location.href = dropdown.options[dropdown.selectedIndex].value;
+						if ( cats_dropdown.options[cats_dropdown.selectedIndex].value != 0 ) {
+							location.href = cats_dropdown.options[cats_dropdown.selectedIndex].value;
 						}
 					}
-					dropdown.onchange = onCatsChange;
+					cats_dropdown.onchange = onCatsChange;
 					-->
 				</script>
 
