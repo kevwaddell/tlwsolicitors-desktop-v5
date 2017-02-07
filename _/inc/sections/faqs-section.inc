@@ -48,9 +48,6 @@ $color = "red";
 			</div>
 		</div>
 		<?php } ?>
-		</div>
-
-	</div>
-		
+		</div>	
 </section>
 <?php } ?>

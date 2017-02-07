@@ -92,6 +92,8 @@
 	
 	<?php include (STYLESHEETPATH . '/_/inc/contact-us/route-finder-modal.inc'); ?>
 	
+	<?php include (STYLESHEETPATH . '/_/inc/sections/video-viewer.inc'); ?>
+	
 	<?php include (STYLESHEETPATH . '/_/inc/xmas/pop-up.inc'); ?>
 	
 	

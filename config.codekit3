@@ -1588,6 +1588,18 @@
 		"oAP": "\/_\/inc\/sections\/toolkit-section.inc",
 		"oF": 0
 		},
+	"\/_\/inc\/sections\/video-section.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/sections\/video-section.inc",
+		"oF": 0
+		},
+	"\/_\/inc\/sections\/video-viewer.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/sections\/video-viewer.inc",
+		"oF": 0
+		},
 	"\/_\/inc\/site-map\/site-map-list-left-col.inc": {
 		"ft": 8192,
 		"oA": 2,

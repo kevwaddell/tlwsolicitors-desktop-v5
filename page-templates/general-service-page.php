@@ -55,6 +55,11 @@ Template Name: General Service page
 		
 			<?php foreach ($sections as $section) { ?>
 			
+				<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
+				<!-- VIDEO SECTION -->
+					<?php include (STYLESHEETPATH . '/_/inc/sections/video-section.inc'); ?>		
+				<?php } ?>
+				
 				<?php if ($section['acf_fc_layout'] == 'feedback-section') { ?>
 				<!-- FEEDBACK SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/feedback-section.inc'); ?>		

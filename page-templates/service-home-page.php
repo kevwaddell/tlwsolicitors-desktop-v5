@@ -6,6 +6,7 @@ Template Name: Service Home page
 
 <?php get_header(); ?>	
 	
+	<main id="main-content">
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 	<?php 
 		$color = get_field('page_colour');
@@ -20,7 +21,7 @@ Template Name: Service Home page
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main id="main-content">
+
 		
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { 
@@ -51,9 +52,15 @@ Template Name: Service Home page
 		
 		<?php if ($sections_active) { 
 		$sections = get_field('sections'); 
+		//echo '<pre>';print_r($sections);echo '</pre>';
 		?>		
 		
 			<?php foreach ($sections as $section) { ?>
+			
+				<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
+				<!-- VIDEO SECTION -->
+					<?php include (STYLESHEETPATH . '/_/inc/sections/video-section.inc'); ?>		
+				<?php } ?>
 			
 				<?php if ($section['acf_fc_layout'] == 'feedback-section') { ?>
 				<!-- FEEDBACK SECTION -->
@@ -61,7 +68,7 @@ Template Name: Service Home page
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'faqs-section') { ?>
-				<!-- FEEDBACK SECTION -->
+				<!-- FAQ's SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/faqs-section.inc'); ?>		
 				<?php } ?>
 				
@@ -71,17 +78,17 @@ Template Name: Service Home page
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>
-				<!-- FORM SECTION -->
+				<!-- BLOG SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/blog-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'downloads-section') { ?>
-				<!-- FORM SECTION -->
+				<!-- DOWNLOADS SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/downloads-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'toolkit-section') { ?>
-				<!-- FORM SECTION -->
+				<!-- TOOLKIT SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/toolkit-section.inc'); ?>		
 				<?php } ?>
 	
@@ -89,8 +96,9 @@ Template Name: Service Home page
 		
 		<?php } ?>
 		
-	</main>	
+
 	<?php endwhile; ?>
 	<?php endif; ?>
-
+	</main>	
+	
 <?php get_footer(); ?>

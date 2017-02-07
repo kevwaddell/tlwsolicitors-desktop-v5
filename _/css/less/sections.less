@@ -2066,6 +2066,55 @@ article.content-section {
 	z-index: 1;
 	}
 	
+	// -->> Videos Section
+	
+	&#video-section {
+		
+		a.video-link {
+		display: block;
+		width: 100%;
+		height: 340px;
+		.bg-repeat(no-repeat);
+		background-position: center center;
+		.bg-size();
+		.drop-shadow(0, 3px, 20px, 0.7);
+		.border(@wht; 0.4);
+		.no-rounded;
+		.rel;
+		.mag-bot(4);
+		
+			&:after {
+			content: "\f144";	
+			font-family: FontAwesome;
+			.font-size(7);
+			.line-h(34);
+			text-align: center;
+			.col(@wht);
+			.abs;
+			.left(0);
+			.top(0);
+			width: 100%;
+			height: 100%;
+			.bg-col(@grayDk);
+			.opacity(0);
+			.transition(0.4s);
+			.no-text-dec;
+			}
+			
+			&:hover, &:active, &:focus {
+			.border-col(@grayDk);
+				&:after {
+				.opacity(0.8);	
+				}
+			}
+			
+			&:active {
+			.no-shadow;
+			}
+			
+		}
+	}
+	
 	// -->> Jobs Section
 	&#vacancies-section {
 	.gradient(@red, @red , @redMid);
@@ -3784,6 +3833,72 @@ article.content-section {
 		}
 	}
 	
+}
+
+//Video Viewer 
+
+#video-viewer {
+.fixed;
+.left(0);
+.right(0);
+.bottom(0);
+.top(0);
+.trans-bg(@grayDk; 0.8);
+z-index: 11004002;
+overflow: hidden;
+
+	
+	&.viewer-open {
+	.top(0);	
+	.opacity(1);
+	}
+	
+	&.viewer-closed {
+	top: 100%;	
+	.opacity(0);
+	}
+	
+	#close-video {
+	.abs;
+	.top(2);
+	.right(2);
+	.w(4);
+	.h(4);
+	.pad-all(0);
+	.rounded(100%);
+	.no-border;
+	.trans-bg(@wht; 0.5);
+	.col(@grayDk);	
+		i {
+		.block;
+		.w(4);
+		.h(4);
+		text-align: center;
+		.line-h(4);	
+		.font-size(2);
+		}
+		&:hover, &:active, &:focus {
+		.col(@gray);
+		.bg-col(@wht);
+		}
+	}
+	
+	.video-viewer-inner {
+	.abs;
+	left: 50%;
+	top: 50%;
+	.translate(-50%, -50%);
+	.w(80);
+	.h(45);
+	.bg-col(@grayDk);
+	.drop-shadow(0,0, 40px, 0.7);
+	overflow: hidden;
+		iframe {
+		.block;	
+		.pad-all(0);
+		.mag-all(0);
+		}	
+	}
 }
 
 body.home section#top-banner header.banner-title {

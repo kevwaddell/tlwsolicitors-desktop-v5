@@ -662,6 +662,40 @@
 				return false;
 				
 			});
+			
+			/* VIDEO LINK FUNCTION */
+			
+			/* FAQ's BUTTON ACTIONS
+			These functions control the pop up videos
+			that show that embed the your Tube video into the pop up inner wrapper
+		    */
+		    
+			$('a.video-link').on(event_type, function(){
+				var video_id = $(this).attr('href');
+				var video = $(video_id).find('iframe');
+				
+				$('body').addClass('video-open');
+				
+				$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
+					$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
+					$(video).clone().attr('src', $(video).attr('src') + '&autoplay=1').appendTo('.video-viewer-inner');
+					
+				});
+				
+				return false;
+			});
+			
+			$('button#close-video').on(event_type, function(){
+				
+				$(this).parent().animate({top: '100%', opacity: 0}, 500, function(){
+					$(this).toggleClass('viewer-open viewer-closed').removeAttr('style');
+					$(this).find('.video-viewer-inner').empty();
+					$('body').removeClass('video-open');
+				});
+				
+				return false;
+
+			});
 		
 		});
 	
