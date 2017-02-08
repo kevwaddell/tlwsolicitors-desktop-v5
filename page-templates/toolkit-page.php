@@ -62,13 +62,18 @@ Template Name: Toolkit page
 		
 			<?php foreach ($sections as $section) { ?>
 			
+				<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
+				<!-- VIDEO SECTION -->
+					<?php include (STYLESHEETPATH . '/_/inc/sections/video-section.inc'); ?>		
+				<?php } ?>
+			
 				<?php if ($section['acf_fc_layout'] == 'feedback-section') { ?>
 				<!-- FEEDBACK SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/feedback-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'faqs-section') { ?>
-				<!-- FEEDBACK SECTION -->
+				<!-- FAQ's SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/faqs-section.inc'); ?>		
 				<?php } ?>
 				
@@ -78,17 +83,17 @@ Template Name: Toolkit page
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>
-				<!-- FORM SECTION -->
+				<!-- BLOG SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/blog-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'downloads-section') { ?>
-				<!-- FORM SECTION -->
+				<!-- DOWNLOADS SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/downloads-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'toolkit-section') { ?>
-				<!-- FORM SECTION -->
+				<!-- TOOLKIT SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/toolkit-section.inc'); ?>		
 				<?php } ?>
 	
