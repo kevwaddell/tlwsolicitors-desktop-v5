@@ -1540,6 +1540,12 @@
 		"oAP": "\/_\/inc\/sections\/homepage\/toolkit-section.inc",
 		"oF": 0
 		},
+	"\/_\/inc\/sections\/homepage\/video-section.inc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/inc\/sections\/homepage\/video-section.inc",
+		"oF": 0
+		},
 	"\/_\/inc\/sections\/location-section.inc": {
 		"ft": 8192,
 		"oA": 2,

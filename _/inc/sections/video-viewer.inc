@@ -1,8 +1,12 @@
 <?php 
-global $sections_active;	
+global $sections_active;
+global $hp_sections;
 ?>
-<?php if ($sections_active) { 
+<?php if ($sections_active || !empty($hp_sections)) { 
 global $sections;	
+if (!empty($hp_sections)) {
+	$sections = $hp_sections;
+}
 ?>
 <?php foreach ($sections as $section) { ?>
 

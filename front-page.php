@@ -4,6 +4,7 @@
 	<?php 
 		$hp_sections = get_field('hp_sections', 'option');
 		$banner_active = get_field('hp_top_banner_active', 'option');	
+		$pg_color = get_field('page_colour', get_option( 'page_on_front' ));
 		$quick_links = array();
 	?>	
 	
@@ -29,6 +30,11 @@
 		<?php if (!empty($hp_sections)) { ?>		
 			<?php foreach ($hp_sections as $section) { ?>
 				
+				<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
+				<!-- VIDEOS SECTION -->
+					<?php include (STYLESHEETPATH . '/_/inc/sections/homepage/video-section.inc'); ?>		
+				<?php } ?>
+				
 				<?php if ($section['acf_fc_layout'] == 'feedback-section') { ?>
 				<!-- FEEDBACK SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/homepage/feedback-section.inc'); ?>		
@@ -40,17 +46,17 @@
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>
-				<!-- FORM SECTION -->
+				<!-- BLOG SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/homepage/blog-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'downloads-section') { ?>
-				<!-- FORM SECTION -->
+				<!-- DOWNLOADS SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/homepage/downloads-section.inc'); ?>		
 				<?php } ?>
 				
 				<?php if ($section['acf_fc_layout'] == 'toolkit-section') { ?>
-				<!-- FORM SECTION -->
+				<!-- TOOLKIT SECTION -->
 					<?php include (STYLESHEETPATH . '/_/inc/sections/homepage/toolkit-section.inc'); ?>		
 				<?php } ?>
 
