@@ -129,7 +129,7 @@ if(!is_admin()) {
 		}
 		
 		// #2. Load the URL of merged file
-		wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css', array(), filemtime( get_stylesheet_directory().'/_/css/print-styles.css'), 'all');
+		wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style.css', array(), filemtime( get_stylesheet_directory().'/_/css/merged-style.css'), 'all');
 		
 		// #3. Deregister all handles
 		foreach ($handles as $handle)
