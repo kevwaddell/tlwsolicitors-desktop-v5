@@ -27,7 +27,7 @@ $img_post = $news_page;
 	<?php include (STYLESHEETPATH . '/_/inc/posts/index-post-list.inc'); ?>	
 	
 	<!-- SOCIAL FEED -->
-	<?php include (STYLESHEETPATH . '/_/inc/posts/social-feed-slider.inc'); ?>
+	<?php //include (STYLESHEETPATH . '/_/inc/posts/social-feed-slider.inc'); ?>
 
 </main>
 
