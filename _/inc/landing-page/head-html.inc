@@ -32,7 +32,14 @@
 	<meta name="geo.position" content="55.009452;-1.490004">
 	<meta name="ICBM" content="55.009452, -1.490004">
 	
-	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/_/img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=zXdkgBvmkj">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png?v=zXdkgBvmkj" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png?v=zXdkgBvmkj" sizes="16x16">
+	<link rel="manifest" href="/manifest.json?v=zXdkgBvmkj">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=zXdkgBvmkj" color="#cc015a">
+	<link rel="shortcut icon" href="/favicon.ico?v=zXdkgBvmkj">
+	<meta name="theme-color" content="#ffffff">
+	
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
