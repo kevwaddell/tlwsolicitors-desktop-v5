@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
+<html lang="en-GB" class="no-js">
 <head id="www-tlwsolicitors-co-uk" data-template-set="tlw-solicitors-theme">
 	
 	<?php if ($_SERVER['SERVER_NAME']=='tlwsolicitors.staging.wpengine.com') { ?>
@@ -21,7 +21,7 @@
 	<!-- End Google Tag Manager -->
 	<?php } ?>
 	<style>body{opacity: 0;}</style>
-	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta charset="UTF-8">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	
 	<meta name="viewport" content ="width=device-width,user-scalable=yes" />
