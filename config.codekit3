@@ -51,40 +51,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/_\/css\/fonts\/aleo-bold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_\/css\/fonts\/aleo-bold-webfont.eot",
-		"oF": 0
-		},
-	"\/_\/css\/fonts\/aleo-bold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_\/css\/fonts\/aleo-bold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/_\/css\/fonts\/aleo-bold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_\/css\/fonts\/aleo-bold-webfont.ttf",
-		"oF": 0
-		},
-	"\/_\/css\/fonts\/aleo-bold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_\/css\/fonts\/aleo-bold-webfont.woff",
-		"oF": 0
-		},
-	"\/_\/css\/fonts\/aleo-bold-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_\/css\/fonts\/aleo-bold-webfont.woff2",
-		"oF": 0
-		},
 	"\/_\/css\/fonts\/aleo-regular-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -111,6 +77,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_\/css\/fonts\/aleo-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/_\/css\/fonts\/aleo-regular-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/css\/fonts\/aleo-regular-webfont.woff2",
 		"oF": 0
 		},
 	"\/_\/css\/fonts\/fontawesome-webfont.eot": {
