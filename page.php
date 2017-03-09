@@ -14,7 +14,7 @@
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main id="main-content" class="main-content-section">
+	<main id="main-content">
 		
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { 
