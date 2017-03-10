@@ -69,6 +69,8 @@
 			
 		$(document).ready(function(){
 			
+		$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
+			
 		//console.log($(window).scrollTop());
 
 		$(".selectpicker").selectpicker({
