@@ -2066,6 +2066,69 @@ article.content-section {
 	z-index: 1;
 	}
 	
+	// -->> Gallery Section
+	
+	&#gallery-section {
+		.gallery-items {
+		.pad-bot(3);
+		z-index: 2;	
+		.rel;
+		}
+		
+		.gallery-items-inner {
+		.pad-bot(3);
+		.over-hide;
+		text-align: center;
+		}
+		
+		.gallery-item {
+		width: 10%;
+		.h(11);
+		.in-block;
+		.pad-all(0.5);
+			a {
+			height: 100%;
+			background-position: center center;
+			.bg-repeat(no-repeat);
+			.bg-size();
+			.no-text-dec;	
+			.border(white; 0.4);
+				i {
+				.block;	
+				.line-h(9.2);
+				text-align: center;
+				.trans-bg(white; 0.5);
+				.txt-col-red;
+				.font-size(4);
+				.opacity(0);
+				}
+				
+				&:hover, &:active, &:focus {
+					i {
+					.opacity(1);
+					}
+				}
+			}	
+			
+			&.active {
+				a {
+				opacity: 0.5;
+				pointer-events: none;		
+				}
+			}
+		}	
+		
+		.gallery-items-viewer {
+		.h(47);
+			img {
+			.border(white; 0.4);
+			.h(47);
+			width: auto;
+			.drop-shadow(0, 3px, 20px, 0.7);	
+			}
+		}
+	}
+	
 	// -->> Videos Section
 	
 	&#video-section {

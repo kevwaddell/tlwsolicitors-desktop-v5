@@ -2,6 +2,7 @@
 
 			<?php if ( have_posts() ): while ( have_posts() ) : the_post(); 
 			$download_active = get_field('download_active');
+			$gallery_active = get_field('gallery_active');
 			$date = get_the_date('l - jS F - Y');	
 			$show_author = get_field('show_author');
 			$all_forms_active = get_field('all_forms_active', 'option');
@@ -18,6 +19,10 @@
 				<?php } ?>
 				
 				<?php include (STYLESHEETPATH . '/_/inc/posts/sections/main-content-section.inc'); ?>
+				
+				<?php if ($gallery_active) { ?>
+				<?php include (STYLESHEETPATH . '/_/inc/posts/sections/gallery-section.inc'); ?>
+				<?php } ?>
 				
 				<?php if ($download_active) { ?>
 				<?php include (STYLESHEETPATH . '/_/inc/posts/sections/downloads-section.inc'); ?>

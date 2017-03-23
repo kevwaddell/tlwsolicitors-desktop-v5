@@ -698,6 +698,26 @@
 				return false;
 
 			});
+			
+			/* POST GALLERY FUNCTION */
+			
+			$('body').on(event_type,'a.gallery-img-link', function(){
+				
+				$(this).parent().siblings().removeClass('active');
+				$(this).parent().addClass('active');
+				var path = $(this).attr('href');
+				var target = $('.gallery-items-viewer');
+				var img = new Image();
+				$(target).empty();
+				
+				$(img).attr('src', path).addClass('animated fadeIn').appendTo(target);
+				
+				console.log(img);
+				
+			
+			return false;
+			
+			});
 		
 		});
 	
