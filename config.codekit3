@@ -7,7 +7,7 @@
 		"uuidString": "34890903-23F3-4529-8A2E-3AC0DCBC0360"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/404.php": {
 		"ft": 8192,
@@ -196,31 +196,34 @@
 	"\/_\/css\/img\/bg-icon-logo-grey.png": {
 		"ft": 32768,
 		"iS": 43504,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/bg-icon-logo-grey.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/bg-icon-logo-mini.png": {
 		"ft": 32768,
 		"iS": 2407,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/bg-icon-logo-mini.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/bg-icon-logo-wht.png": {
 		"ft": 32768,
 		"iS": 42391,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/bg-icon-logo-wht.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/bg-icon-logo-wht.svg": {
@@ -236,131 +239,144 @@
 	"\/_\/css\/img\/color-icon.png": {
 		"ft": 32768,
 		"iS": 4151,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/color-icon.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/drawn-arrow.png": {
 		"ft": 32768,
 		"iS": 6577,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/drawn-arrow.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/headway-logo-2016.png": {
 		"ft": 32768,
 		"iS": 31172,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/headway-logo-2016.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/holly-bl.png": {
 		"ft": 32768,
 		"iS": 18354,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/holly-bl.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/holly-br.png": {
 		"ft": 32768,
 		"iS": 18367,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/holly-br.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/holly-tl.png": {
 		"ft": 32768,
 		"iS": 18124,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/holly-tl.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/holly-tr.png": {
 		"ft": 32768,
 		"iS": 18336,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/holly-tr.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/law-awards-bg.png": {
 		"ft": 32768,
 		"iS": 5084,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/law-awards-bg.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/law-awards-text-right-2016.png": {
 		"ft": 32768,
 		"iS": 3940,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/law-awards-text-right-2016.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/northern-Law-Awards-logo.png": {
 		"ft": 32768,
 		"iS": 7879,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/northern-Law-Awards-logo.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/snowflake-1.png": {
 		"ft": 32768,
 		"iS": 5311,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/snowflake-1.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/snowflake-2.png": {
 		"ft": 32768,
 		"iS": 2289,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/snowflake-2.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/snowflake-3.png": {
 		"ft": 32768,
 		"iS": 7980,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/snowflake-3.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/spinner.svg": {
@@ -376,21 +392,23 @@
 	"\/_\/css\/img\/striped-img-overlay.png": {
 		"ft": 32768,
 		"iS": 112,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/striped-img-overlay.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/thin-stripe-wht.png": {
 		"ft": 32768,
 		"iS": 87,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/thin-stripe-wht.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/tlw-animated-icon.gif": {
@@ -414,21 +432,23 @@
 	"\/_\/css\/img\/tlw-banner-logo-lrg.png": {
 		"ft": 32768,
 		"iS": 9504,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/tlw-banner-logo-lrg.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/tlw-logo-icon.png": {
 		"ft": 32768,
 		"iS": 2119,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/tlw-logo-icon.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/tlw-logo-icon.svg": {
@@ -444,21 +464,23 @@
 	"\/_\/css\/img\/tlw-logo-white.png": {
 		"ft": 32768,
 		"iS": 2839,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/tlw-logo-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/tlw-logo-wide.png": {
 		"ft": 32768,
 		"iS": 8274,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/tlw-logo-wide.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/tlw-logo-wide.svg": {
@@ -474,11 +496,12 @@
 	"\/_\/css\/img\/tlw-logo.png": {
 		"ft": 32768,
 		"iS": 3654,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/tlw-logo.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/tlw-logo.svg": {
@@ -494,11 +517,12 @@
 	"\/_\/css\/img\/user-bg.png": {
 		"ft": 32768,
 		"iS": 44899,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/user-bg.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/css\/img\/xmas-logo.gif": {
@@ -1237,11 +1261,12 @@
 	"\/_\/img\/map-marker.png": {
 		"ft": 32768,
 		"iS": 4316,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/_\/img\/map-marker.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_\/inc\/banners\/blog\/img-banner-index-pg.inc": {
@@ -1986,11 +2011,12 @@
 	"\/screenshot.png": {
 		"ft": 32768,
 		"iS": 8611,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/search.php": {
@@ -2054,7 +2080,7 @@
 	"creationDate": 499875130,
 	"displayValue": "tlwsolicitors-desktop-v5",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-wonka"
+	"iconImageName": "brackets_orange"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3014,6 +3040,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -3838,14 +3868,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -3908,7 +3930,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
