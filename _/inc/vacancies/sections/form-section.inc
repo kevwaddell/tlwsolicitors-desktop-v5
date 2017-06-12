@@ -11,7 +11,10 @@ if (empty($section_title)) {
 $section_title = $form->title;
 }
 $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'send-your-cv'];	
+$today = date('Ymd');
+$job_display_to_date = get_field( 'job_display_to_date');
 ?>
+<?php if ($job_display_to_date > $today) { ?>
 <section id="form-section" class="pg-section with-header with-icon-logo">
 <a name="send-your-cv" id="send-your-cv" class="section-target"></a>
 	<div class="container">
@@ -21,3 +24,4 @@ $quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'send-your-cv
 	</div>
 	<div class="overlay"></div>
 </section>
+<?php } ?>
